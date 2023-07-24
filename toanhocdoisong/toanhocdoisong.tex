@@ -3,11 +3,6 @@
 \everymath{\color{toanhocdoisong}}
 \graphicspath{{../toanhocdoisong/pic/}}
 \begingroup
-\blfootnote{$^1$\color{toanhocdoisong}Nguồn: Accromath, vol. $17$, $2022$.}
-%\blfootnote{$^2$\color{toanhocdoisong}Đại học McGill, Canada.}
-%\blfootnote{$^3$\color{toanhocdoisong}École Polytechnique Fédérale de Lausanne, Thụy Sỹ.}
-\blfootnote{$^2$\color{toanhocdoisong}Viện Toán học.}
-\blfootnote{$^3$\color{toanhocdoisong}Giải đấu để chọn ra người thách đấu với nhà vô địch -- Pi.}
 \AddToShipoutPicture*{\put(0,616){\includegraphics[width=19.3cm]{../bannertoanhocdoisong}}}
 \AddToShipoutPicture*{\put(102,507){\includegraphics[scale=1]{../tieude.pdf}}}
 \centering
@@ -16,210 +11,250 @@
 \vspace*{200pt}
 
 \begin{multicols}{2}
-	\textit{Khi các đấu thủ hoặc các đội thi đấu với nhau, cơ hội chiến thắng của mỗi bên phụ thuộc vào thực lực của họ. Hệ thống tính điểm Elo là một phương pháp tính toán trình độ tương đối của những người chơi trong một trò chơi có tổng bằng không, cho phép đánh giá khả năng về kết cục của một trận đấu.}
-	\vskip 0.05cm
-	Từ ngày $24$ tháng $11$ đến ngày $16$ tháng $12$ năm $2021$, tại Dubai đã diễn ra giải vô địch thế giới môn cờ vua. Kỳ thủ Nauy Magnus Carlsen, nhà vô địch từ năm $2013$, đấu với kỳ thủ Nga Ian Nepomniachtchi, người giành chiến thắng ở Giải đấu các ứng viên$^{\small{3}}$. Người chiến thắng giành được $1{,}2$ triệu euro tiền thưởng.
-	\vskip 0.05cm
-	Trận đấu gồm $14$ ván. Mỗi ván thắng được $1$ điểm, thua $0$ điểm và nếu hòa thì mỗi đấu thủ được $\frac{1}{2}$ điểm. Chung cuộc, Carlsen giành chiến thắng $7\frac{1}{2} - 3\frac{1}{2}$, với $4$ thắng, $0$ thua và $7$ hòa sau $11$ ván ($3$ ván cuối cùng không cần thiết vì không làm thay đổi kết quả cuối cùng). Và như vậy Carlsen giành danh hiệu vô địch thế giới lần thứ $5$ liên tiếp.
-	\vskip 0.05cm
-	Kết quả này phù hợp với hệ thống tính điểm Elo mà Liên đoàn Cờ vua Thế giới (FIDE) sử dụng từ năm $1970$ để đánh giá trình độ tương đối của các kỳ thủ. Quả thực, khi đó Carlsen được xếp hạng số một thế giới với số điểm Elo $2856$, trong khi đối thủ của anh, kỳ thủ số một của Nga, xếp thứ năm với số điểm Elo $2782$.
-	\vskip 0.05cm
-	Khi hai đấu thủ $A$ và $B$ với Elo $\theta_A$ và $\theta_B$ đấu với nhau, phương pháp Elo dự đoán $A$ sẽ giành được số điểm trung bình là
-	\setlength{\abovedisplayskip}{4pt}
-	\setlength{\belowdisplayskip}{5pt}
-	\begin{align*}
-		s_{AB} = \frac{1}{1+ 10^{-(\theta_A - \theta_B) /400}} \tag{$1$}
-	\end{align*}
-	biết rằng $A$ được $1$ điểm nếu thắng, $0$ nếu thua và $\frac{1}{2}$ nếu hòa. Điểm số trung bình B giành được là $s_{BA} = 1 – s_{AB}$.
-	\vskip 0.05cm
-	Trước trận tranh ngôi vô địch, ta có $\theta_A = 2856$ với Carlsen và $\theta_B = 2782$ với Nepomniachtchi, do đó $s_{AB} \approx 0{,}60$, tiên đoán chiến thắng của kỳ thủ Nauy vì trung bình anh sẽ giành được $8\frac{1}{2}$ điểm sau $14$ ván, so với số điểm $5\frac{1}{2}$ của kỳ thủ Nga.
-	\vskip 0.05cm
-	\textbf{\color{toanhocdoisong}Cơ sở toán học của phương pháp tính điểm Elo}
-	\vskip 0.05cm
-	Để xác định số điểm trung bình $s_{AB}$ của kỳ thủ $A$ khi đấu với kỳ thủ $B$, phương pháp ngây thơ là lấy số điểm trung bình của $A$ trong các trận đã đấu giữa hai người. Nhưng trong một trò chơi như cờ vua, phần lớn trong số hàng trăm nghìn người chơi chưa từng gặp nhau, và ngay cả khi họ đã từng gặp nhau, số trận họ đã đấu với nhau là quá ít để có một đánh giá chất lượng. Hệ thống tính điểm Elo giải quyết khó khăn này dựa vào một mô hình toán học cho phép xếp hạng các đấu thủ và qua đó ước tính kết quả có thể xảy ra khi họ đối đầu nhau.
-	\vskip 0.02cm
-	Biểu thức ($1$) lấy cảm hứng từ một mô hình được thiết lập từ những năm $1920$ bởi nhà toán học người Đức Ernst Zermelo và sau đó được cải tiến bởi nhà thống kê người Canada Ralph Bradley và người đồng nghiệp Milton Terry. Trong các công trình này, cũng như trong phần còn lại của bài viết, ta giả sử mọi ván đấu đều phân định thắng thua. Như vậy đây là một mô hình đơn giản hóa, nhất là đối với môn cờ vua, khi hòa là kết quả thường xảy ra nhất giữa các kỳ thủ đỉnh cao.
-	\vskip 0.02cm
-	Khi một ván đấu kết thúc với kết quả thắng $(1)$ hoặc thua $(0)$, điểm số trung bình chính là xác suất $p_{AB}$ để $A$ thắng $B$. Mô hình Bradley--Terry--Elo giả sử rằng xác suất này có dạng
-	
-	\vspace{-15pt}
-	\begin{align*}
-		p_{AB} = G(\theta_A - \theta_B)\tag{$2$}
-	\end{align*}
-	ở đó $G: \mathbb R \rightarrow (0, 1)$ là một hàm liên tục, tăng ngặt sao cho $G(x) + G(-x) = 1$ với mọi số thực $x$ và $G(x) \rightarrow 1$ khi $x \rightarrow \infty$. Một thí dụ về hàm như thế được cho trong Hình $1$. Ta có $p_{AB} + p_{BA} = G(\theta_A - \theta_B) + G(\theta_B - \theta_A) = 1$, không có kết quả hòa. Vì $G(0) = 1/2$, hai đấu thủ có trình độ ngang nhau có xác suất thắng như nhau; hiệu $\theta_A - \theta_B$ càng tăng thì xác suất để $A$ thắng càng lớn, và tiến tới giới hạn bằng $1$, nghĩa là chiến thắng chắc chắn của $A$.
-	Lựa chọn phổ biến nhất của $G$ là luật logistic với tham số $\beta > 0$, được định nghĩa bởi
-	
-	\vspace{-15pt}
-	\begin{align*}
-		L(x) = \frac{ 1 }{ (1 + e^{-\beta x}) }\tag{$3$}
-	\end{align*}
-	với mọi $x \in \mathbb R$.
-	\begin{figure}[H]
-%		\vspace*{5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.8\linewidth]{pic1}
-		\caption{\small\textit{\color{toanhocdoisong}Hình $1$. Đồ thị hàm logistic $L(x)$ với $\beta = \ln(10) / 400$.}}
-		\vspace*{-10pt}
-	\end{figure}
-	Chọn $G = L$ với tham số $\beta = \ln(10) / 400$, ta thu được công thức ($1$) mà FIDE sử dụng. Ban đầu, nhà vật lý người Mỹ gốc Hungary Arpad Elo, người đưa phương pháp mô hình hóa này vào thế giới cờ vua, sử dụng một hàm phân phối chuẩn, khi đó $s_{AB}$ không có công thức tường minh như trên.
-	\vskip 0.05cm
-	\textbf{\color{toanhocdoisong}Tính chất của mô hình xác suất}
-	\vskip 0.05cm
-	Mô hình Bradley--Terry--Elo có ưu điểm là nó cho phép xếp hạng tất cả người chơi của một trò chơi theo trình độ tương đối, ngay cả khi họ chưa từng đối đầu trực tiếp. Do đó, ta có thể dùng nó để dự đoán, đặc biệt là dựa vào các mô phỏng.
-	Tuy nhiên, giả định rằng xác suất để $A$ thắng $B$ có dạng ($2$) không hề là một điều vô tình. Như đã đề cập, nó ngầm cho rằng không có ván hòa. Nếu có kết quả hòa, mô hình sẽ cần phải được điều chỉnh.
-	\vskip 0.05cm
-	Biểu thức ($2$) cũng ngầm giả định rằng kết quả một trận đấu giữa $A$ và $B$ chỉ phụ thuộc vào trình độ tương đối $\theta_A - \theta_B$. Đặc biệt, những yếu tố như đi trước (cầm quân trắng trong cờ vua), được nghỉ ngơi nhiều hơn đối thủ, hay thi đấu trước các cổ động viên không ảnh hưởng đến kết quả cuối cùng (một điều không hợp lý đối với thể thao chuyên nghiệp).
-	\vskip 0.05cm
-	Hơn nữa, cần phải hiểu rằng điểm số Elo của một đấu thủ không hề có giá trị nội tại: ý nghĩa của nó phụ thuộc vào điểm số Elo của các đối thủ, vì ta có thể cộng tất cả với cùng một hằng số tùy ý, hiệu số giữa chúng vẫn giữ nguyên. Tương tự, nếu ta nhân tất cả các Elo với một hằng số $c > 0$ và thay hàm $G(x)$ bởi $G(x / c)$, các xác suất thắng cũng không thay đổi.
-	\vskip 0.05cm
-	Trong trường hợp công thức ($1$), được biểu diễn trong Hình $1$ với các giá trị $\theta_A - \theta_B$ từ $-400$ đến $+400$, tham số $\beta$ được chọn sao cho chênh lệch $100$ điểm cho xác suất thắng $64\%$ đối với người mạnh hơn. Nếu chênh lệch là $200$ điểm, xác suất là $75\%$, và nó vào khoảng $91\%$ khi chênh lệch là $400$ điểm.
-	\vskip 0.05cm
-	Trong cờ vua, điểm Elo của hầu hết các kỳ thủ có trong xếp hạng của FIDE nằm trong khoảng từ $1000$ đến $3000$. Phân phối của chúng nói chung không đối xứng và thay đổi tùy theo từng nước. Hơn nữa, có nhiều phiên bản khác nhau của hệ thống xếp hạng, ngoài ra nó còn được điều chỉnh để áp dụng cho nhiều trò chơi và môn thể thao khác, trong đó có cờ vây, \textit{scrabble}, nhiều trò chơi trên mạng, bóng đá, tennis và khúc côn cầu trên băng.
-	\vskip 0.05cm
-	\textbf{\color{toanhocdoisong}Cập nhật xếp hạng}
-	\vskip 0.05cm
-	Tất nhiên là trình độ tương đối của các đấu thủ thay đổi theo thời gian. Một số người mạnh lên khi tích lũy thêm kinh nghiệm, một số khác yếu đi do tuổi tác, hoặc, trong trường hợp các môn thể thao đồng đội, do chấn thương, do giải nghệ hoặc do chuyển nhượng không tốt.
-	\vskip 0.05cm
-	Để thể hiện sự thay đổi này, phương pháp tính điểm Elo đưa ra một quy tắc cập nhật điểm xếp hạng sau mỗi trận đấu. Gọi $\theta_{A, n}$ và $\theta_{B, n}$ là điểm xếp hạng (Elo) của hai đấu thủ A và B ngay trước lần gặp nhau thứ $n$. Elo đề xuất rằng sau trận đấu này, chênh lệch $\theta_{A, n} - \theta_{B, n}$ được phân phối lại cho hai người theo ``độ bất ngờ" của kết quả và một số thực dương $k$, gọi là \textit{hệ số phát triển}.
-	\vskip 0.05cm
-	Gọi $s$ là kết quả của ván đấu giữa $A$ và $B$, với $s = 1$ nếu $A$ thắng, $s = 0$ nếu $A$ thua và $s = 1/2$ nếu ván đấu hòa. Elo mới của $A$ sẽ là
-	\begin{align*}
-		\theta_{A, n + 1} = \theta_{A, n} + k (s – s_{AB, n}),
-	\end{align*}
-	ở đó $s_{AB, n}$ là kết quả dự đoán được tính theo công thức ($1$) với các giá trị $\theta_{A, n}$ và $\theta_{B, n}$. Dễ thấy điểm số Elo của $A$ tăng nếu $s = 1$, và $s_{AB, n}$ càng nhỏ thì điểm số tăng càng nhiều. Như vậy, chiến thắng trước một đối thủ mạnh hơn thì có giá trị hơn. Tương tự, điểm số Elo của $A$ giảm khi thua, tức là khi $s = 0$. Cuối cùng, khi ván đấu hòa, điểm số Elo của $A$ tăng nếu điểm số Elo ban đầu của $B$ lớn hơn, tức là $s_{AB, n} < 1/2$.
-	Đối với các kỳ thủ chuyên nghiệp, hệ thống tính điểm Elo cố định giá trị $k = 10$, do đó tại giải vô địch thế giới, mỗi ván thắng mang lại cho Carlsen $10 \times (1 – 0{,}60) \approx 4$ điểm Elo, trong khi mỗi ván hòa khiến anh mất $10 \times (0{,}5 – 0{,}60) \approx 1$ điểm. Sau giải đấu, điểm số Elo mới của anh là
-	\begin{align*}
-		2856 + 4 \times 4{,}0 - 7 \times 1{,}0 = 2865,
-	\end{align*}
-	trong khi đó điểm số Elo của Nepomniachtchi giảm từ $2782$ xuống $2773$.
-	\vskip 0.05cm
-	Các giá trị khác của $k$ được dùng cho các trình độ khác nhau của các kỳ thủ. Chẳng hạn, người ta dùng $k = 40$ cho các kỳ thủ mới chơi chưa quá $30$ ván hoặc các kỳ thủ trẻ dưới $18$ tuổi, giúp họ nhanh chóng đạt đến trình độ thực. Sau đó, $k$ được quy định bằng $20$ chừng nào điểm Elo của họ vẫn ở dưới $2400$.
-	\vskip 0.05cm
-	\textbf{\color{toanhocdoisong}Tính chất của phương pháp cập nhật}
-	\vskip 0.05cm
-	Trong trường hợp đặc biệt khi tất cả các ván đấu đều phân thắng bại, ta thấy rằng một cách tổng quát, phương pháp cập nhật mà Elo đề xuất sử dụng một hàm $M: \mathbb R \rightarrow (0, \infty)$ liên tục, giảm ngặt sao cho $M(x) \rightarrow 0$ khi $x \rightarrow \infty$. Hàm này cho phép cập nhật điểm xếp hạng của các đấu thủ $A$ và $B$ như sau.
-	\vskip 0.05cm
-	Nếu $A$ thắng:
-	\begin{align*}
-		&\theta_{A, n  +1} = \theta_{A, n} + M(\theta_{A, n} - \theta_{B, n}),\\
-		&\theta_{B, n  +1} = \theta_{B, n} - M(\theta_{A, n} - \theta_{B, n}).
-	\end{align*}
-	Nếu $B$ thắng:
-	\begin{align*}
-		&\theta_{A, n  +1} = \theta_{A, n} - M(\theta_{B, n} - \theta_{A, n}),\\
-		&\theta_{B, n  +1} = \theta_{B, n} + M(\theta_{B, n} - \theta_{A, n}).
-	\end{align*}
-	Trong công thức của FIDE, $M(x) = k L(-x)$ với mọi số thực $x$.
-	\vskip 0.01cm
-	Công thức cập nhật này có ý nghĩa tìm kiếm xác suất. Thực vậy, gọi $\theta_A$ và $\theta_B$ là trình độ tương đối thực sự nhưng chưa biết của hai đấu thủ $A$ và $B$. Giả sử $G(\theta_A - \theta_B)$ là xác suất thực sự để $A$ thắng $B$. Kỳ vọng của thay đổi xếp hạng của $A$ tại thời điểm $n$ được cho bởi biểu thức sau:
-	\begin{align*}
-		&M(\theta_{A, n} - \theta_{B, n}) G(\theta_A - \theta_B)\\
-		 &- M(\theta_{B, n} - \theta_{A, n}) G(\theta_B - \theta_A).
-	\end{align*}
-	Nếu phương pháp cập nhật là tốt, ta mong muốn rằng kỳ vọng này bằng $0$ khi $\theta_{A, n} - \theta_{B, n} = \theta_A - \theta_B$. Do $M$ là hàm giảm, ta cũng hy vọng rằng sau ván đấu, hiệu $(\theta_{A, n + 1} - \theta_{B, n + 1}) - (\theta_A - \theta_B)$ gần $0$ hơn so với hiệu $(\theta_{A, n} - \theta_{B, n}) - (\theta_A - \theta_B)$.
-	\vskip 0.01cm
-	Lập luận tương tự cũng đúng đối với $B$, và ta có thể kiểm tra rằng những tính chất mong muốn này được đạt nếu các hàm $G$ và $M$ thỏa mãn, với mọi số thực $x$:
-	\begin{align*}
-		M(x) / M(-x) = G(-x) / G(x). \tag{$4$}
-	\end{align*}
-	Từ phương trình cân bằng này, với một chút nỗ lực, ta có thể chứng minh rằng với mỗi hàm $M$ cho trước, hàm $G$ duy nhất thỏa mãn được cho bởi
-	\begin{align*}
-		G(x) = \frac { M(-x) }{ M(x) + M(-x) },
-	\end{align*}
-	với mọi $x \in \mathbb R$.
-	\vskip 0.01cm
-	Do đó, quy tắc cập nhật mà Elo đề xuất ngầm cho rằng xác suất ban đầu là xác suất logistic, tức là $G = L$.
-	\vskip 0.01cm
-	Có một lưu ý tinh tế: nếu ta cố định hàm $G$ trước thì tồn tại vô số hàm $M$ thỏa mãn quan hệ ($4$). Thật vậy, với mọi hằng số $k > 0$, $M(x) = k G(-x)$ là một nghiệm. Nhưng ta cũng có thể chọn $M(x) = k G(-x) S(|x|)$, ở đó $S$ là một hàm thỏa mãn $S(0) = 1$ và $S(x) = S(-x)$ với mọi số thực $x$. Tất nhiên là hàm $S$ được chọn phải đảm bảo tính đơn điệu giảm của $M$.
-	\vskip 0.05cm
-	\textbf{\color{toanhocdoisong}Kết quả về sự hội tụ}
-	\vskip 0.05cm
-	Có thể liên hệ phương pháp cập nhật của Elo với thuật toán giảm gradient ngẫu nhiên trong học máy trong một mô hình hồi quy logistic.
-	\vskip 0.05cm
-	Ta hãy tưởng tượng có $N$ đấu thủ và trình độ của họ được biểu diễn bởi vector $(\theta_1, \dots, \theta_N)$ ẩn nhưng cố định. Ta cũng giả sử rằng ban đầu, ta có một ước lượng $(\theta_{1, 0}, \dots, \theta_{N, 0})$, và các đấu thủ sẽ tham gia một dãy vô hạn các ván đấu, mỗi ván diễn ra 
-	\end{multicols}
-	\vspace*{-8pt}
-	\begin{tBox}
-		\begin{wrapfigure}{l}{0.18\linewidth}
-			\vspace*{-15pt}
-			\centering
-			\captionsetup{labelformat= empty, justification=centering}
-			\hspace*{3pt}\includegraphics[width= 1.1\linewidth]{pic2}
-			\caption{\small\textit{\color{toanhocdoisong}\hspace*{15pt}Arpad Elo.}}
-			\vspace*{-20pt}
-		\end{wrapfigure}
-		Sinh ngày $25$ tháng $8$ năm $1903$ tại Egyházaskeszö, Áo--Hung trong một gia đình khiêm tốn, Arpad Elo (Élö Árpád trong tiếng Hungary) di cư sang Mỹ năm $1913$ cùng cha mẹ. Ông học vật lý tại Đại học Chicago, sau đó giảng dạy tại Đại học Marquette Milwaukee, Wisconsin.
-		\vskip 0.05cm
-		Ông là một kỳ thủ tài ba, từng tám lần vô địch bang và là chủ tịch Liên đoàn Cờ vua Mỹ từ $1935$ đến $1937$. Ông nổi tiếng thế giới vì đã đưa vào sử dụng hệ thống mang tên mình, được xây dựng trong những năm $1950$ sau khi hệ thống xếp hạng đầu tiên, do Kenneth Harkness phát triển, bị chỉ ra những nhược điểm. Phương pháp mới được FIDE thông qua vào năm $1970$, và Elo trở thành thành viên danh dự của tổ chức này từ năm $1981$.
-		\vskip 0.05cm
-		Một phân tích chi tiết đầu tiên về hệ thống tính điểm Elo (có khi bị viết sai thành ELO như thể một từ viết tắt) được chính Elo đưa ra trong cuốn sách năm $1978$ của mình, The Rating of Chessplayers, Past and Present. Ngày nay, phương pháp của ông là một phần không thể tách rời của thế giới cờ vua. Nó được dùng để xác định cách các kỳ thủ đối đầu với nhau tại các giải cờ vua trên toàn thế giới, và mọi kỳ thủ đều theo dõi sát sao sự thay đổi điểm số Elo của mình để đo mức độ tiến bộ và biết được thứ bậc của mình trong cờ vua.
-		\vskip 0.05cm
-		Arpad Elo qua đời ngày $5$ tháng $11$ năm $1992$ (thọ $89$ tuổi) tại Brookfield, Wisconsin.
-		\vspace*{-3pt}
-	\end{tBox}
-	\begin{multicols}{2}
-	giữa hai đấu thủ được chọn ngẫu nhiên theo phân phối đều. Cuối cùng, tưởng tượng rằng sau mỗi ván, vector trình độ được cập nhật theo phương pháp của Elo tại hai tọa độ $i$ và $j$ của hai đấu thủ vừa thi đấu.
-	\vskip 0.05cm
-	Dưới giả thiết các hàm $G$ và $M$ thỏa mãn các điều kiện đã nói đến ở trên, và hơn nữa $M$ có đạo hàm bị chặn, nhà toán học người Anh David Aldous đã chứng minh được rằng khi $n$ tiến ra vô cùng, dãy các vector $(\theta_{1, n}, \dots, \theta_{N, n})$ đạt đến một phân phối dừng. Liệu phân phối dừng này có phải là một xấp xỉ tốt của $(\theta_1, \dots, \theta_N)$ hay không vẫn là một câu hỏi lý thuyết mở, mặc dù nó đã được khẳng định bởi nhiều mô phỏng và thực tế hàng chục năm sử dụng hệ thống xếp hạng Elo của các kỳ thủ cờ vua.
-	\vskip 0.05cm
-	Trong khi đó, mặc dù kết quả hội tụ như của Aldous tạo niềm tin đối với phương pháp của Elo, chưa chắc đã tồn tại một vector ẩn $(\theta_1, \dots, \theta_N)$ phản ánh trình độ thực sự của các đấu thủ. Rốt cuộc thì các đấu thủ thay đổi theo thời gian, và các đội thể thao cũng liên tục thay đổi. Vector trình độ thực, nếu tồn tại, là một vector động.
-	\vskip 0.05cm
-	Thành công của phương pháp tính điểm Elo nằm ở khả năng theo được sự thay đổi này mà không phải phụ thuộc vào một mô hình ngẫu nhiên chính xác. Đây là một thực tế được xác nhận trong môn cờ vua, và trong cả nhiều tình huống khác, trong đó tham số $\beta$ và hệ số phát triển $k$ cần được lựa chọn một cách thích hợp.
-	\vskip 0.05cm
-	\textbf{\color{toanhocdoisong}Hệ thống Elo trong khúc côn cầu}
-	\vskip 0.05cm
-	Để minh họa phương pháp tính điểm Elo và khả năng dự đoán của nó ở ngoài môn cờ vua, ta hãy cùng xem xét ứng dụng của nó trong môn khúc côn cầu trên băng\footnote[4]{\color{toanhocdoisong}Accromath là tạp chí Canada, nơi khúc côn cầu trên băng là môn thể thao phổ biến nhất -- Pi.}, trong đó nhiều điều chỉnh đã được thực hiện để tận dụng kết quả của tất cả các trận trong vòng đấu thường và vòng đấu loại trực tiếp của giải National Hockey League (NHL) kể từ khi nó ra đời vào năm $1917$. Các dữ liệu này được lưu tại trang \url{hockey-reference.com}.
-	\vskip 0.05cm
-	Thí dụ, các nhà phân tích Ryan Best và Neil Paine của trang \textit{FiveThirtyEight} đề xuất một hệ thống xếp hạng Elo tính đến các tham số sau:
-	\vskip 0.05cm
-	$a)$ Mỗi đội có số diểm Elo ban đầu là $1380$.
-	\vskip 0.05cm
-	$b)$ Quy tắc cập nhật sử dụng hệ số phát triển $k = 6$.
-	\vskip 0.05cm
-	$c)$ Ta tính đến lợi thế sân nhà, tức là nếu hai đội có cùng Elo, đội chủ nhà có xác suất thắng là $57{,}1\%$ thay vì $50\%$.
-	\vskip 0.05cm
-	$d)$ Thay đổi điểm Elo tăng thêm $25\%$ đối với những trận loại trực tiếp.
-	\vskip 0.05cm
-	$e)$ Đầu mỗi mùa giải, điểm Elo của mỗi đội được tính lại, bằng
-	\begin{align*}
-		0{,}7 \!\times\!\text{điểm xếp hạng mùa trước} + 0{,}3 \!\times\!\! 1505.
-	\end{align*}
-	Như vậy, điểm số Elo trung bình của cả mùa giải dao động hàng năm xung quanh $1500$.
+	Việc quản lý lượng hàng lưu trong kho là một vấn đề quan trọng trong thương nghiệp. Đây cũng là một bài toán cơ bản của ngành vận trù học. Trong bài viết này, chúng ta hãy cùng tìm hiểu một số mô hình toán học để tìm chi phí tối thiểu cho các tình huống khác nhau khi lưu trữ hàng trong kho.
+	\vskip 0.1cm
+	$\pmb{1}$ \textbf{Ford Harris và mô hình EOQ cổ điển}
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{pic3}
-		\caption{\small\textit{\color{toanhocdoisong}Hình $2$. Xếp hạng Elo của đội Montreal Canadiens từ năm $1917$ đến nay.}}
+		\includegraphics[width= 0.6\linewidth]{1}
+		\caption{\small\textit{\color{toanhocdoisong}Ford Whitman Harris ($1877-1962$).}}
 		\vspace*{-10pt}
 	\end{figure}
-	Ngoài ra, mô hình của Best và Paine tính đến cả hiệu số bàn thắng -- bàn thua của mỗi trận đấu và sự phụ thuộc lẫn nhau (hay tự tương quan) giữa các trận đấu liên tiếp.
-	\vskip 0.05cm
-	Hình $2$ cho thấy sự thay đổi của xếp hạng Elo của đội Montreal Canadiens theo mô hình của Best và Paine. Đỉnh cao nhất của đồ thị nằm ở nửa sau của thập niên $1970$, giai đoạn mà họ giành được bốn cúp Stanley\footnote[5]{\color{toanhocdoisong}Danh hiệu vô địch hàng năm của NHL -- Pi.}  liên tiếp.
-	\vskip 0.05cm
-	Ta cũng có thể thấy các đỉnh khác trong nửa sau thập niên $1940$ và giữa những năm $1990$, cũng như thời kỳ xuất sắc ổn định cuối những năm $1950$, khi họ vô địch năm lần liên tiếp (từ $1956$ đến $1960$). Trái lại, xếp hạng Elo của đội dao động quanh mức trung bình kể từ đầu những năm $2000$. Sự hiện diện của họ tại trận chung kết cúp Stanley năm $2021$, bởi vậy, có ít khả năng lặp lại trong tương lai gần.
-	\vskip 0.05cm
-	Vì xếp hạng Elo có tính tương đối, sẽ bổ ích hơn nếu ta so sánh sự thay đổi xếp hạng của các câu lạc bộ khác nhau. Hình $3$ so sánh các đội Montreal Canadiens (đường màu đỏ), Toronto Maple Leafs (xanh nước biển) và năm đội giành cúp Stanley từ $2008$ đến $2017$, gồm Boston Bruins (da cam), Detroit Red Wings (xanh lá cây), Chicago Blackhawks (đen), Los Angeles Kings (tím) và Pittsburgh Penguins (vàng).
+	Mô hình EOQ (Economic Order Quantity) được Ford Whitman Harris, một kỹ sư lúc đó đang làm tư vấn về luật liên quan đến các bằng sáng chế, công bố năm $1913$. Đây là một mô hình đơn giản nhưng có tính thực tiễn cao về việc quản lý lượng hàng trong kho và vẫn có vai trò quan trọng trong ngành vận trù học ngày nay. 
+	\vskip 0.1cm
+	Mô hình EOQ này nhận các thông số đầu vào như sau:
+	\vskip 0.1cm
+	$K$: chi phí thiết lập cho một đơn hàng
+	\vskip 0.1cm
+	$c$: chi phí để sản xuất hoặc mua một đơn vị hàng
+	\vskip 0.1cm
+	$h$: chi phí để lưu một đơn vị hàng trong kho trong một đơn vị thời gian.
+	\vskip 0.1cm
+	Giả sử rằng nhu cầu tiêu thụ là đều theo thời gian và có giá trị $d$ đơn vị hàng/đơn vị thời gian. Nếu mỗi lần đặt hàng, ta đặt một lượng $Q$ đơn vị hàng thì số lượng hàng này sẽ được tiêu thụ hết trong thời gian $Q/d$. Chi phí cho một lần đặt hàng sẽ là $K+cQ$.
+	\vskip 0.1cm
+	Do lượng hàng sẽ giảm dần tuyến tính theo thời gian khi được bán ra, từ lúc nhận được $Q$ đơn vị hàng này đến khi tiêu thụ hết, số lượng đơn vị hàng trung bình được lưu trong kho từ đơn hàng này sẽ là $\dfrac{Q + 0}{2} = \dfrac{Q}{2}$. Chi phí lưu kho của đơn hàng cho đến khi bán hết sẽ là:
+	\begin{align*}
+		h\cdot \frac{Q}{2}\cdot \frac{Q}{d}=\frac{hQ^2}{2d}.
+	\end{align*}
+	Tổng chi phí cho một chu kỳ hàng sẽ là:
+	\begin{align*}
+		K + cQ + \frac{hQ^2}{2d}.
+	\end{align*}
+	Chi phí trong một đơn vị thời gian là:
+	\begin{align*}
+		T = \frac{K + cQ + \frac{hQ^2}{2d}}{\frac{Q}{d}} = \frac{dK}{Q} + dc + \frac{hQ}{2}.
+	\end{align*}
+	Ta cần tìm giá trị $Q^*$ sao cho $T$ nhận giá trị cực tiểu. Lấy đạo hàm của $T$ theo $Q$ được:
+	\begin{align*}
+		-\frac{dK}{Q^2} + \frac{h}{2} = 0.
+	\end{align*}
+	hay $Q^* = \sqrt{\dfrac{2dK}{h}}$.
+	\vskip 0.1cm
+	Nếu vẽ đồ thị của hàm $T(Q)$, ta được dạng đồ thị như trong Hình $1$. Hình dạng này của đồ thị hàm số có vai trò quan trọng trong một số bài toán ở các phần tiếp theo.
 	\begin{figure}[H]
-		\vspace*{-10pt}
+		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{pic4}
-		\caption{\small\textit{\color{toanhocdoisong}Hình $3$. Xếp hạng Elo của bảy đội NHL từ $2008$ đến $2018$; đội vô địch mỗi năm từ $2008$ đến $2017$ được đánh dấu bằng hình tròn.}}
+		\includegraphics[width= 1\linewidth]{2}
+		\caption{\small\textit{\color{toanhocdoisong}Hình $1$. Đồ thị của $T(Q)$.}}
 		\vspace*{-10pt}
 	\end{figure}
-	Trong Hình $3$, các đội vô địch được đánh dấu bằng hình tròn. Đội vô địch năm $2018$, Washington Capitals, không được xét đến trong hình. Có thể thấy rõ là đội hay nhất không phải lúc nào cũng vô địch.
-	\vskip 0.05cm
-	\textbf{\color{toanhocdoisong}Kết luận}
-	\vskip 0.05cm
-	Là một yếu tố không thể thiếu trong thế giới cờ vua đồng thời có thể được áp dụng cho các trò chơi hai người có tổng bằng không nói chung, hệ thống tính điểm Elo cho phép đánh giá trình độ tương đối của các đấu thủ ngay cả khi họ chưa từng đối đầu nhau. Sự cập nhật liên tục dần dần qua từng trận đấu đem lại một cách đơn giản và hiệu quả để nắm bắt quá trình thay đổi của các đấu thủ hoặc của các đội, như được minh họa trong thí dụ về NHL.
-	\vskip 0.05cm
-	\PIbox{\textbf{\color{toanhocdoisong}Xếp hạng Elo của các kỳ thủ cờ vua}
-		\vskip 0.05cm
-		Ngày nay, một người mới chơi có điểm số Elo khoảng $1000$, còn một người chơi nghiệp dư giỏi có điểm số Elo khoảng $2000$. Các đại kiện tướng quốc tế cần đạt được điểm số Elo tối thiểu $2500$. Nhóm này gần như trùng với nhóm các kỳ thủ chuyên nghiệp, ngày nay có hơn $1000$ người trên toàn thế giới. Cho đến nay chỉ có khoảng mười lăm kỳ thủ từng đạt đến mức điểm Elo $2800$ trong sự nghiệp của mình.
-		\vskip 0.05cm
-		Các phần mềm cờ vua cũng có xếp hạng điểm Elo. Chương trình tốt nhất hiện nay, Stockfish, có điểm số Elo khoảng $3700$, cho thấy trong cờ vua máy tính đã vượt xa con người như thế nào: xác suất $p_{AB}$ giữa Stockfish ($A$) và Magnus Carlsen ($B$) là khoảng $0{,}992\ldots$ (tức là trung bình $992$ trận thắng và $8$ trận thua cho máy tính sau $1000$ trận đấu không có hòa). Đó cũng là khoảng cách giữa Carlsen và một kỳ thủ nghiệp dư giỏi có điểm số Elo $2000$, mức đạt được bởi khoảng $30000$ người.
-		\vskip 0.05cm
-		Ta cũng có thể đặt câu hỏi liệu xếp hạng Elo có thể giúp so sánh các kỳ thủ thuộc các thời đại khác nhau. Chẳng hạn, một kỳ thủ có điểm Elo $2700$ trong thập niên $1980$ liệu có trình độ tương đương với một kỳ thủ có điểm Elo $2700$ ngày nay? Đây là một câu hỏi phức tạp, nhất là khi bản thân môn cờ vua cũng đã thay đổi. Chẳng hạn, các kỳ thủ, từ những người chuyên nghiệp đến những người nghiệp dư hăng hái nhất, đều dùng phần mềm để luyện tập. Nhưng người ta cũng quan sát được hiện tượng ``lạm phát", được gây ra bởi chính cách tính điểm Elo. Từ đầu những năm $2000$, điểm Elo trung bình của $50$ kỳ thủ mạnh nhất đã tăng hàng chục điểm, do đó điểm Elo cỡ $2700$ ở năm $2010$ rất có thể kém giá trị hơn so với ở năm $2000$.}
+	\PIbox{Công thức EOQ dạng như trên xuất hiện ở nhiều giáo trình chuyên ngành kinh tế. Sau khi được Harris công bố năm $1913$, nó được nhiều tài liệu nhắc đến trong các thập kỷ sau đó (thường không có trích dẫn). Nhiều người gọi tên công thức này theo các tài liệu hoặc giáo trình mà họ biết. Vì lý do này, công thức EOQ còn được gọi là công thức Wilson hay công thức Camp. Trong khi đó, nguồn gốc từ Harris của công thức EOQ bị lãng quên cho đến khi được Donal Erlenkotter phát hiện lại vào năm $1988$. Một trong những nguyên nhân của vấn đề này có lẽ là do bản thân Harris không phải là một học giả. Tuy chỉ học hết cấp $3$, Harris đã tự phân đấu và học việc để trở thành một kỹ sư với nhiều bằng sáng chế. Sau đó, ông tiếp tục tự học và có một sự nghiệp thành công trong lĩnh vực luật về các bằng sáng chế. Bản thân Harris cũng không cố gắng đạt được sự công nhận cho công thức EOQ cho đến khi mất năm $1962$. Ông luôn cho rằng các sáng chế mang tính thực tiễn có giá trị hơn những ý tưởng trừu tượng.}
+	\vskip 0.1cm
+	$\pmb{2}$ \textbf{Mô hình EOQ có cho phép thiếu hụt}
+	\vskip 0.1cm
+	Trong thiết lập trên, ta chưa xét thời gian từ lúc đặt hàng cho đến khi hảng về kho. Trong thực tế, việc này không phải là ngay lập tức và việc sản xuất hoặc vận chuyển cần tốn một khoảng thời gian $L$ nào đó. Do đó, khi lượng hàng trong kho chi còn Ld (đủ dùng cho khoảng thời gian $L$) thì ta phải đặt lượng hàng $Q^*$.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 1\linewidth]{3}
+		\caption{\small\textit{\color{toanhocdoisong}Hình $2$. Để tránh thiếu hụt, người ta cần đặt hàng khi lượng hàng còn lại trong kho đủ lớn sao cho trong khoảng thời gian này, thiếu hụt không xảy ra.}}
+		\vspace*{-10pt}
+	\end{figure}
+	Mô hình này cũng có thể mở rộng trong trường hợp việc thiếu hụt là được cho phép. Nếu có nhu cầu cho hàng hóa mà hiện tại trong kho không có thì việc này được diễn tả bởi chi phí p, là chi phí phạt do thiếu hụt một đơn vị hàng trong một đơn vị thời gian. Trong thực tế, chi phí này có thể ứng với việc khách hàng mua hàng của công ty khác hoặc ta phải giảm giá cho khách hàng do họ phải đợi, ... Việc cân bằng giữa chi phí phạt do thiếu hụt và chi phí lưu hàng cho kho sẽ cho ta phương án với chi phí thấp nhất.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 1\linewidth]{4}
+		\caption{\small\textit{\color{toanhocdoisong}Hình $3$. Mô hình $EOQ$ có cho phép thiếu hụt xảy ra.}}
+		\vspace*{-10pt}
+	\end{figure}
+	Giả sử mỗi lần đặt hàng có lượng hàng là $Q$. Do có sự thiếu hụt nên sau khi giải quyết hết thiếu hụt, lượng hàng vào kho sẽ là $S$. Lượng hàng chịu chi phí do thiếu hụt sẽ là $Q-S$. Trong một chu kỳ thời gian $\dfrac{Q}{d}$, khoảng thời gian $\dfrac{S}{d}$ ban đầu sẽ không có thiếu hụt nhưng có chi phí lưu hàng trong kho còn khoảng thời gian còn lại không có hàng lưu kho.
+	\vskip 0.1cm
+	Tương tự với phần trên, chi phí đặt hàng vẫn là $K+cQ$ nhưng chi phí lưu kho trong một chu kỳ sẽ là
+	\begin{align*}
+		h\cdot\frac{S}{2}\cdot\frac{S}{d} = \frac{hS^2}{2d}.
+	\end{align*}
+	Trong khoảng thời gian thiếu hụt, lượng thiếu hụt trung bình sẽ là $\dfrac{Q-S}{2}$ nên chi phí phát sinh do thiếu hụt trong một chu kỳ sẽ là:
+	\begin{align*}
+		p\cdot\frac{Q-S}{2}\cdot\frac{Q-S}{d} = \frac{p(Q-S)^2}{2d}.
+	\end{align*}
+	Tổng chi phí trong một chu kỳ sẽ là:
+	\begin{align*}
+		K + cQ + \frac{hS^2}{2d} + \frac{p(Q-S)^2}{2d}.
+	\end{align*}
+	Tổng chi phí trong một đơn vị thời gian là:
+	\begin{align*}
+		T = \frac{K + cQ + \frac{hS^2}{2d} + \frac{p(Q-S)^2}{2d}}{\frac{Q}{d}} = \frac{Kd}{Q} + cd + \frac{hS^2}{2Q} + \frac{p(Q-S)^2}{2Q}.
+	\end{align*}
+	Trong trường hợp này, cả $Q$ và $S$ đều thay đổi được nên $T$ là một hàm số của cả $Q$ lẫn $S$. Đây là một hàm số nhiều biến chứ không phải hàm số một biến như trong toán phổ thông. Vậy phải làm sao để tìm giá trị của $Q$ và $S$ để $T$ cực tiểu?
+	\vskip 0.1cm
+	Cần nhớ lại rằng, với hàm số một biến dạng $y=f(x)$ thì đạo hàm $\dfrac{dy}{dx}$ cho ta biết tốc độ biến thiên của $y$ khi $x$ thay đổi. Với những hàm số nhiều biến, để biểu diễn tốc độ biến thiên của nó khi một trong các biến thay đổi, người ta sử dụng khái niệm đạo hàm riêng. Đạo hàm riêng được tính cho từng biến. Trong trường hợp $T$, nó là hàm số $T(Q,S)$ của cả hai biến $Q$ và $S$ nên ta có hai đạo riêng, một cho $Q$ (kí hiệu $\dfrac{\phi T}{\phi Q}$) và một cho $S$ (kí hiệu $\dfrac{\phi T}{\phi S}$) . Việc tính đạo hàm riêng cũng không khác là mấy so với tính đạo hàm của hàm số một biến. Khi lấy đạo hàm riêng theo một biến, ta coi các biến còn lại không đổi và áp dụng các quy tắc giống như khi lấy đạo hàm của hàm số một biến.
+	\vskip 0.1cm
+	Trong trường hợp hàm $T(Q,S)$, ta có:
+	\begin{align*}
+		\frac{\phi T}{\phi S} = \frac{hS}{Q} - \frac{p(Q-S)}{Q},\\
+		\frac{\phi T}{\phi Q} = - \frac{dK}{Q^2} - \frac{hS^2}{2Q^2} + \frac{p(Q-S)}{Q} - \frac{p(Q-S)^2}{2Q^2}.
+	\end{align*}
+	Để tìm cực trị của hàm nhiều biến, ta tìm điểm mà tại đó các đạo hàm riêng của nó bằng $0$ (tương tự như việc dùng đạo hàm để tìm cực trị của hàm số một biến). Với $T$, điều kiện này tương đương với hệ phương trình:
+	\begin{align*}
+		\frac{hS}{Q} - \frac{p(Q-S)}{Q}= 0\\
+		-\frac{dK}{Q^2} - \frac{hS^2}{2Q^2} + \frac{p(Q-S)}{Q} - \frac{p(Q-S)^2}{2Q^2}= 0.
+	\end{align*}
+	Hệ phương trình này tương đương với:
+	\begin{align*}
+		\begin{cases}
+			S = \frac{p}{p+h}Q\\
+			-dK - \frac{hS^2}{2} + p(Q-S)Q - \frac{p}{2}(Q-S)^2 = 0
+		\end{cases}
+	\end{align*}
+	Tiến hành thế sử dụng biểu thức của $S$ theo $Q$ ta có:
+	\begin{align*}
+		-dK - \frac{h}{2}\left(\frac{p}{p+h}\right)^2Q^2 + p\left(Q - \frac{p}{p+h}Q\right)Q - \frac{p}{2}\left(Q - \frac{p}{p+h}Q\right)^2 = 0\\
+		-dK - \frac{h}{2}\left(\frac{p}{p+h}\right)^2Q^2 + \frac{ph}{p+h}Q^2 - \frac{ph^2}{2(p+h)^2}Q^2 = 0\\
+		\frac{1}{2}\frac{\left(-p^2h + 2ph(p+h)-ph^2\right)}{(p+h)^2}Q^2 = dK\\
+		\frac{1}{2}\cdot\frac{ph(p+h)}{(p+h)^2}Q^2 = dK\\
+		Q^2 = \frac{2dK}{h}\cdot\frac{p+h}{p}.
+	\end{align*}
+	Ta được các giá trị của $S$ và $Q$ tại điểm cực trị:
+	\begin{align*}
+		Q^*=\sqrt{\frac{2dK}{h}}\sqrt{\frac{p+h}{p}},S^*= \sqrt{\frac{2dK}{h}}\sqrt{\frac{p}{p+h}}.
+	\end{align*}
+	Khi đó, chu kỳ tối ưu của việc đặt hàng sẽ là:
+	\begin{align*}
+		t^* = \frac{Q^*}{d}= \sqrt{\dfrac{2K}{dh}}\sqrt{\dfrac{p+h}{p}}.
+	\end{align*}
+	Số đơn vị hàng có tình trạng thiếu sẽ là:
+	\begin{align*}
+		Q^*- S^* = \sqrt{\dfrac{2dK}{p}}\sqrt{\dfrac{h}{p+h}}.
+	\end{align*}
+	Chính sách nhập hàng của ta sẽ thay đổi theo các giá trị của $h$ và $p$. Khi $p \to \infty$ còn $h$ không đổi, $Q^*-S^* \to 0$ và ta trở lại mô hình EOQ cơ bản: chi phí thiệt hại khi có thiếu hụt là quá lớn nên việc thiếu hụt không được phép xảy ra. Ngược lại, nếu $h \to \infty$ với $p$ không đổi (chi phí giữ hàng trong kho rất lớn so với thiệt hại do thiếu hụt), thì $S^* \to 0$ hay việc sử dụng kho hàng là không khả thi về mặt kinh tế và tất cả các nhu cầu mua hàng đều không được đáp ứng ngay mà được gom lại và giải quyết theo từng đợt mà không có lưu kho.
+	\vskip 0.1cm
+	$\pmb{3}$ \textbf{Mô hình EOQ với giá thành phân tầng}
+	\vskip 0.1cm
+	Ta hãy xử lí một tình huống khá thú vị xuất phát từ thực tế. Khi đặt hàng, nếu số lượng hàng vượt quá một ngưỡng q nào đó, giá mua vào có thể được chiết khấu giảm đi. Ta hãy xét hàm chi phí mua vào cho một đơn vị hàng như sau:
+	\begin{align*}
+		c(Q)= \begin{cases}
+			c_1,Q <q\\
+			c_2,Q \ge q
+		\end{cases}
+	\end{align*}
+	với $c_2<c_1$.
+	\vskip 0.1cm
+	Ta được hai hàm chi phí ứng với hai giá mua này (để đơn giản, trường hợp có thiếu hụt không được cho phép):
+	\begin{align*}
+		T_1 = \dfrac{dK}{Q} + c_1d  + \frac{hQ}{2},\\
+		T_2 = \frac{dK}{Q} + c_2d + \frac{hQ}{2}.
+	\end{align*}
+	$T_2$ có hình dạng đồ thị giống hệt $T_1$ nhưng được tịnh tiến xuống một khoảng $(c_1-c_2 )d$ theo trục $y$. Hai đồ thị này đều có giá trị cực tiểu tại $Q=Q^*$. Ta cần chú ý đến điểm $Q_1>Q^*$ có $T_1 (Q_1 )=T_2 (Q^*)$ và dùng điểm này để biện luận các trường hợp (bạn đọc có thể tự giải để tìm $Q_1$, nó sẽ là nghiệm của một phương trình bậc hai).
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 1\linewidth]{5}
+		\caption{\small\textit{\color{toanhocdoisong}Hình $4$. Đồ thị của $T_1(Q)$ và $T_2(Q)$.}}
+		\vspace*{-10pt}
+	\end{figure}
+	Hàm chi phí của ta sẽ có dạng:
+	\begin{align*}
+		T(Q) = \begin{cases}
+			T_1(Q),Q \le q\\
+			T_2(Q),Q > q
+		\end{cases}
+	\end{align*}
+	Những hàm số như trên còn được gọi là hàm số liên tục theo từng đoạn. Để tìm cực tiểu của nó, ta cần xét 3 trường hợp khác nhau.
+	Trường hợp 1: q<Q^*.  Khi đó cực tiểu sẽ trùng với Q=Q^* (Hình 5).
+	
+	
+	Hình 5. Trường hợp 1, q<Q^*.
+	Trường hợp 2: Q^*≤q≤Q_1. Nhìn vào Hình 6, ta thấy cực tiểu sẽ đạt được khi Q=q. Ta mua hàng với số lượng nhỏ nhất để vẫn được mua với giá thấp hơn.
+	
+	Hình 6. Trường hợp 2: Q^*≤q≤Q_1.
+	Trường hợp 3: q>Q_1. Tương tự trường hợp 1, ta mua với số lượng Q=Q^*. Tuy không được hưởng chiết khấu nhưng chi phí lưu kho của ta vẫn nhỏ hơn so với việc mua nhiều để được chiết khấu.
+	
+	Hình 7. Trường hợp 3: q>Q_1
+	Bạn đọc có thể thử tự giải cho trường hợp có nhiều hơn 2 tầng phân khúc của giá hàng. Khi đó ta sẽ có một bài toán khảo sát hàm số liên tục từng đoạn tương đối thú vị.
+	4. Mô hình EOQ ngẫu nhiên và bài toán sạp báo
+	Ta hãy sử dụng mô hình EOQ để nghiên cứu một bài toán phức tạp hơn. Xét một sạp báo với lượng báo S được đặt vào đầu buổi sáng. Nếu báo đặt không đủ nhu cầu, ta có chi phí phạt p cho một đơn vị báo bị thiếu hụt, còn nếu báo đặt bị thừa, do nó là mặt hàng có giá trị suy giảm theo thời gian ta sẽ có chi phí h để lưu trữ mỗi đơn vị sang ngày hôm sau (bao gồm chi phí giữ trong kho qua đêm trừ đi giá bán rẻ hơn vào ngày hôm sau).
+	
+	Hình 8. Báo ra hàng ngày có giá trị giảm nhiều vào ngày hôm sau nên việc đặt mua bao nhiêu báo cũng là một vấn đề quan trọng của các sạp báo.
+	Gọi D là nhu cầu trong ngày và giá một đơn vị báo mua vào là c. Chi phí của một ngày sẽ là:
+	C(D,S)=cS+p max⁡(0,D-S)+h max⁡(0,S-D).
+	Ở đây, chi phí phạt chỉ xuất hiện khi nhu cầu nhiều hơn lượng báo ta có, còn chi phí lưu trữ chỉ xuất hiện khi lượng báo nhiều hơn nhu cầu.
+	Ta lại giả sử nhu cầu D là một biến ngẫu nhiên với hàm mật độ xác suất f(x). Khi đó, giá trị trung bình của chi phí của ta sẽ là:
+	C(S)=E[C(D,S)]=cS+∫_S^∞▒p(x-S)  f(x)dx+∫_0^S▒h(S-x)  f(x)dx.
+	Chú ý rằng cận của hai tích phân trong biểu thức này ứng với phân tích ở trên về sự xuất hiện của p và h theo S trong mô hình: p chỉ có ý nghĩa khi D>S và h chỉ xuất hiện khi D<S.
+	Với biến ngẫu nhiên nhận các giá trị liên tục, người ta sử dụng khái niệm hàm mật độ. Xác suất để biến ngẫu nhiên X với hàm mật độ f(x) nằm trong khoảng [a,b] sẽ là ∫_a^b▒f(x)dx.
+	Đến đây ta gặp phải vấn đề làm thế nào để tìm cực trị của một hàm số có chứa tích phân! Tuy rằng các công thức giải tích đại học có thể cho ta kết quả ngay, việc sử dụng các kiến thức toán phổ thông để tìm cực trị của C(S) cũng không quá khó. Ta viết lại C(S) dưới dạng:
+	C(S)=cS+p∫_S^∞▒x f(x)dx-pS∫_S^∞▒f(x)  dx+hS∫_0^S▒f(x)dx-h∫_0^S▒x f(x)dx
+	=cS+p[G(∞)-G(S)]-pS[F(∞)-F(S)]+hS[F(S)-F(0)]-h[G(S)-G(0)],
+	với F và G lần lượt là nguyên hàm của f(x) và xf(x).
+	Ta lấy đạo hàm của C(S) theo S, (sử dụng các công thức dF(S)/dS=f(S) và dG(S)/dS=Sf(S)):
+	dC(S)/dS=c-pSf(S)-pF(∞)+pF(S)+pSf(S)+hF(S)+hSf(S)-hF(0)-hSf(S)
+	=c-p[F(∞)-F(S)]+h[F(S)-F(0)]
+	=c-p∫_S^∞▒f(x)dx+h∫_0^S▒f(x)dx.
+	Chú ý rằng ở đây ta đã sử dụng dạng ngược của công thức Newton-Leibniz: F(b)-F(a)=∫_a^b▒f(x)dx. Trong trường hợp các hàm số f(x) và xf(x) không có nguyên hàm, ta cần tính đạo hàm theo giới hạn để tính đạo hàm của tích phân có cận phụ thuộc tham biến (xem phụ lục).
+	Vì f(x) là hàm mật độ xác suất nên ∫_0^∞▒〖f(x)dx=1〗 (ứng với P(0≤D≤∞)=1). Do đó:
+	∫_0^S▒f(x)dx+∫_S^∞▒f(x)dx=∫_0^∞▒〖f(x)dx=1〗.
+	Thay vào biểu thức của dC(S)/dS ta được:
+	dC(S)/dS=c-p(1-∫_0^S▒f(x)  dx)+h∫_0^S▒f(x)dx=(c-p)+(p+h) ∫_0^S▒f(x)dx.
+	Để tìm cực trị, ta cho biểu thức trên bằng 0 và được:
+	(p+h) ∫_0^S▒f(x)dx=p-c,
+	hay:
+	∫_0^S▒〖f(x)dx=(p-c)/(p+h)〗.
+	Do đó cực trị xuất hiện ở giá trị S^* sao cho:
+	F(S^* )=(p-c)/(p+h).
+	Ở đây ta đã chọn F(S) sao cho F(0)=0. Khi đó F(x) trở thành hàm phân phối cộng dồn cho biến ngẫu nhiên D. Giá trị F(x) sẽ bằng với xác suất P(D≤x).
+	Có thể thấy, việc sử dụng nguyên hàm và các công thức có liên quan cho phép ta tìm cực trị của một hàm số có chứa tích phân chỉ sau một vài biến đổi.
+	Mô hình trên cho bài toán sạp báo cũng có thể được áp dụng cho các trường hợp khác trong thực tế khi người ta cần phải tính đến việc một số loại hàng hóa không giữ nguyên giá trị nếu bị lưu kho đến giai đoạn thời gian tiếp theo. Các ví dụ thường thấy bao gồm: thực phẩm, hoa, quần áo (ví dụ quần áo mùa đông khi mùa hè sắp đến), ...
+	Trong trường hợp trước khi đặt hàng, cửa hàng vẫn còn tồn một lượng hàng hóa I từ trước đó thì chi phí của ta sẽ là:
+	C ̅(S)=C(S)-CI.
+	Nếu I<S^* thì ta chỉ cần đặt một lượng hàng hóa đúng bằng S^*-I.
+	Trong trường hợp I≥S^*, ta cần xét xem C(S) đồng biến hay nghịch biến trong khoảng này. Do f(x)>0 với mọi x nên dC(S)/dS tăng khi S tăng. Tại S=S^*, dC(S)/dS=0 nên dC(S)/dS sẽ >0 với S>S^*. Vì vậy, trong trường hợp này, ta không đặt thêm hàng nữa mà chỉ bán hết lượng hàng I còn trong kho.
+	Nếu có thêm chi phí thiết lập đơn hàng K thì hàm chi phí của ta có giá trị như sau:
+	C ̅(S)=K+C(S)-cI nếu đơn hàng được đặt
+	và  C ̅(S)=C(I)-cI nếu không đặt hàng mà chi bán nốt hàng trong kho.
+	
+	Hình 9. Cách tìm s^* khi có S^*.
+	Ta hãy xét một giá trị s^*<S^* sao cho C(s^* )=K+C(S^*) (giá trị s^*>S* không có ý nghĩa về mặt thực tế). Trong một bài toán cụ thể, nếu đã biết được dạng của f(x), s^* là hoàn toàn xác định được. 
+	Phương án của ta cho trường hợp I>0,K>0 sẽ như sau:
+	Nếu I<s^* thì C(S^* )<K+C(I) và ta đặt hàng với lượng hàng bằng S^*.
+	Nếu I≥s^* thì C(S)≤K+C(I) với mọi S≥I do đó ta không đặt hàng.
+	5. Lời kết
+	Trong bài viết này, chúng ta đã thấy sự đa dạng của các bài toán có sử dụng mô hình EOQ cũng như việc ứng dụng các kỹ thuật đa dạng tìm cực trị của hàm số để cho ra nghiệm tối ưu. Các bài toán cực trị còn rất nhiều ứng dụng khác trong đời sống mà Pi sẽ trình bày với độc giả trong những số sau này.
+	Phụ lục: Đạo hàm của tích phân có cận phụ thuộc tham biến
+	Xét tích phân I(t)=∫_α(t)^β(t)▒f(x)dx với α(t) và β(t) là các hàm khả vi theo t. Giả sử rằng khi t∈[c,d] thì α(t) và β(t) nhận giá trị trong [a,b].
+	Xét t_0∈[c,d], ta có:
+	I(t)=∫_α(t)^α(t_0 )▒f(x)dx+∫_α(t_0 )^β(t_0 )▒f(x)dx+∫_β(t_0 )^β(t)▒f(x)dx=I_1 (t)+I_2+I_3 (t).
+	Do I_2 không phụ thuộc t nên:
+	I^' (t_0 )=I_1^' (t_0 )+I_3'(t_0).
+	Theo định nghĩa đạo hàm:
+	I_3'(t_0)=lim┬(t→t_0 )⁡〖(I_3 (t)-I_3 (t_0 ))/(t-t_0 )=lim┬(t→t_0 )⁡〖1/(t-t_0 ) [∫_β(t_0 )^β(t)▒f(x)dx-∫_β(t_0 )^β(t_0 )▒f(x)dx]〗=lim┬(t→t_0 )⁡〖1/(t-t_0 ) ∫_β(t_0 )^β(t)▒f(x)dx〗 〗.
+	Đến đây, ta cần dùng định lí giá trị trung bình cho tích phân: với hàm số f(x) liên tục trên [a,b], tồn tại giá trị ξ∈[a,b] sao cho ∫_a^b▒〖f(x)dx=(b-a)f(ξ)〗. Thật vậy, xét hàm số f(x) liên tục trong khoảng [a,b], khi đó tồn tại giá trị m và M sao cho m≤f(x)≤M với mọi x trong khoảng trên. Do đó:
+	∫_a^b▒m dx≤∫_a^b▒f(x)dx≤∫_a^b▒Mdx,
+	hay 
+	m(b-a)≤∫_a^b▒f(x)dx≤M(b-a).
+	Việc này tương đương với: ∫_a^b▒〖f(x)〗 dx=c(b-a), m≤c≤M. Vì f(x) là liên tục nên tồn tại giá trị a≤ξ≤b sao cho f(ξ)=c hay ∫_a^b▒〖f(x)=(b-a)f(ξ) 〗.
+	Sử dụng định lý này cho biểu thức của I_3^' (t_0), ta có:
+	I_3'(t_0)=lim┬(t→t_0 )⁡〖(β(t)-β(t_0 ))/(t-t_0 ) f(ξ)〗=β^' (t_0 )f(β(t_0 )).
+	Tương tự:
+	I_1^' (t_0 )=-α^' (t_0 )f(α(t_0 )).
+	Tài liệu tham khảo
+	Erlenkotter, D. (1990). Ford Whitman Harris and the Economic Order Quantity Model. Operations Research, 38(6), 937–946. https://www.jstor.org/stable/170961
+	Hillier, F. S., & Lieberman, G. J. (2015). Introduction to operations research. Mcgraw-Hill.
+	Taha, H. A. (2017). Operations research : an introduction. Pearson Education Limited.
 \end{multicols}
