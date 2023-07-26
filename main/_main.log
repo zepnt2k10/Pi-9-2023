@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  25 JUL 2023 11:20
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  26 JUL 2023 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2895,7 +2895,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 82.
 
-(../toancuabi/toancuabi2a.tex
+(../toancuabi/toancuabi2b.tex
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 14.
 Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
@@ -2997,25 +2997,26 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 Requested font "rsfs10" at 12.0pt
 Requested font "rsfs10" at 9.0pt
 Requested font "rsfs7" at 7.0pt
-File: ../toancuabi/pic3//bai3.pdf Graphic file (type pdf)
-<use ../toancuabi/pic3//bai3.pdf>
+File: ../toancuabi/pic3//bai1k3.pdf Graphic file (type pdf)
+<use ../toancuabi/pic3//bai1k3.pdf>
+File: ../toancuabi/pic3//bai2k3.pdf Graphic file (type pdf)
+<use ../toancuabi/pic3//bai2k3.pdf>
+File: ../toancuabi/pic3//bai3k3.pdf Graphic file (type pdf)
+<use ../toancuabi/pic3//bai3k3.pdf>
+File: ../toancuabi/pic3//bai5k3.pdf Graphic file (type pdf)
+<use ../toancuabi/pic3//bai5k3.pdf>
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 9.0pt on input line 65.
 Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
-um;mapping=tex-text;" at 10.95pt
+um;mapping=tex-text;" at 9.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
 d/EBGaramond-Regular.otf
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 25.
-Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
-m;mapping=tex-text;" at 10.95pt
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 65.
+Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
+um;mapping=tex-text;" at 7.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Italic.otf
-Package microtype Info: Character `156' is missing
-(microtype)             in font `\TU/EBGaramond(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-File: ../toancuabi/pic3//bai9k2.pdf Graphic file (type pdf)
-<use ../toancuabi/pic3//bai9k2.pdf>
+d/EBGaramond-Regular.otf
 File: ../toancuabi/pic3//bai10k2.pdf Graphic file (type pdf)
 <use ../toancuabi/pic3//bai10k2.pdf>
 
@@ -3049,10 +3050,10 @@ File: ftoancuabi2.pdf Graphic file (type pdf)
 ]
 File: ../toancuabi/pic3//bai12.pdf Graphic file (type pdf)
 <use ../toancuabi/pic3//bai12.pdf>
-File: ../toancuabi/pic3//bai14k2.pdf Graphic file (type pdf)
-<use ../toancuabi/pic3//bai14k2.pdf>
+File: ../toancuabi/pic3//bai14k3.pdf Graphic file (type pdf)
+<use ../toancuabi/pic3//bai14k3.pdf>
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 102.
+(Font)              scaled to size 12.0pt on input line 110.
 Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
 m;mapping=tex-text;" at 12.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
@@ -3060,11 +3061,8 @@ d/EBGaramond-Italic.otf
 Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
 (microtype)             Ignoring protrusion settings for this character.
-File: ../toancuabi/pic3//bai10.pdf Graphic file (type pdf)
-<use ../toancuabi/pic3//bai10.pdf>
-
-Overfull \vbox (4.18304pt too high) has occurred while \output is active []
-
+File: ../toancuabi/pic3//bai18k3.pdf Graphic file (type pdf)
+<use ../toancuabi/pic3//bai18k3.pdf>
 File: toancuabi1.pdf Graphic file (type pdf)
 <use toancuabi1.pdf>
 File: ftoancuabi1.pdf Graphic file (type pdf)
@@ -3077,8 +3075,7 @@ File: toancuabi1.pdf Graphic file (type pdf)
 <use toancuabi1.pdf>
 File: ftoancuabi1.pdf Graphic file (type pdf)
 <use ftoancuabi1.pdf>
-
-[2]) (_main.aux)
+ [2]) (_main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3089,12 +3086,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69079 strings out of 410939
- 1575776 string characters out of 2823530
- 2656143 words of memory out of 3000000
- 88597 multiletter control sequences out of 15000+600000
+ 69096 strings out of 410939
+ 1576351 string characters out of 2823530
+ 2649143 words of memory out of 3000000
+ 88614 multiletter control sequences out of 15000+600000
  489812 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 104i,11n,120p,1132b,680s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 104i,11n,120p,1132b,598s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
 Output written on _main.pdf (2 pages).
