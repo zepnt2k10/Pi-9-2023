@@ -2,96 +2,268 @@
 \pagestyle{quantoan}
 \everymath{\color{quantoan}}
 \graphicspath{{../quantoan/pic/}}
-\blfootnote{\color{quantoan}\color{quantoan}$^1$Theo https://www.askamathematician.com/2009/12/q-do-you-exactly-know-what-einstein-meant-by-do-not-worry-about-your-difficulties-in-mathematics-i-can-assure-you-mine-are-still-greater/}
+%\blfootnote{\color{quantoan}\color{quantoan}$^1$/}
 \begingroup
 \AddToShipoutPicture*{\put(0,616){\includegraphics[width=19.3cm]{../bannerquantoan}}}
-\AddToShipoutPicture*{\put(110,522){\includegraphics[scale=1]{../tieude.pdf}}}
+\AddToShipoutPicture*{\put(90,525){\includegraphics[scale=1]{../tieude.pdf}}}
 \centering
 \endgroup
-\vspace*{185pt}
+\vspace*{180pt}
 
 \begin{multicols}{2}
-	
-	\vspace*{-8pt}
-	\PIbox{\textit{Đừng lo lắng về những khó khăn của các bạn trong toán học. Tôi có thể đảm bảo với các bạn  rằng tôi còn chật vật với toán hơn các bạn rất nhiều.}
-		\vskip 0.01cm
-		\hfill Albert Einstein}
-	\vskip 0.2cm	
-	Chúng ta sẽ cùng nghe ý kiến của một nhà toán học và của hai nhà vật lý bàn luận về câu nói này của Albert Einstein.
+	\textbf{\color{quantoan}Vài nét chung về thuật toán Dijkstra.}
+	\vskip 0.1cm
+	Lý thuyết đồ thị là một nhánh của Toán học và của Tin học nhằm mô hình hóa những vấn đề khác nhau thường gặp trong cuộc sống bởi những đồ thị. Một trong những vấn đề cổ điển của lý thuyết đồ thị là mô hình hóa mạng lưới đường bộ giữa các thành phố (làng, xã \ldots), đặc biệt hơn một trong những bài toán đặt ra là tối ưu hóa khoảng cách, thời gian di chuyển cũng như giá thành di chuyển từ thành phố này tới thành phố khác. Cụ thể hơn là tìm con đường tốt nhất về khía cạnh khoảng cách, thời gian, giá thành \!\ldots\,\! để di chuyển từ thành phố này tới thành phố khác. Việc tìm con đường tốt nhất nhắc tới trong bài toán tổng quát nêu trên được đưa về việc tìm con đường ngắn nhất nối hai đỉnh tương ứng trên một đồ thị.
+	\vskip 0.1cm 
+	Để dễ hình dung, ta xét một mạng lưới đường bộ biểu diễn như hình dưới đây được trích dẫn từ Wikipedia.
+	\vskip 0.1cm
+	Một mạng lưới như thế được gọi là một đồ thị. Ở đây những thành phố từ $A$ tới $J$ được gọi là các đỉnh của đồ thị. Các thành phố đó được nối với nhau bởi những con đường mà ta gọi là các cạnh của đồ thị. Mỗi cạnh được gán với một giá trị mà ta gọi là trọng số của cạnh. Trọng số trong ví dụ này biểu diễn khoảng cách được đo bằng đơn vị km giữa hai thành phố liên kết với nhau. Bài toán đặt ra là tìm đường đi ngắn nhất từ thành phố $A$ tới thành phố $J$. 
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{2}
-		\caption{\small\textit{\color{quantoan}Minh họa Einstein bởi Laurent Taudin theo phong cách của Albert Uderzo.}}
+		\includegraphics[width= 0.9\linewidth]{1}
+		%		\caption{\small\textit{\color{}}}
 		\vspace*{-10pt}
 	\end{figure}
-	\textbf{\color{quantoan}Nhà toán học:} Không thể biết chính xác ý của Einstein qua câu nói này nếu không hỏi ông ấy trực tiếp. Người ta thường cho rằng Einstein không hiểu sâu sắc về toán hoặc khi còn trẻ ông ấy học toán khá kém. Tuy nhiên, thật là lầm lẫn khi nói rằng Einstein kém về môn toán. Một số bài báo của ông khá phức tạp về mặt toán học, liên quan đến các môn học cao cấp như phương trình vi phân ngẫu nhiên và giải tích tensor. Hơn nữa, Einstein học toán rất xuất sắc khi còn trẻ.
-	\vskip 0.1cm
-	Có lẽ ý của Einstein khi tuyên bố gặp khó khăn trong môn toán là ông cảm thấy như thể phải vật lộn để học một số kiến thức toán rất cao cấp cần thiết cho việc phát biểu các lý thuyết của mình, hoặc rằng (so với các nhà toán học hoặc nhà vật lý toán học) kỹ năng toán học của ông không hoàn toàn được coi là mẫu mực. Tuy nhiên, chắc chắn Einstein có năng khiếu toán học bẩm sinh vượt hơn rất nhiều so với những người bình thường quanh bạn. Vì vậy, ta có thể luận ra được rằng câu trích dẫn ban đầu thực sự hướng đến các sinh viên trẻ tuổi, vì vậy nó chẳng qua  có thể chỉ phản ánh một nỗ lực nhằm  khuyến khích các sinh viên trẻ luôn kiên trì bất chấp những khó khăn mà họ cảm thấy được.
-	\vskip 0.1cm
-	\textbf{\color{quantoan}Nhà vật lý:} Đây là phỏng đoán của tôi. Einstein đã chứng kiến sự kết thúc của những gì có thể được coi là ``vật lý trực quan" của thế kỷ $19$ và trước đó. Điều này phần lớn là lỗi của chính ông. Vào năm $1905$ (``năm kỳ diệu" của Einstein), ông đã giới thiệu cho thế giới về cả \textit{cơ học lượng tử} và \textit{thuyết tương đối hẹp}. Cho đến thời điểm đó (hầu hết) vật lý hiện đại là thứ có thể dễ dàng hình dung và cảm nhận bằng trực giác. Bạn có thể vẽ các quỹ đạo của các vật thể di chuyển, điện trường và từ trường có thể được mô hình hóa bằng các đường, bạn có thể hình dung dòng nhiệt chảy như chất lỏng, v.v.
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.95\linewidth]{1}
-		\caption{\small\textit{\color{quantoan}Các đường điện trường (màu xanh) có thể dễ dàng được thể hiện bằng hình vẽ trực quan.}}
+		\begin{tikzpicture}[quantoan]
+			\clip(-0.54,-0.7) rectangle (7.48,5.76);
+			\draw  (0.26,4.18)-- (2.78,5.02);
+			\draw  (2.78,5.02)-- (2.86,3.8);
+			\draw  (2.86,3.8)-- (2.,2.76);
+			\draw  (2.86,3.8)-- (4.02,2.42);
+			\draw  (4.02,2.42)-- (4.74,3.4);
+			\draw  (4.02,2.42)-- (4.,0.);
+			\draw  (4.,0.)-- (6.8,3.36);
+			\draw  (6.8,3.36)-- (2.78,5.02);
+			\draw  (0.26,4.18)-- (0.26,2.46);
+			\draw  (0.26,2.46)-- (1.54,1.);
+			\draw  (1.54,1.)-- (4.,0.);
+			
+			\draw [fill=quantoan] (2.86,3.8) circle (8pt) node {$\color{white}C$};
+			\draw [fill=quantoan] (2.,2.76) circle (8pt) node {$\color{white}G$};
+			\draw [fill=quantoan] (4.02,2.42) circle (8pt) node {$\color{white}H$};
+			\draw [fill=quantoan] (4.74,3.4) circle (8pt) node {$\color{white}D$};
+			\draw [fill=quantoan] (2.78,5.02) circle (8pt) node {$\color{white}A$};
+			\draw [fill=quantoan] (0.26,4.18) circle (8pt) node {$\color{white}B$};
+			\draw [fill=quantoan] (0.26,2.46) circle (8pt) node {$\color{white}F$};
+			\draw [fill=quantoan] (1.54,1.) circle (8pt) node {$\color{white}I$};
+			\draw [fill=quantoan] (4.,0.) circle (8pt) node {$\color{white}J$};
+			\draw [fill=quantoan] (6.8,3.36) circle (8pt) node {$\color{white}E$};
+			\begin{scriptsize}
+			\draw[color=black] (1.46,4.9) node {$85$};
+			\draw[color=black] (2.56,4.3) node {$217$};
+			\draw[color=black] (2.2,3.4) node {$186$};
+			\draw[color=black] (3.1,3.05) node {$103$};
+			\draw[color=black] (4.68,2.7) node {$183$};
+			\draw[color=black] (3.74,1.39) node {$167$};
+			\draw[color=black] (5.7,1.65) node {$502$};
+			\draw[color=black] (4.96,4.4) node {$173$};
+			\draw[color=black] (0.,3.49) node {$80$};
+			\draw[color=black] (0.55,1.69) node {$250$};
+			\draw[color=black] (2.58,0.3) node {$84$};
+			\end{scriptsize}
+		\end{tikzpicture}
 		\vspace*{-10pt}
 	\end{figure}
-	Hơn nữa, thứ toán học được sử dụng trong đó khá đơn giản. Như kiểu toán đơn giản ta học ở  trường trung học. Với sự ra đời của thuyết tương đối và cơ học lượng tử, một thời đại của khoa học đã đến, ở đó những kết luận đạt được rơi tuột hoàn toàn ra khỏi sự kiểm soát của toán học truyền thống. Ngày nay, trực giác không chỉ trở thành hoàn toàn vô dụng, mà nó sẽ thường xuyên chủ động dẫn dắt bạn đi sai đường nhiều hơn là đi đúng hướng.
+	Ta xét một ví dụ khác về mạng lưới tàu hỏa của một thành phố như đồ thị dưới đây.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 0.9\linewidth]{2}
+%		\caption{\small\textit{\color{}}}
+		\vspace*{-10pt}
+	\end{figure}
+	Ở đây các đỉnh từ $A$ tới $G$ của đồ thị đại diện cho các ga tàu. Mỗi cạnh của đồ thị thể hiện rằng có đường tàu di chuyển giữa hai ga. Trọng số trên mỗi cạnh chính là thời gian di chuyển tính bằng phút từ ga này tới ga kia. Bài toán đặt ra là làm thế nào tìm đường đi nhanh nhất di chuyển từ ga $B$ tới ga $G$. 
 	\vskip 0.1cm
-	Một số điều đầu tiên chúng ta học được về thuyết tương đối và cơ học lượng tử là: không có  khái niệm ``hiện tại" đối với hai điểm khác nhau, các hạt thực sự là các sóng, những sóng đó lại thực sự là các hạt, đi nhanh làm cho thời gian chậm lại, đi nhanh làm cho độ dài ngắn đi, năng lượng và vật chất chẳng qua là một, không gian và thời gian gần như giống nhau, đôi khi một số thứ sẽ đột nhiên xuất hiện ở phía bên kia của các rào cản mà chúng không thể vượt qua,  v.v.
+	Để giải quyết những bài toán như trên, vào năm $1959$, nhà Toán học đồng thời là nhà Khoa học máy tính người Hà Lan, E.W. Dijkstra ($1930 - 2022$) đã đề xuất một thuật toán cho phép tính toán đường đi ngắn nhất giữa một đỉnh cụ thể và tất cả các đỉnh khác trong một đồ thị mà ở đó tất cả các trọng đó đều dương. Thuật toán bắt đầu từ việc gán trọng số bằng $0$ cho đỉnh xuất phát và bằng vô cùng cho các đỉnh còn lại. Quá trình xử lý của thuật toán bao gồm kiểm tra lần lượt các đỉnh và chọn ra đỉnh có khoảng cách nhỏ nhất tính từ đỉnh xuất phát. Tiếp tục quá trình xử lý trên cho tới khi không còn đỉnh để chọn thì dừng lại. Ta thu được đường đi ngắn nhất.
 	\vskip 0.1cm
-	Không có thứ gì trong số các khái niệm này có thể được dự đoán bằng trực giác, và nhiều thứ trong số đó là kết quả của một số kiến thức và phép toán khá phức tạp.  Một nhánh của vật lý được nghiên cứu hiện nay (Mô hình chuẩn, Lý thuyết dây, và những thứ khác) sử dụng thứ toán học khó đến mức bạn phải mất nhiều năm bồi dưỡng về toán trước khi  có thể bắt đầu nắm bắt những gì đang xảy ra.  Einstein đã có nhiều năm được đào tạo về toán, nhưng có lẽ sẽ không thể tưởng tượng được sự đa dạng rộng lớn của các loại toán học khác nhau cần được vận dụng vì lý thuyết của ông.
+	\textbf{\color{quantoan}Thuật toán Dijkstra dưới dạng bảng.}
+	\vskip 0.1cm 
+	Để hiểu hơn về thuật toán Dijkstra, trong mục này ta tập trung vào giải một trong hai bài toán nêu ở mục trước.
 	\vskip 0.1cm
-	Chính bước nhảy vọt cuối cùng này về độ phức tạp trong toán  đã quật ngã Einstein.  Cậu bé  Einstein yêu quý của chúng ta  thực sự thông minh, thực sự giỏi toán trong trường phổ thông và là một người biết ăn mặc thời trang tinh tế.  Tuy nhiên, ngay cả những người mà bạn cho là thông minh  một cách không thể tưởng tượng được (tôi đang muốn nói về gốc họ Do Thái `Stein ở đây) hầu như sẽ luôn luôn bị che khuất bởi một người thông minh hơn và với sự chuẩn bị tốt hơn, chuyên sâu hơn.  Mặc dù Einstein có một nền tảng vật lý vững chắc, nhưng  phải cần tới các nhà toán học (với kiến thức toán và  gọng kính dày cộp của họ) mới có thể  đưa môn khoa học này tiến lên phía trước.
+	\textbf{\color{quantoan}Bài toán:} Tìm đường đi ngắn nhất nối hai thành phố là hai đỉnh $A$ và $J$ của đồ thị cho bởi hình bên. Trọng số trên các cạnh thể hiện khoảng cách tính bằng km từ thành phố này tới thành phố kia. 	
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 1\linewidth]{3}
+%		\caption{\small\textit{\color{}}}
+		\vspace*{-10pt}
+	\end{figure}
+	Thuật toán Dijkstra được tiến hành như sau.
 	\vskip 0.1cm
-	\textbf{\color{quantoan}Ý kiến của một nhà vật lý khác:} Tôi không được biết  tới trích dẫn này của Einstein. Tôi chỉ có một phỏng đoán sơ bộ như sau. Trong khoảng thời gian từ khi công bố thuyết tương đối hẹp đến khi công bố  thuyết tương đối rộng, ông đã dành thời gian tìm hiểu hình học vi phân đủ để phát triển ý tưởng của mình. Đối với Einstein việc này hiển nhiên không hề dễ dàng  và cần rất nhiều tư vấn với những người khác ở Châu Âu. Chẳng hạn, Einstein và Levi--Civita thường xuyên liên lạc với nhau. Vì vậy, ông ấy có thể đã trả lời nhận xét của ai đó giống như khi chúng ta  nghe  thấy rằng bạn bè của ta đang có một thời gian khó khăn với môn toán.
+	\textit{Bước $1$: Khởi đầu.} Ta dựng một bảng gồm các cột là những đỉnh của đồ thị như hình dưới đây. Vì ta xuất phát từ đỉnh $A$ nên ta gán trọng số là $0$ và các đỉnh còn lại có trọng số là vô cùng. Ta ghi $0_A$ trong cột chứa đỉnh $A$ và vô cùng trong những cột còn lại. Điều này có nghĩa là ở bước $1$, xuất phát từ $A$ ta có thể đi tới $A$ mất $0$ km và ta chưa đi tới những đỉnh khác. 
+	\begin{table}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
+			\hline
+			Xuất phát&	$0_A$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$\\
+			\hline
+		\end{tabular}}
+%		\caption{\small\textit{\color{}.}}
+		\vspace*{-10pt}
+	\end{table}
+	\textit{Bước $2$: Chọn đỉnh đầu tiên và cập nhật trọng số cho các đỉnh còn lại.}   
+	Ta chọn giá trị nhỏ nhất ở dòng cuối cùng trong bảng vẽ ở bước $1$. Ở đây giá trị nhỏ nhất là $0_A$ tương ướng với đường đi từ $A$ tới chính nó với khoảng cách là $0$~km.
 	\vskip 0.1cm
-	\textbf{\color{quantoan}Bản thân Einstein và những người đương thời nói gì?}
+	$\bullet$ Đóng khung giá trị nhỏ nhất được chọn. 
 	\vskip 0.1cm
-	Câu trích dẫn sau đây của Einstein có thể giúp chúng ta có thêm một góc nhìn:
+	$\bullet$ Trong cột Xuất phát ta ghi đỉnh được chọn cũng như khoảng cách tương ứng. Ở đây ta ghi $A(0)$.
 	\vskip 0.1cm
-	``Từ khi các nhà toán học đổ bộ vào thuyết tương đối, tôi không còn hiểu được nó nữa."
+	$\bullet$ Ta xóa tất cả các ô nằm ngay phía dưới ô được đóng khung. Điều này có nghĩa là xuất phát từ $A$ ta đã tìm ra đường đi ngắn nhất tới $A$ và không cần tìm thêm những đường đi khác nữa.
+	\vskip 0.1cm 
+	Dựa vào đồ thị ta thấy rằng, từ đỉnh $A$ ta có thể di chuyển tới các đỉnh $B$, $C$ và $E$ với các khoảng cách tương ứng là $85$ km, $217$ km và $173$ km. So với những trọng số vô cùng đã gán ở bước $1$, ta thấy rằng những giá trị mới nhỏ hơn, nên ở dòng thứ $3$ của bảng, tương ứng với các đỉnh $B$, $C$ và $E$, ta ghi $85_A$, $217_A$ và $173_A$ thay vì những giá trị vô cùng. Những đỉnh còn lại vẫn giữ nguyên giá trị được gán ở bước $1$. Chỉ số $A$ ở dưới những giá trị muốn nói rằng ta di chuyển từ đỉnh $A$.
+	\vskip 0.1cm 
+	Ta có bảng mới như sau: 
+	\begin{table}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
+			\hline
+			Xuất phát&	$[0_A ]$	&$\infty$&	$\infty$&	$\infty$	&$\infty$	&$\infty$&	$\infty$&	$\infty$&	$\infty$	&$\infty$\\
+			\hline
+			$A(0)$&		&$85_A$	&$217_A$&	$\infty$	&$173_A$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$\\
+			\hline
+		\end{tabular}}
+		\vspace*{-10pt}
+	\end{table}
+	\textit{Bước $3$: Chọn đỉnh thứ hai và cập nhật trọng số cho các đỉnh còn lại.}  Ta chọn trọng số nhỏ nhất ở dòng cuối cùng trong bảng vẽ ở bước $2$. Ở đây giá trị nhỏ nhất là $85_A$ tương ướng với đường đi từ $A$ tới đỉnh $B$ với khoảng cách là  $85$ km.
 	\vskip 0.1cm
-	\hfill (A. Sommerfelt 
-	\vskip 0.01cm
-	\hfill``\textit{To Albert Einstein's Seventieth Birthday}")
+	$\bullet$ Đóng khung giá trị nhỏ nhất được chọn. 
 	\vskip 0.1cm
-	Có khả năng Einstein đã nói điều này vào một lúc nào đó khoảng giữa năm $1907$ (khi Minkowski giảng bài về cách phát biểu lại thuyết tương đối hẹp) và năm $1912$ (khi Einstein nhận ra rằng ông cần một cách tiếp cận hình học để xây dựng thuyết tương đối rộng).
+	$\bullet$ Trong cột Xuất phát ta ghi đỉnh được chọn cũng như khoảng cách tương ứng. Ở đây đỉnh được chọn là đỉnh $B$ nên ta ghi $B(85)$.
 	\vskip 0.1cm
-	Các nhận xét khác cũng được lưu lại trong khoảng thời gian này bao gồm nhận xét của Einstein trong một bài giảng, khi ông cần rút ra một kết quả cụ thể:
+	Ta xóa tất cả các ô nằm ngay phía dưới ô được đóng khung. Điều này có nghĩa là xuất phát từ $A$ ta đã tìm ra đường đi ngắn nhất tới $B$ và không cần tìm thêm những đường đi khác nữa. 
 	\vskip 0.1cm
-	``Điều này đã được thực hiện một cách tao nhã bởi Minkowski; nhưng viên phấn thì rẻ hơn chất xám, và chúng ta sẽ làm điều đó một cách tuỳ biến mà không gò bó."
+	Từ đỉnh $B$ ta chỉ có thể di chuyển tới đỉnh $F$ với khoảng cách tương ứng là $80$ km. Ta tính được khoảng cách nhỏ nhất từ $A$ tới $F$ là $85+80=165$ km. So với trọng số đã gán trước đó cho đỉnh $F$ ta chọn giá trị nhỏ hơn, nên ở dòng thứ $4$ của bảng, đỉnh $F$ được gán giá trị mới là $165_B$, các đỉnh còn lại vẫn giữ nguyên giá trị. Ta hiểu $165_B$ ở đây chính là tổng khoảng cách nhỏ nhất từ $A$ tới $B$ và từ $B$ tới $F$.
+	\vskip 0.1cm 
+	Ta được bảng mới như sau : 
+	\begin{table}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
+			\hline
+			Xuất phát&	$[0_A ]$	&$\infty$&	$\infty$&	$\infty$	&$\infty$	&$\infty$&	$\infty$&	$\infty$&	$\infty$	&$\infty$\\
+			\hline
+			$A(0)$&		&$85_A$	&$217_A$&	$\infty$	&$173_A$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$\\
+			\hline
+			$B(85)$	&	&	&$217_A$&	$\infty$&	$173_A$&	$165_B$&	$\infty$	&$\infty$&	$\infty$	&$\infty$\\
+			\hline
+		\end{tabular}}
+		\vspace*{-10pt}
+	\end{table}
+	\textit{Bước $4$: Chọn đỉnh thứ ba và cập nhật trọng số cho các đỉnh còn lại.}  Lặp lại bước $3$ với dòng cuối cùng của bảng trên ta thu được đỉnh thứ ba cần chọn là đỉnh $F$ vì có trọng số nhỏ nhất. Từ đỉnh $F$ ta chỉ có thể di chuyển tới đỉnh $I$ với khoảng cách tương ứng là $250$ km. Ta tính được khoảng cách nhỏ nhất từ $A$ tới $I$ là $165+250=415$ km. So với trọng số đã gán trước đó cho đỉnh $I$ ta chọn giá trị nhỏ hơn, nên ở dòng thứ $5$ của bảng, đỉnh $I$ được gán giá trị mới là $415_F$, các đỉnh còn lại vẫn giữ nguyên giá trị. 
 	\vskip 0.1cm
-	\hfill(thuật lại bởi Polya trong cuốn
-	\vskip 0.01cm
-	\hfill \textit{Littlewood's Miscellany})
+	Ta được bảng mới như sau : 
+	\begin{table}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
+			\hline
+			Xuất phát&	$[0_A ]$	&$\infty$&	$\infty$&	$\infty$	&$\infty$	&$\infty$&	$\infty$&	$\infty$&	$\infty$	&$\infty$\\
+			\hline
+			$A(0)$&		&$85_A$	&$217_A$&	$\infty$	&$173_A$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$\\
+			\hline
+			$B(85)$	&	&	&$217_A$&	$\infty$&	$173_A$&	$165_B$&	$\infty$	&$\infty$&	$\infty$	&$\infty$\\
+			\hline
+			$F(165)$&	&	&	$217_A$&	$\infty$	&$173_A$	&	&$\infty$&	$\infty$&	$415_F$	&$\infty$\\
+			\hline
+		\end{tabular}}
+		\vspace*{-10pt}
+	\end{table}
+	\textit{Bước $5$: Lặp lại quá trình trên cho tới khi không còn đỉnh để chọn.}
+	\vskip 0.1cm 
+	$\bullet$ \textit{Dòng $5$ -- Dòng} $6$: Chọn đỉnh $E$ và cập nhật trọng số mới $675_E$ cho đỉnh $J$. Ở đây $675$ km chính là tổng khoảng cách từ $A$ tới $E$ và từ $E$ tới $J$. Các đỉnh còn lại vẫn giữ nguyên giá trị.
+	\vskip 0.1cm 
+	$\bullet$ \textit{Dòng $6$ -- Dòng} $7$: Chọn đỉnh $C$. Từ đỉnh $C$ ta có thể di chuyển tới các đỉnh $G$ và $H$ với các khoảng cách tương ứng là $186$ km và $103$ km. Tổng khoảng cách ngắn nhất tương ứng tính từ $A$ tới các đỉnh $G$ và $H$ lần lượt là $217+186=403$ km và $217+103=320$ km. Ta cập nhật trọng số mới $403_C$ cho đỉnh $G$ và $320_C$ cho đỉnh $H$. Các đỉnh còn lại vẫn giữ nguyên. 
 	\vskip 0.1cm
-	Sau đó, Einstein nhận ra rằng thuyết tương đối rộng có thể không chỉ yêu cầu những khái niệm này mà còn cần những mở rộng cao cấp hơn của những khái niệm đó:
+	\textit{Dòng  $7$ -- Dòng} $8$: Chọn đỉnh $H$. Từ đỉnh $H$ ta có thể di chuyển tới các đỉnh $D$ và $J$ với các khoảng cách tương ứng là $183$ km và $167$ km. Tổng khoảng cách ngắn nhất tương ứng tính từ $A$ tới các đỉnh $D$ và $J$ lần lượt là $320+183=503$ km và $320+167=487$ km. Bằng cách chọn giá trị nhỏ nhất, ta cập nhật trọng số mới $503_H$ cho đỉnh $D$ và $487_H$ cho đỉnh $J$. Các đỉnh còn lại không thay đổi. 
 	\vskip 0.1cm
-	``Vấn đề này vẫn không giải quyết được đối với tôi cho đến năm $1912$, khi tôi đột nhiên nhận ra rằng lý thuyết mặt của Gauss nắm giữ chìa khóa để giải mã bí ẩn này. Tôi nhận ra rằng tọa độ bề mặt của Gauss có một ý nghĩa sâu sắc. Tuy nhiên, lúc đó tôi không biết rằng Riemann đã nghiên cứu cơ sở của hình học một cách sâu sắc hơn nữa. Tôi chợt nhớ rằng lý thuyết của Gauss có trong khóa học hình học do Geiser đưa ra khi tôi còn là sinh viên...
+	$\bullet$ \textit{Dòng  $8$ -- Dòng $9$}: Chọn đỉnh $G$. Vì không có đường đi nào xuất phát từ $G$ tới những đỉnh còn lại (không tính những đỉnh đã bị loại), nên các giá trị của các đỉnh còn lại không thay đổi.
 	\vskip 0.1cm
-	Tôi nhận ra rằng nền tảng của hình học có ý nghĩa vật lý. Người bạn thân của tôi, nhà toán học Grossmann đã ở đó khi tôi từ Praha trở về Zurich. Từ ông ấy, lần đầu tiên tôi biết về Ricci và sau đó là Riemann. Vì vậy, tôi đã hỏi bạn tôi rằng liệu vấn đề của tôi có thể được giải quyết bằng lý thuyết Riemann hay không, cụ thể là liệu các bất biến của yếu tố đường có thể xác định hoàn toàn các đại lượng mà tôi đang tìm kiếm hay không."
+	$\bullet$ \textit{Dòng  $9$ -- Dòng $10$}: Chọn đỉnh $I$. Trọng số của đỉnh $D$ không thay đổi vì không có đường đi từ $I$ tới $J$. Trọng số của đỉnh $J$ cũng vậy vì trọng số mới $415+84=499$ km lớn hơn trọng số ban đầu. 
 	\vskip 0.1cm
-	\hfill (Einstein, \textit{Bài giảng Kyoto}, $1922$)
+	$\bullet$ \textit{Dòng  $10$ -- Dòng $11$}: Chọn đỉnh $J$ và thuật toán kết thúc vì mục đích của ta là di chuyển từ $A$ tới $J$.
+	\vskip 0.1cm 
+	Ta thu được bảng cuối cùng như sau :
+	\begin{table}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
+			\hline
+			Xuất phát&	$[0_A ]$	&$\infty$&	$\infty$&	$\infty$	&$\infty$	&$\infty$&	$\infty$&	$\infty$&	$\infty$	&$\infty$\\
+			\hline
+			$A(0)$&		&$85_A$	&$217_A$&	$\infty$	&$173_A$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$\\
+			\hline
+			$B(85)$	&	&	&$217_A$&	$\infty$&	$173_A$&	$165_B$&	$\infty$	&$\infty$&	$\infty$	&$\infty$\\
+			\hline
+			$F(165)$&	&	&	$217_A$&	$\infty$	&$173_A$	&	&$\infty$&	$\infty$&	$415_F$	&$\infty$\\
+			\hline
+			$E(173)$	&	&	&$[217_A]$&	$\infty$&	&	&	$\infty$&	$\infty$&	$415_F$&	$675_E$\\
+			\hline
+			$C(217)$	&	&	&	&$\infty$&	&	&$403_C$&	$[320_C ]$&	$415_F$	&$675_E$\\
+			\hline
+			$H(320)$	&	&	&	&$503_H$&	&	&$[403_C]$&		&$415_F$&	$487_H$\\
+			\hline
+			$G(403)$&	&	&	&$503_H$&	&	&	&	&$[415_F ]$&	$487_H$\\
+			\hline
+			$I(415)$&	&	&	&$503_H$&	&	&	&	&	&$[487_H]$\\
+			\hline
+			$J(487)$&	&	&	&$[503_H]$&	& & & & & \\
+			\hline
+		\end{tabular}}
+		\vspace*{-10pt}
+	\end{table} 		
+	\textit{Bước $6$: Kết luận}. Dựa vào bảng trên ta kết luận rằng đường đi ngắn nhất xuất phát từ thành phố $A$ tới thành phố $J$ dài $487$ km. Để dựng lại con đường đó dựa vào bảng trên ta chỉ cần đọc các đỉnh theo chiều ngược lại từ $J$ tới $A$ như sau:
 	\vskip 0.1cm
-	Sau khi đã tạo ra được những sự liên hệ này vào năm $1912$, Einstein không còn lựa chọn nào khác ngoài việc học hình học cao cấp mà ông còn thiếu -- chủ yếu là từ Grossmann. Khi  đã  thực hiện được như vậy, ông có thể sử dụng hình học cao cấp để phát biểu thuyết tương đối rộng.
+	$\bullet$ Xuất phát từ đỉnh $J$, ta đọc giá trị đóng khung là [$487_H$] , ta chọn chỉ số $H$ là đỉnh tiếp theo.
 	\vskip 0.1cm
-	Sau này, David Hilbert có tâm sự với người viết tiểu sử của mình:
+	$\bullet$ Ở cột chứa đỉnh $H$, giá trị đóng khung là [$320_C$], ta chọn $C$ là đỉnh tiếp theo.
 	\vskip 0.1cm
-	``Mọi cậu học trò trên những con phố của thủ đô toán học này [Göttingen] đều hiểu về hình học bốn chiều tốt hơn Einstein. Tuy nhiên, bất chấp điều này, Einstein đã làm được việc, chứ không phải các nhà toán học."
+	$\bullet$ Ở cột chứa đỉnh $C$, giá trị đóng khung là [$217_A$], ta chọn $A$ là đỉnh tiếp theo và cũng là đỉnh cuối cùng. 
 	\vskip 0.1cm
-	\hfill (Constance Reid, \textit{Hilbert}, Springer,  $1996$)
+	Đọc từ dưới lên trên, ta được đường đi ngắn nhất cần tìm là $A-C-H-J$ với khoảng cách ngắn nhất là $487$ km.
+	\vskip 0.1cm 
+\textbf{\color{quantoan}Một số bài tập áp dụng.}
+	\vskip 0.1cm 
+	\textbf{\color{quantoan}Bài $\pmb{1}$:} Đồ thị bên biểu diễn bản đồ của một thành phố. Đỉnh $A$ đại diện cho vị trí của các dịch vụ kỹ thuật, các đỉnh còn lại đại diện cho vị trí của các vườn hoa công cộng. Hai vườn hoa công cộng được nối với nhau bởi một cạnh trên đồ thị khi có đường đi từ vườn hoa này tới vườn hoa kia. Trọng số trên mỗi cạnh là số đèn xanh -- đỏ nằm trên con đường đó. Bằng cách sử dụng thuật toán Dijkstra, hãy tìm một đường đi từ $A$ tới $G$ chứa ít đèn đỏ nhất. 	 
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 1\linewidth]{4}
+%		\caption{\small\textit{\color{}}}
+		\vspace*{-10pt}
+	\end{figure}
+	\textbf{\color{quantoan}Bài $\pmb{2}$:} Một thành phố lớn đưa vào sử dụng hệ thống cho thuê xe đạp tự phục vụ. Người thuê có thể lấy xe tại một điểm và trả xe tại một điểm bất kỳ trong hệ thống. Thành phố lắp đặt bảy điểm thuê xe biểu diễn như đồ thị hình bên. Mỗi cạnh của đồ thị thể hiện rằng có một đường đi từ trạm dừng này tới trạm dừng khác. Trọng số trên mỗi cạnh thể hiện thời gian di chuyển tính bằng phút. Bằng cách sử dụng thuật toán Dijkstra, hãy tìm một đường đi nhanh nhất từ $A$ tới $G$.
+	\vskip 0.1cm	 
+	\textbf{\color{quantoan}Nguồn tham khảo.} 
 	\vskip 0.1cm
-	Đây quả là một tuyên bố hào phóng của Hilbert, vì ông đã suýt đánh bại được Einstein trong cuộc chạy đua cuối cùng đến các phương trình trường của thuyết tương đối rộng. Nhưng ông nhận ra rằng tài năng vật lý của Einstein đã cho phép ông ấy làm được nhiều thứ hơn việc bù đắp những sự thiếu hụt của mình về các tinh tế toán học.
+	[$1$] Algorithme de Dijkstra -- Wikipédia (wikipedia.org)
 	\vskip 0.1cm
-	\textbf{\color{quantoan}Tài liệu tham khảo}
+	[$2$]Graphes -- Trajet minimal -- Bac ES Polynésie française $2008$ -- Maths--cours.fr
 	\vskip 0.1cm
-	[$1$]	Constance Reid, \textit{Hilbert}, Springer,  $1996$.
-	\vskip 0.1cm
-	[$2$]	A. Sommerfelt ``\textit{To Albert Einstein's Seventieth Birthday}" in Paul A. Schilpp (ed.) \textit{Albert Einstein}, Philosopher--Scientist, Evanston, $1949$.
-	\vskip 0.1cm
-	[$3$] Littlewood, J. E. $(1986)$, Bollobás, Béla (ed.), \textit{Littlewood's miscellany}, Cambridge: Cambridge University Press.
+	[$3$] Graphes Algorithme de Dijkstra -- Bac ES Métropole $2009$ -- Maths-cours.fr
 \end{multicols}
