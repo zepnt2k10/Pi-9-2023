@@ -14,7 +14,7 @@
 	\textbf{\color{quantoan}Vài nét chung về thuật toán Dijkstra.}
 	\vskip 0.1cm
 	Lý thuyết đồ thị là một nhánh của Toán học và của Tin học nhằm mô hình hóa những vấn đề khác nhau thường gặp trong cuộc sống bởi những đồ thị. Một trong những vấn đề cổ điển của lý thuyết đồ thị là mô hình hóa mạng lưới đường bộ giữa các thành phố (làng, xã \ldots), đặc biệt hơn một trong những bài toán đặt ra là tối ưu hóa khoảng cách, thời gian di chuyển cũng như giá thành di chuyển từ thành phố này tới thành phố khác. Cụ thể hơn là tìm con đường tốt nhất về khía cạnh khoảng cách, thời gian, giá thành \!\ldots\,\! để di chuyển từ thành phố này tới thành phố khác. Việc tìm con đường tốt nhất nhắc tới trong bài toán tổng quát nêu trên được đưa về việc tìm con đường ngắn nhất nối hai đỉnh tương ứng trên một đồ thị.
-	\vskip 0.1cm 
+	\vskip 0.1cm
 	Để dễ hình dung, ta xét một mạng lưới đường bộ biểu diễn như hình dưới đây được trích dẫn từ Wikipedia.
 	\vskip 0.1cm
 	Một mạng lưới như thế được gọi là một đồ thị. Ở đây những thành phố từ $A$ tới $J$ được gọi là các đỉnh của đồ thị. Các thành phố đó được nối với nhau bởi những con đường mà ta gọi là các cạnh của đồ thị. Mỗi cạnh được gán với một giá trị mà ta gọi là trọng số của cạnh. Trọng số trong ví dụ này biểu diễn khoảng cách được đo bằng đơn vị km giữa hai thành phố liên kết với nhau. Bài toán đặt ra là tìm đường đi ngắn nhất từ thành phố $A$ tới thành phố $J$. 
@@ -22,16 +22,7 @@
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.9\linewidth]{1}
-		%		\caption{\small\textit{\color{}}}
-		\vspace*{-10pt}
-	\end{figure}
-	\begin{figure}[H]
-		\vspace*{-5pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
 		\begin{tikzpicture}[quantoan]
-			\clip(-0.54,-0.7) rectangle (7.48,5.76);
 			\draw  (0.26,4.18)-- (2.78,5.02);
 			\draw  (2.78,5.02)-- (2.86,3.8);
 			\draw  (2.86,3.8)-- (2.,2.76);
@@ -55,29 +46,71 @@
 			\draw [fill=quantoan] (4.,0.) circle (8pt) node {$\color{white}J$};
 			\draw [fill=quantoan] (6.8,3.36) circle (8pt) node {$\color{white}E$};
 			\begin{scriptsize}
-			\draw[color=black] (1.46,4.9) node {$85$};
-			\draw[color=black] (2.56,4.3) node {$217$};
-			\draw[color=black] (2.2,3.4) node {$186$};
-			\draw[color=black] (3.1,3.05) node {$103$};
-			\draw[color=black] (4.68,2.7) node {$183$};
-			\draw[color=black] (3.74,1.39) node {$167$};
-			\draw[color=black] (5.7,1.65) node {$502$};
-			\draw[color=black] (4.96,4.4) node {$173$};
-			\draw[color=black] (0.,3.49) node {$80$};
-			\draw[color=black] (0.55,1.69) node {$250$};
-			\draw[color=black] (2.58,0.3) node {$84$};
+				\draw (1.46,4.9) node {$85$};
+				\draw (2.56,4.3) node {$217$};
+				\draw (2.2,3.4) node {$186$};
+				\draw (3.1,3.05) node {$103$};
+				\draw (4.68,2.7) node {$183$};
+				\draw (3.74,1.39) node {$167$};
+				\draw (5.7,1.65) node {$502$};
+				\draw (4.96,4.4) node {$173$};
+				\draw (0.,3.49) node {$80$};
+				\draw (0.55,1.69) node {$250$};
+				\draw (2.58,0.3) node {$84$};
 			\end{scriptsize}
 		\end{tikzpicture}
 		\vspace*{-10pt}
-	\end{figure}
+	\end{figure} 
 	Ta xét một ví dụ khác về mạng lưới tàu hỏa của một thành phố như đồ thị dưới đây.
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 0.9\linewidth]{2}
-%		\caption{\small\textit{\color{}}}
-		\vspace*{-10pt}
+		\begin{tikzpicture}[quantoan,scale=0.77]
+		\draw  (0.,3.)-- (1.5,4.78);
+		\draw  (1.5,4.78)-- (2.14,1.18);
+		\draw  (0.,3.)-- (2.14,1.18);
+		\draw  (2.14,1.18)-- (4.08,2.76);
+		\draw  (6.24,5.)-- (4.08,2.76);
+		\draw  (4.08,2.76)-- (1.5,4.78);
+		\draw  (1.5,4.78)-- (6.24,5.);
+		\draw  (6.24,5.)-- (8.58,3.42);
+		\draw  (8.58,3.42)-- (7.,1.);
+		\draw  (7.,1.)-- (4.08,2.76);
+		\draw  (4.08,2.76)-- (8.58,3.42);
+		\draw  (7.,1.)-- (6.24,5.);
+		\draw  (2.14,1.18)-- (7.,1.);
+		\draw [fill=quantoan] (0.,3.) circle (1.5pt);
+		\draw (-0.3,3.17) node {$A$};
+		\draw [fill=quantoan] (1.5,4.78) circle (1.5pt);
+		\draw (1.64,5.15) node {$B$};
+		\draw [fill=quantoan] (2.14,1.18) circle (1.5pt);
+		\draw (2.04,0.89) node {$C$};
+		\draw [fill=quantoan] (4.08,2.76) circle (1.5pt);
+		\draw (4.06,3.33) node {$D$};
+		\draw [fill=quantoan] (6.24,5.) circle (1.5pt);
+		\draw (6.38,5.37) node {$E$};
+		\draw [fill=quantoan] (7.,1.) circle (1.5pt);
+		\draw (7.2,0.77) node {$F$};
+		\draw [fill=quantoan] (8.58,3.42) circle (1.5pt);
+		\draw (8.72,3.79) node {$G$};
+		\begin{scriptsize}
+		\draw (1.04,3.87) node {$4$};
+		\draw (1.56,3.11) node {$7$};
+		\draw (0.88,2.03) node {$8$};
+		\draw (3.36,1.91) node {$10$};
+		\draw (4.98,4.29) node {$15$};
+		\draw (3.,4.07) node {$18$};
+		\draw (3.94,5.39) node {$21$};
+		\draw (7.54,4.49) node {$17$};
+		\draw (7.96,2.11) node {$7$};
+		\draw (5.16,1.83) node {$12$};
+		\draw (5.6,3.43) node {$31$};
+		\draw (6.74,4.03) node {$10$};
+		\draw (4.6,0.85) node {$25$};
+	\end{scriptsize}
+	\end{tikzpicture}
+	\vspace*{-10pt}
 	\end{figure}
 	Ở đây các đỉnh từ $A$ tới $G$ của đồ thị đại diện cho các ga tàu. Mỗi cạnh của đồ thị thể hiện rằng có đường tàu di chuyển giữa hai ga. Trọng số trên mỗi cạnh chính là thời gian di chuyển tính bằng phút từ ga này tới ga kia. Bài toán đặt ra là làm thế nào tìm đường đi nhanh nhất di chuyển từ ga $B$ tới ga $G$. 
 	\vskip 0.1cm
@@ -92,8 +125,43 @@
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{3}
-%		\caption{\small\textit{\color{}}}
+		\vspace*{-5pt}\begin{tikzpicture}[quantoan]
+			\draw  (0.26,4.18)-- (2.78,5.02);
+			\draw  (2.78,5.02)-- (2.86,3.8);
+			\draw  (2.86,3.8)-- (2.,2.76);
+			\draw  (2.86,3.8)-- (4.02,2.42);
+			\draw  (4.02,2.42)-- (4.74,3.4);
+			\draw  (4.02,2.42)-- (4.,0.);
+			\draw  (4.,0.)-- (6.8,3.36);
+			\draw  (6.8,3.36)-- (2.78,5.02);
+			\draw  (0.26,4.18)-- (0.26,2.46);
+			\draw  (0.26,2.46)-- (1.54,1.);
+			\draw  (1.54,1.)-- (4.,0.);
+			
+			\draw [fill=quantoan] (2.86,3.8) circle (8pt) node {$\color{white}C$};
+			\draw [fill=quantoan] (2.,2.76) circle (8pt) node {$\color{white}G$};
+			\draw [fill=quantoan] (4.02,2.42) circle (8pt) node {$\color{white}H$};
+			\draw [fill=quantoan] (4.74,3.4) circle (8pt) node {$\color{white}D$};
+			\draw [fill=quantoan] (2.78,5.02) circle (8pt) node {$\color{white}A$};
+			\draw [fill=quantoan] (0.26,4.18) circle (8pt) node {$\color{white}B$};
+			\draw [fill=quantoan] (0.26,2.46) circle (8pt) node {$\color{white}F$};
+			\draw [fill=quantoan] (1.54,1.) circle (8pt) node {$\color{white}I$};
+			\draw [fill=quantoan] (4.,0.) circle (8pt) node {$\color{white}J$};
+			\draw [fill=quantoan] (6.8,3.36) circle (8pt) node {$\color{white}E$};
+			\begin{scriptsize}
+				\draw (1.46,4.9) node {$85$};
+				\draw (2.56,4.3) node {$217$};
+				\draw (2.2,3.4) node {$186$};
+				\draw (3.1,3.05) node {$103$};
+				\draw (4.68,2.7) node {$183$};
+				\draw (3.74,1.39) node {$167$};
+				\draw (5.7,1.65) node {$502$};
+				\draw (4.96,4.4) node {$173$};
+				\draw (0.,3.49) node {$80$};
+				\draw (0.55,1.69) node {$250$};
+				\draw (2.58,0.3) node {$84$};
+			\end{scriptsize}
+		\end{tikzpicture}
 		\vspace*{-10pt}
 	\end{figure}
 	Thuật toán Dijkstra được tiến hành như sau.
@@ -253,12 +321,94 @@
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width= 1\linewidth]{4}
-%		\caption{\small\textit{\color{}}}
+		\begin{tikzpicture}[quantoan,scale=0.75]
+			\draw  (0.,3.)-- (1.46,4.96);
+			\draw  (1.46,4.96)-- (6.42,4.98);
+			\draw  (6.42,4.98)-- (6.38,1.6);
+			\draw  (6.38,1.6)-- (8.84,3.36);
+			\draw  (8.84,3.36)-- (6.42,4.98);
+			\draw  (6.38,1.6)-- (3.38,0.62);
+			\draw  (3.38,0.62)-- (3.4,2.98);
+			\draw  (3.4,2.98)-- (0.,3.);
+			\draw  (1.46,4.96)-- (3.4,2.98);
+			\draw  (3.4,2.98)-- (6.42,4.98);
+			\draw  (3.4,2.98)-- (6.38,1.6);
+			\draw  (6.42,4.98)-- (3.38,0.62);
+			\draw  (3.38,0.62)-- (1.46,4.96);
+			\begin{scriptsize}
+			\draw [fill=quantoan] (0.,3.) circle (8pt) node {$\color{white}A$};
+			\draw [fill=quantoan] (1.46,4.96) circle (8pt) node {$\color{white}B$};
+			\draw [fill=quantoan] (3.4,2.98) circle (8pt) node {$\color{white}C$};
+			\draw [fill=quantoan] (3.38,0.62) circle (8pt) node {$\color{white}E$};
+			\draw [fill=quantoan] (6.38,1.6) circle (8pt) node {$\color{white}F$};
+			\draw [fill=quantoan] (6.42,4.98) circle (8pt) node {$\color{white}D$};
+			\draw [fill=quantoan] (8.84,3.36) circle (8pt) node {$\color{white}G$};
+			\draw (1.04,3.97) node {$2$};
+			\draw (4.,4.83) node {$1$};
+			\draw (6.14,3.47) node {$6$};
+			\draw (7.84,2.39) node {$2$};
+			\draw (7.86,4.61) node {$5$};
+			\draw (5.1,0.97) node {$1$};
+			\draw (3.62,2.15) node {$3$};
+			\draw (1.42,2.85) node {$1$};
+			\draw (2.64,4.25) node {$2$};
+			\draw (4.88,4.41) node {$4$};
+			\draw (5.,2.07) node {$5$};
+			\draw (4.68,3.17) node {$3$};
+			\draw (2.4,2.31) node {$3$};
+		\end{scriptsize}
+		\end{tikzpicture}
 		\vspace*{-10pt}
 	\end{figure}
 	\textbf{\color{quantoan}Bài $\pmb{2}$:} Một thành phố lớn đưa vào sử dụng hệ thống cho thuê xe đạp tự phục vụ. Người thuê có thể lấy xe tại một điểm và trả xe tại một điểm bất kỳ trong hệ thống. Thành phố lắp đặt bảy điểm thuê xe biểu diễn như đồ thị hình bên. Mỗi cạnh của đồ thị thể hiện rằng có một đường đi từ trạm dừng này tới trạm dừng khác. Trọng số trên mỗi cạnh thể hiện thời gian di chuyển tính bằng phút. Bằng cách sử dụng thuật toán Dijkstra, hãy tìm một đường đi nhanh nhất từ $A$ tới $G$.
-	\vskip 0.1cm	 
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[quantoan]
+			\draw  (1.,2.)-- (4.,4.);
+			\draw  (4.,4.)-- (6.28,3.4);
+			\draw  (6.28,3.4)-- (1.,2.);
+			\draw  (1.,2.)-- (4.36,-2.02);
+			\draw  (4.36,-2.02)-- (3.64,0.58);
+			\draw  (3.64,0.58)-- (4.,4.);
+			\draw  (4.,4.)-- (7.,1.);
+			\draw  (7.,1.)-- (6.42,-1.74);
+			\draw  (6.42,-1.74)-- (4.36,-2.02);
+			\draw  (4.36,-2.02)-- (6.28,3.4);
+			\draw  (6.28,3.4)-- (3.64,0.58);
+			\draw  (3.64,0.58)-- (7.,1.);
+			\draw [fill=quantoan] (1.,2.) circle (1.5pt);
+			\draw (0.84,2.49) node {$A$};
+			\draw [fill=quantoan] (4.,4.) circle (1.5pt);
+			\draw (4.,4.57) node {$B$};
+			\draw [fill=quantoan] (6.28,3.4) circle (1.5pt);
+			\draw (6.42,3.77) node {$C$};
+			\draw [fill=quantoan] (7.,1.) circle (1.5pt);
+			\draw (7.38,1.09) node {$D$};
+			\draw [fill=quantoan] (3.64,0.58) circle (1.5pt);
+			\draw (3.32,0.41) node {$E$};
+			\draw [fill=quantoan] (4.36,-2.02) circle (1.5pt);
+			\draw (4.2,-2.33) node {$F$};
+			\draw [fill=quantoan] (6.42,-1.74) circle (1.5pt);
+			\draw (6.58,-2.01) node {$G$};
+			\begin{scriptsize}
+			\draw (2.66,3.47) node {$7$};
+			\draw (5.26,4.13) node {$10$};
+			\draw (3.6,3.19) node {$14$};
+			\draw (2.48,-0.03) node {$13$};
+			\draw (4.36,-0.45) node {$8$};
+			\draw (3.06,2.35) node {$11$};
+			\draw (6.2,2.25) node {$16$};
+			\draw (6.84,-0.61) node {$5$};
+			\draw (5.42,-1.49) node {$18$};
+			\draw (5.68,0.68) node {$5$};
+			\draw (4.78,2.39) node {$9$};
+			\draw (5.36,1.55) node {$18$};
+			\end{scriptsize}
+		\end{tikzpicture}
+		\vspace*{-10pt}
+	\end{figure}	 
 	\textbf{\color{quantoan}Nguồn tham khảo.} 
 	\vskip 0.1cm
 	[$1$] Algorithme de Dijkstra -- Wikipédia (wikipedia.org)
