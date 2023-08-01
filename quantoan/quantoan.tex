@@ -5,7 +5,7 @@
 %\blfootnote{\color{quantoan}\color{quantoan}$^1$/}
 \begingroup
 \AddToShipoutPicture*{\put(0,616){\includegraphics[width=19.3cm]{../bannerquantoan}}}
-\AddToShipoutPicture*{\put(90,525){\includegraphics[scale=1]{../tieude.pdf}}}
+\AddToShipoutPicture*{\put(114,522){\includegraphics[scale=1]{../tieude.pdf}}}
 \centering
 \endgroup
 \vspace*{180pt}
@@ -22,7 +22,7 @@
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[quantoan]
+		\begin{tikzpicture}[quantoan,scale=0.9]
 			\draw  (0.26,4.18)-- (2.78,5.02);
 			\draw  (2.78,5.02)-- (2.86,3.8);
 			\draw  (2.86,3.8)-- (2.,2.76);
@@ -66,7 +66,7 @@
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[quantoan,scale=0.77]
+		\begin{tikzpicture}[quantoan,scale=0.75]
 		\draw  (0.,3.)-- (1.5,4.78);
 		\draw  (1.5,4.78)-- (2.14,1.18);
 		\draw  (0.,3.)-- (2.14,1.18);
@@ -110,11 +110,11 @@
 		\draw (4.6,0.85) node {$25$};
 	\end{scriptsize}
 	\end{tikzpicture}
-	\vspace*{-10pt}
+	\vspace*{-15pt}
 	\end{figure}
-	Ở đây các đỉnh từ $A$ tới $G$ của đồ thị đại diện cho các ga tàu. Mỗi cạnh của đồ thị thể hiện rằng có đường tàu di chuyển giữa hai ga. Trọng số trên mỗi cạnh chính là thời gian di chuyển tính bằng phút từ ga này tới ga kia. Bài toán đặt ra là làm thế nào tìm đường đi nhanh nhất di chuyển từ ga $B$ tới ga $G$. 
+	Ở đây các đỉnh từ $A$ tới $G$ của đồ thị đại diện cho các ga tàu. Mỗi cạnh của đồ thị thể hiện rằng có đường tàu nối giữa hai ga. Trọng số trên mỗi cạnh chính là thời gian di chuyển tính bằng phút từ ga này tới ga kia. Bài toán đặt ra là làm thế nào tìm đường đi nhanh nhất để di chuyển từ ga $B$ tới ga $G$. 
 	\vskip 0.1cm
-	Để giải quyết những bài toán như trên, vào năm $1959$, nhà Toán học đồng thời là nhà Khoa học máy tính người Hà Lan, E.W. Dijkstra ($1930 - 2022$) đã đề xuất một thuật toán cho phép tính toán đường đi ngắn nhất giữa một đỉnh cụ thể và tất cả các đỉnh khác trong một đồ thị mà ở đó tất cả các trọng đó đều dương. Thuật toán bắt đầu từ việc gán trọng số bằng $0$ cho đỉnh xuất phát và bằng vô cùng cho các đỉnh còn lại. Quá trình xử lý của thuật toán bao gồm kiểm tra lần lượt các đỉnh và chọn ra đỉnh có khoảng cách nhỏ nhất tính từ đỉnh xuất phát. Tiếp tục quá trình xử lý trên cho tới khi không còn đỉnh để chọn thì dừng lại. Ta thu được đường đi ngắn nhất.
+	Để giải quyết những bài toán như trên, vào năm $1959$, nhà Toán học đồng thời là nhà Khoa học máy tính người Hà Lan, E.W. Dijkstra ($1930 - 2022$) đã đề xuất một thuật toán cho phép tính toán đường đi ngắn nhất giữa một đỉnh cụ thể và tất cả các đỉnh khác trong một đồ thị mà ở đó tất cả các trọng đó đều dương. Thuật toán bắt đầu từ việc gán trọng số bằng $0$ cho đỉnh xuất phát và bằng vô cùng cho các đỉnh còn lại. Quá trình xử lý của thuật toán bao gồm kiểm tra lần lượt các đỉnh, chọn ra đỉnh có khoảng cách nhỏ nhất tính từ đỉnh xuất phát và cập nhật trọng số cho các đỉnh lân cận của đỉnh được chọn. Tiếp tục quá trình xử lý trên cho tới khi đỉnh kết thúc được chọn hoặc cho tới khi không còn đỉnh để chọn thì dừng lại. Ta thu được đường đi ngắn nhất.
 	\vskip 0.1cm
 	\textbf{\color{quantoan}Thuật toán Dijkstra dưới dạng bảng.}
 	\vskip 0.1cm 
@@ -125,7 +125,7 @@
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\vspace*{-5pt}\begin{tikzpicture}[quantoan]
+		\vspace*{-5pt}\begin{tikzpicture}[quantoan,scale=0.9]
 			\draw  (0.26,4.18)-- (2.78,5.02);
 			\draw  (2.78,5.02)-- (2.86,3.8);
 			\draw  (2.86,3.8)-- (2.,2.76);
@@ -173,7 +173,7 @@
 		\captionsetup{labelformat= empty, justification=centering}
 		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
 			\hline
-			&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
+			Đỉnh được chọn&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
 			\hline
 			Xuất phát&	$0_A$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$\\
 			\hline
@@ -186,7 +186,7 @@
 	\vskip 0.1cm
 	$\bullet$ Đóng khung giá trị nhỏ nhất được chọn. 
 	\vskip 0.1cm
-	$\bullet$ Trong cột Xuất phát ta ghi đỉnh được chọn cũng như khoảng cách tương ứng. Ở đây ta ghi $A(0)$.
+	$\bullet$ Trong cột Đỉnh được chọn ta ghi đỉnh được chọn cũng như khoảng cách tương ứng. Ở đây ta ghi $A(0)$.
 	\vskip 0.1cm
 	$\bullet$ Ta xóa tất cả các ô nằm ngay phía dưới ô được đóng khung. Điều này có nghĩa là xuất phát từ $A$ ta đã tìm ra đường đi ngắn nhất tới $A$ và không cần tìm thêm những đường đi khác nữa.
 	\vskip 0.1cm 
@@ -199,7 +199,7 @@
 		\captionsetup{labelformat= empty, justification=centering}
 		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
 			\hline
-			&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
+			Đỉnh được chọn&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
 			\hline
 			Xuất phát&	$[0_A ]$	&$\infty$&	$\infty$&	$\infty$	&$\infty$	&$\infty$&	$\infty$&	$\infty$&	$\infty$	&$\infty$\\
 			\hline
@@ -212,20 +212,20 @@
 	\vskip 0.1cm
 	$\bullet$ Đóng khung giá trị nhỏ nhất được chọn. 
 	\vskip 0.1cm
-	$\bullet$ Trong cột Xuất phát ta ghi đỉnh được chọn cũng như khoảng cách tương ứng. Ở đây đỉnh được chọn là đỉnh $B$ nên ta ghi $B(85)$.
+	$\bullet$ Trong cột Đỉnh được chọn ta ghi đỉnh được chọn cũng như khoảng cách tương ứng. Ở đây đỉnh được chọn là đỉnh $B$ nên ta ghi $B(85)$.
 	\vskip 0.1cm
 	Ta xóa tất cả các ô nằm ngay phía dưới ô được đóng khung. Điều này có nghĩa là xuất phát từ $A$ ta đã tìm ra đường đi ngắn nhất tới $B$ và không cần tìm thêm những đường đi khác nữa. 
 	\vskip 0.1cm
 	Từ đỉnh $B$ ta chỉ có thể di chuyển tới đỉnh $F$ với khoảng cách tương ứng là $80$ km. Ta tính được khoảng cách nhỏ nhất từ $A$ tới $F$ là $85+80=165$ km. So với trọng số đã gán trước đó cho đỉnh $F$ ta chọn giá trị nhỏ hơn, nên ở dòng thứ $4$ của bảng, đỉnh $F$ được gán giá trị mới là $165_B$, các đỉnh còn lại vẫn giữ nguyên giá trị. Ta hiểu $165_B$ ở đây chính là tổng khoảng cách nhỏ nhất từ $A$ tới $B$ và từ $B$ tới $F$.
 	\vskip 0.1cm 
-	Ta được bảng mới như sau : 
+	Ta được bảng mới như sau: 
 	\begin{table}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
 		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
 			\hline
-			&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
+			Đỉnh được chọn&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
 			\hline
 			Xuất phát&	$[0_A ]$	&$\infty$&	$\infty$&	$\infty$	&$\infty$	&$\infty$&	$\infty$&	$\infty$&	$\infty$	&$\infty$\\
 			\hline
@@ -238,14 +238,14 @@
 	\end{table}
 	\textit{Bước $4$: Chọn đỉnh thứ ba và cập nhật trọng số cho các đỉnh còn lại.}  Lặp lại bước $3$ với dòng cuối cùng của bảng trên ta thu được đỉnh thứ ba cần chọn là đỉnh $F$ vì có trọng số nhỏ nhất. Từ đỉnh $F$ ta chỉ có thể di chuyển tới đỉnh $I$ với khoảng cách tương ứng là $250$ km. Ta tính được khoảng cách nhỏ nhất từ $A$ tới $I$ là $165+250=415$ km. So với trọng số đã gán trước đó cho đỉnh $I$ ta chọn giá trị nhỏ hơn, nên ở dòng thứ $5$ của bảng, đỉnh $I$ được gán giá trị mới là $415_F$, các đỉnh còn lại vẫn giữ nguyên giá trị. 
 	\vskip 0.1cm
-	Ta được bảng mới như sau : 
+	Ta được bảng mới như sau: 
 	\begin{table}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
 		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
 			\hline
-			&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
+			Đỉnh được chọn&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
 			\hline
 			Xuất phát&	$[0_A ]$	&$\infty$&	$\infty$&	$\infty$	&$\infty$	&$\infty$&	$\infty$&	$\infty$&	$\infty$	&$\infty$\\
 			\hline
@@ -258,28 +258,30 @@
 		\end{tabular}}
 		\vspace*{-10pt}
 	\end{table}
-	\textit{Bước $5$: Lặp lại quá trình trên cho tới khi không còn đỉnh để chọn.}
+	\textit{Bước $5$ đến kết thúc: Lặp lại quá trình trên cho tới khi đỉnh kết thúc được chọn hoặc không còn đỉnh để chọn.}
 	\vskip 0.1cm 
-	$\bullet$ \textit{Dòng $5$ -- Dòng} $6$: Chọn đỉnh $E$ và cập nhật trọng số mới $675_E$ cho đỉnh $J$. Ở đây $675$ km chính là tổng khoảng cách từ $A$ tới $E$ và từ $E$ tới $J$. Các đỉnh còn lại vẫn giữ nguyên giá trị.
+	$\bullet$ \textit{Dòng} $5$: Chọn đỉnh $E$, đóng khung trọng số $173_A$ và xóa tất cả các ô nằm dưới ô vừa được đóng khung. 
+	\vskip 0.1cm
+	$\bullet$ \textit{Dòng} $6$: Ghi $E(173)$ trong cột \textit{Đỉnh được chọn}. Cập nhật trọng số mới $675_E$ cho đỉnh $J$. Ở đây $675$ km chính là tổng khoảng cách từ $A$ tới $E$ và từ $E$ tới $J$. Các đỉnh còn lại vẫn giữ nguyên giá trị. Tiếp theo chọn đỉnh $C$, đóng khung trọng số $217_A$ và xóa tất cả các ô nằm dưới ô vừa được đóng khung.
 	\vskip 0.1cm 
-	$\bullet$ \textit{Dòng $6$ -- Dòng} $7$: Chọn đỉnh $C$. Từ đỉnh $C$ ta có thể di chuyển tới các đỉnh $G$ và $H$ với các khoảng cách tương ứng là $186$ km và $103$ km. Tổng khoảng cách ngắn nhất tương ứng tính từ $A$ tới các đỉnh $G$ và $H$ lần lượt là $217+186=403$ km và $217+103=320$ km. Ta cập nhật trọng số mới $403_C$ cho đỉnh $G$ và $320_C$ cho đỉnh $H$. Các đỉnh còn lại vẫn giữ nguyên. 
+	$\bullet$ \textit{Dòng} $7$: Ghi $C(217)$ trong cột \textit{Đỉnh được chọn}. Từ đỉnh $C$ ta có thể di chuyển tới các đỉnh $G$ và $H$ với các khoảng cách tương ứng là $186$ km và $103$ km. Tổng khoảng cách ngắn nhất tương ứng tính từ $A$ tới các đỉnh $G$ và $H$ lần lượt là $217+186=403$ km và $217+103=320$ km. Ta cập nhật trọng số mới $403_C$ cho đỉnh $G$ và $320_C$ cho đỉnh $H$. Các đỉnh còn lại vẫn giữ nguyên. Tiếp theo chọn đỉnh $H$, đóng khung trọng số $320_C$ và xóa tất cả các ô nằm dưới ô vừa được đóng khung.
 	\vskip 0.1cm
-	\textit{Dòng  $7$ -- Dòng} $8$: Chọn đỉnh $H$. Từ đỉnh $H$ ta có thể di chuyển tới các đỉnh $D$ và $J$ với các khoảng cách tương ứng là $183$ km và $167$ km. Tổng khoảng cách ngắn nhất tương ứng tính từ $A$ tới các đỉnh $D$ và $J$ lần lượt là $320+183=503$ km và $320+167=487$ km. Bằng cách chọn giá trị nhỏ nhất, ta cập nhật trọng số mới $503_H$ cho đỉnh $D$ và $487_H$ cho đỉnh $J$. Các đỉnh còn lại không thay đổi. 
+	$\bullet$ \textit{Dòng} $8$: Ghi $H(320)$ trong cột Đỉnh được chọn. Từ đỉnh $H$ ta có thể di chuyển tới các đỉnh $D$ và $J$ với các khoảng cách tương ứng là $183$ km và $167$ km. Tổng khoảng cách ngắn nhất tương ứng tính từ $A$ tới các đỉnh $D$ và $J$ lần lượt là $320+183=503$ km và $320+167=487$ km. Bằng cách chọn giá trị nhỏ nhất, ta cập nhật trọng số mới $503_H$ cho đỉnh $D$ và $487_H$ cho đỉnh $J$. Các đỉnh còn lại không thay đổi. Tiếp theo chọn đỉnh $G$, đóng khung trọng số $403_C$ và xóa tất cả các ô nằm dưới ô vừa được đóng khung.
 	\vskip 0.1cm
-	$\bullet$ \textit{Dòng  $8$ -- Dòng $9$}: Chọn đỉnh $G$. Vì không có đường đi nào xuất phát từ $G$ tới những đỉnh còn lại (không tính những đỉnh đã bị loại), nên các giá trị của các đỉnh còn lại không thay đổi.
+	$\bullet$ \textit{Dòng} $9$: Ghi $G(403)$ trong cột \textit{Đỉnh được chọn}. Vì không có đường đi nào xuất phát từ $G$ tới những đỉnh còn lại (không tính những đỉnh đã bị loại), nên các giá trị của các đỉnh còn lại không thay đổi. Tiếp theo chọn đỉnh $I$, đóng khung trọng số $415_F$ và xóa tất cả các ô nằm dưới ô vừa được đóng khung. 
 	\vskip 0.1cm
-	$\bullet$ \textit{Dòng  $9$ -- Dòng $10$}: Chọn đỉnh $I$. Trọng số của đỉnh $D$ không thay đổi vì không có đường đi từ $I$ tới $J$. Trọng số của đỉnh $J$ cũng vậy vì trọng số mới $415+84=499$ km lớn hơn trọng số ban đầu. 
-	\vskip 0.1cm
-	$\bullet$ \textit{Dòng  $10$ -- Dòng $11$}: Chọn đỉnh $J$ và thuật toán kết thúc vì mục đích của ta là di chuyển từ $A$ tới $J$.
+	$\bullet$ \textit{Dòng} $10$: Ghi $I(415)$ trong cột \textit{Đỉnh được chọn}. Trọng số của đỉnh $D$ không thay đổi vì không có đường đi từ $I$ tới $J$. Trọng số của đỉnh $J$ cũng vậy vì trọng số mới $415+84=499$ km lớn hơn trọng số ban đầu.  Chọn đỉnh $J$, đóng khung trọng số $487_H$ và xóa tất cả các ô nằm dưới ô vừa được đóng khung.
 	\vskip 0.1cm 
-	Ta thu được bảng cuối cùng như sau :
+	$\bullet$ \textit{Dòng $11$}: Ghi $J(487)$ trong cột \textit{Đỉnh được chọn}. Thuật toán kết thúc vì mục đích của ta là di chuyển từ $A$ tới $J$.  Ta được đường đi ngắn nhất có độ dài $487$ km. 
+	\vskip 0.1cm
+	Ta thu được bảng cuối cùng như sau:
 	\begin{table}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
 		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
 			\hline
-			&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
+			Đỉnh được chọn&$A$&	$B$&	$C$&	$D$&	$E$&	$F$&	$G$&	$H$&	$I$&	$J$\\
 			\hline
 			Xuất phát&	$[0_A ]$	&$\infty$&	$\infty$&	$\infty$	&$\infty$	&$\infty$&	$\infty$&	$\infty$&	$\infty$	&$\infty$\\
 			\hline
@@ -299,7 +301,7 @@
 			\hline
 			$I(415)$&	&	&	&$503_H$&	&	&	&	&	&$[487_H]$\\
 			\hline
-			$J(487)$&	&	&	&$[503_H]$&	& & & & & \\
+			$J(487)$&	&	&	& &	& & & & & \\
 			\hline
 		\end{tabular}}
 		\vspace*{-10pt}
@@ -316,12 +318,12 @@
 	\vskip 0.1cm 
 \textbf{\color{quantoan}Một số bài tập áp dụng.}
 	\vskip 0.1cm 
-	\textbf{\color{quantoan}Bài $\pmb{1}$:} Đồ thị bên biểu diễn bản đồ của một thành phố. Đỉnh $A$ đại diện cho vị trí của các dịch vụ kỹ thuật, các đỉnh còn lại đại diện cho vị trí của các vườn hoa công cộng. Hai vườn hoa công cộng được nối với nhau bởi một cạnh trên đồ thị khi có đường đi từ vườn hoa này tới vườn hoa kia. Trọng số trên mỗi cạnh là số đèn xanh -- đỏ nằm trên con đường đó. Bằng cách sử dụng thuật toán Dijkstra, hãy tìm một đường đi từ $A$ tới $G$ chứa ít đèn đỏ nhất. 	 
+	\textbf{\color{quantoan}Bài $\pmb{1}$:} Đồ thị bên biểu diễn bản đồ của một thành phố. Đỉnh $A$ đại diện cho vị trí của các dịch vụ kỹ thuật, các đỉnh còn lại đại diện cho vị trí của các vườn hoa công cộng. Hai vườn hoa công cộng được nối với nhau bởi một cạnh trên đồ thị khi có đường đi từ vườn hoa này tới vườn hoa kia. Trọng số trên mỗi cạnh là số đèn đỏ nằm trên con đường đó. Bằng cách sử dụng thuật toán Dijkstra, hãy tìm một đường đi từ $A$ tới $G$ chứa ít đèn đỏ nhất. 	 
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[quantoan,scale=0.75]
+		\begin{tikzpicture}[quantoan,scale=0.76]
 			\draw  (0.,3.)-- (1.46,4.96);
 			\draw  (1.46,4.96)-- (6.42,4.98);
 			\draw  (6.42,4.98)-- (6.38,1.6);
@@ -365,7 +367,7 @@
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[quantoan]
+		\begin{tikzpicture}[quantoan,scale=0.85]
 			\draw  (1.,2.)-- (4.,4.);
 			\draw  (4.,4.)-- (6.28,3.4);
 			\draw  (6.28,3.4)-- (1.,2.);
