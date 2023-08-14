@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  14 AUG 2023 11:00
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  14 AUG 2023 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2895,9 +2895,9 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 82.
 
-(../toancuabi/toancuabi.tex
+(../toanhocdoisong/toanhocdoisong.tex
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 4.
+ 5.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -2910,7 +2910,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 Requested font "zptmcm7t" at 9.0pt
 Requested font "zptmcm7t" at 7.0pt
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 4.
+ 5.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
@@ -2919,7 +2919,7 @@ Requested font "zptmcm7m" at 12.0pt
 Requested font "zptmcm7m" at 9.0pt
 Requested font "zptmcm7m" at 7.0pt
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 4.
+ 5.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
@@ -2928,7 +2928,7 @@ Requested font "zptmcm7y" at 12.0pt
 Requested font "zptmcm7y" at 9.0pt
 Requested font "zptmcm7y" at 7.0pt
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 4.
+ 5.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
@@ -2936,24 +2936,24 @@ File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 Requested font "zptmcm7v" at 12.0pt
 Requested font "zptmcm7v" at 9.0pt
 Requested font "zptmcm7v" at 7.0pt
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 .
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 Requested font "ptmb7t" at 12.0pt
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 Requested font "ptmb7t" at 9.0pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 Requested font "ptmb7t" at 7.0pt
 Requested font "ptmri7t" at 12.0pt
 Requested font "ptmri7t" at 9.0pt
@@ -2973,7 +2973,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 Requested font "msbm10" at 9.0pt
 Requested font "msbm10" at 7.0pt
 LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 
-4.
+5.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/yhmath\omxyhex.fd
 File: OMXyhex.fd 
@@ -2982,7 +2982,7 @@ File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 Requested font "yhcmex10" at 12.0pt
 Requested font "yhcmex10" at 9.0pt
 Requested font "yhcmex10" at 7.0pt
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 5.
 
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
@@ -2992,13 +2992,13 @@ Requested font "rsfs10" at 12.0pt
 Requested font "rsfs10" at 9.0pt
 Requested font "rsfs7" at 7.0pt
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 4.
+(Font)              scaled to size 9.0pt on input line 5.
 Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
 um;mapping=tex-text;" at 9.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
 d/EBGaramond-Regular.otf
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 4.
+(Font)              scaled to size 10.0pt on input line 5.
 Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
 um;mapping=tex-text;" at 10.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
@@ -3016,13 +3016,13 @@ Requested font "zptmcm7v" at 10.0pt
 Requested font "zptmcm7v" at 7.4pt
 Requested font "zptmcm7v" at 6.0pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 Requested font "ptmb7t" at 10.0pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 Requested font "ptmb7t" at 7.4pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 Requested font "ptmb7t" at 6.0pt
 Requested font "ptmri7t" at 10.0pt
 Requested font "ptmri7t" at 7.4pt
@@ -3039,13 +3039,13 @@ Requested font "yhcmex10" at 6.0pt
 Requested font "rsfs10" at 10.0pt
 Requested font "rsfs5" at 6.0pt
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 7.4pt on input line 4.
+(Font)              scaled to size 7.4pt on input line 5.
 Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
 um;mapping=tex-text;" at 7.4pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
 d/EBGaramond-Regular.otf
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 4.
+(Font)              scaled to size 10.0pt on input line 5.
 Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
 m;mapping=tex-text;" at 10.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
@@ -3053,25 +3053,22 @@ d/EBGaramond-Italic.otf
 Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 17.
-Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
-m;mapping=tex-text;" at 12.0pt
+Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
+mapping=tex-text;" at 12.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Italic.otf
-Package microtype Info: Character `156' is missing
-(microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
-(microtype)             Ignoring protrusion settings for this character.
-File: ../toancuabi/pic2//10.jpg Graphic file (type bmp)
-<../toancuabi/pic2//10.jpg>
+d/EBGaramond-Bold.otf
+File: ../toanhocdoisong/pic//1.jpg Graphic file (type bmp)
+<../toanhocdoisong/pic//1.jpg>
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 10.95pt on input line 23.
 Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
 um;mapping=tex-text;" at 10.95pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
 d/EBGaramond-Regular.otf
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 10.95pt on input line 23.
 Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
 m;mapping=tex-text;" at 10.95pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
@@ -3079,31 +3076,30 @@ d/EBGaramond-Italic.otf
 Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(0)/m/it/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 30.
-Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
-mapping=tex-text;" at 12.0pt
- -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Bold.otf
-File: ../toancuabi/pic2//11.png Graphic file (type bmp)
-<../toancuabi/pic2//11.png>
-File: ../toancuabi/pic2//12.png Graphic file (type bmp)
-<../toancuabi/pic2//12.png>
-File: ../toancuabi/pic2//13.png Graphic file (type bmp)
-<../toancuabi/pic2//13.png>
-File: ../toancuabi/pic2//14.png Graphic file (type bmp)
-<../toancuabi/pic2//14.png>
-File: ../toancuabi/pic2//15.png Graphic file (type bmp)
-<../toancuabi/pic2//15.png>
-File: ../toancuabi/pic2//16.png Graphic file (type bmp)
-<../toancuabi/pic2//16.png>
-File: ../toancuabi/pic2//17.png Graphic file (type bmp)
-<../toancuabi/pic2//17.png>
-
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 1 might be wrong on input line 77.
-
+Requested font "zptmcm7t" at 10.95pt
+Requested font "zptmcm7t" at 8.0pt
+Requested font "zptmcm7m" at 10.95pt
+Requested font "zptmcm7m" at 8.0pt
+Requested font "zptmcm7y" at 10.95pt
+Requested font "zptmcm7y" at 8.0pt
+Requested font "zptmcm7v" at 10.95pt
+Requested font "zptmcm7v" at 8.0pt
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+Requested font "ptmb7t" at 10.95pt
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+Requested font "ptmb7t" at 8.0pt
+Requested font "ptmri7t" at 10.95pt
+Requested font "ptmri7t" at 8.0pt
+Requested font "msam10" at 10.95pt
+Requested font "msam10" at 8.0pt
+Requested font "msbm10" at 10.95pt
+Requested font "msbm10" at 8.0pt
+Requested font "yhcmex10" at 10.95pt
+Requested font "yhcmex10" at 8.0pt
+Requested font "rsfs10" at 10.95pt
+Requested font "rsfs10" at 8.0pt
 
 Overfull \vbox (11.62634pt too high) has occurred while \output is active []
 
@@ -3123,6 +3119,608 @@ Package microtype Info: Loading generic protrusion settings for font family
 Requested font "[lmsans8-regular]:mapping=tex-text;" at 8.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm/lmsans
 8-regular.otf
+File: ../toanhocdoisong/pic//../bannertoanhocdoisong.jpg Graphic file (type bmp
+)
+<../toanhocdoisong/pic//../bannertoanhocdoisong.jpg>
+File: ../toanhocdoisong/pic//../tieude.pdf Graphic file (type pdf)
+<use ../toanhocdoisong/pic//../tieude.pdf>
+File: ftoanhocds2.pdf Graphic file (type pdf)
+<use ftoanhocds2.pdf>
+File: ftoanhocds2.pdf Graphic file (type pdf)
+<use ftoanhocds2.pdf>
+File: ftoanhocds2.pdf Graphic file (type pdf)
+<use ftoanhocds2.pdf>
+[1
+
+]
+File: ../toanhocdoisong/pic//2.png Graphic file (type bmp)
+<../toanhocdoisong/pic//2.png>
+File: ../toanhocdoisong/pic//3.png Graphic file (type bmp)
+<../toanhocdoisong/pic//3.png>
+File: ../toanhocdoisong/pic//4.png Graphic file (type bmp)
+<../toanhocdoisong/pic//4.png>
+File: toanhocds1.pdf Graphic file (type pdf)
+<use toanhocds1.pdf>
+File: ftoanhocds1.pdf Graphic file (type pdf)
+<use ftoanhocds1.pdf>
+File: toanhocds1.pdf Graphic file (type pdf)
+<use toanhocds1.pdf>
+File: ftoanhocds1.pdf Graphic file (type pdf)
+<use ftoanhocds1.pdf>
+File: toanhocds1.pdf Graphic file (type pdf)
+<use toanhocds1.pdf>
+File: ftoanhocds1.pdf Graphic file (type pdf)
+<use ftoanhocds1.pdf>
+ [2]
+Overfull \hbox (3.88408pt too wide) detected at line 114
+[]
+ []
+
+
+Overfull \hbox (7.16074pt too wide) detected at line 128
+[]
+ []
+
+File: toanhocds2.pdf Graphic file (type pdf)
+<use toanhocds2.pdf>
+File: ftoanhocds2.pdf Graphic file (type pdf)
+<use ftoanhocds2.pdf>
+File: toanhocds2.pdf Graphic file (type pdf)
+<use toanhocds2.pdf>
+File: ftoanhocds2.pdf Graphic file (type pdf)
+<use ftoanhocds2.pdf>
+File: toanhocds2.pdf Graphic file (type pdf)
+<use toanhocds2.pdf>
+File: ftoanhocds2.pdf Graphic file (type pdf)
+<use ftoanhocds2.pdf>
+[3]
+Overfull \hbox (1.99701pt too wide) detected at line 142
+[]
+ []
+
+File: ../toanhocdoisong/pic//5.png Graphic file (type bmp)
+<../toanhocdoisong/pic//5.png>
+File: ../toanhocdoisong/pic//6.png Graphic file (type bmp)
+<../toanhocdoisong/pic//6.png>
+File: toanhocds1.pdf Graphic file (type pdf)
+<use toanhocds1.pdf>
+File: ftoanhocds1.pdf Graphic file (type pdf)
+<use ftoanhocds1.pdf>
+File: toanhocds1.pdf Graphic file (type pdf)
+<use toanhocds1.pdf>
+File: ftoanhocds1.pdf Graphic file (type pdf)
+<use ftoanhocds1.pdf>
+File: toanhocds1.pdf Graphic file (type pdf)
+<use toanhocds1.pdf>
+File: ftoanhocds1.pdf Graphic file (type pdf)
+<use ftoanhocds1.pdf>
+[4]
+File: ../toanhocdoisong/pic//7.png Graphic file (type bmp)
+<../toanhocdoisong/pic//7.png>
+File: ../toanhocdoisong/pic//8.png Graphic file (type bmp)
+<../toanhocdoisong/pic//8.png>
+File: ../toanhocdoisong/pic//9.jpg Graphic file (type bmp)
+<../toanhocdoisong/pic//9.jpg>
+File: toanhocds2.pdf Graphic file (type pdf)
+<use toanhocds2.pdf>
+File: ftoanhocds2.pdf Graphic file (type pdf)
+<use ftoanhocds2.pdf>
+File: toanhocds2.pdf Graphic file (type pdf)
+<use toanhocds2.pdf>
+File: ftoanhocds2.pdf Graphic file (type pdf)
+<use ftoanhocds2.pdf>
+File: toanhocds2.pdf Graphic file (type pdf)
+<use toanhocds2.pdf>
+File: ftoanhocds2.pdf Graphic file (type pdf)
+<use ftoanhocds2.pdf>
+ [5]
+Overfull \hbox (1.6797pt too wide) in paragraph at lines 243--244
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+[]\TU/EBGaramond(0)/m/n/12 Vì $[]\OML/ztmcm/m/it/12 f\OT1/ztmcm/m/n/12 (\OML/zt
+mcm/m/it/12 x\OT1/ztmcm/m/n/12 )$[] \TU/EBGaramond(0)/m/n/12 là hàm mật độ xác 
+suất nên
+ []
+
+
+Overfull \hbox (5.16707pt too wide) detected at line 268
+[]
+ []
+
+File: toanhocds1.pdf Graphic file (type pdf)
+<use toanhocds1.pdf>
+File: ftoanhocds1.pdf Graphic file (type pdf)
+<use ftoanhocds1.pdf>
+File: toanhocds1.pdf Graphic file (type pdf)
+<use toanhocds1.pdf>
+File: ftoanhocds1.pdf Graphic file (type pdf)
+<use ftoanhocds1.pdf>
+File: toanhocds1.pdf Graphic file (type pdf)
+<use toanhocds1.pdf>
+File: ftoanhocds1.pdf Graphic file (type pdf)
+<use ftoanhocds1.pdf>
+[6]
+Underfull \hbox (badness 5607) in paragraph at lines 299--300
+[]\OML/ztmcm/m/it/12 C\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 S\OT1/ztmcm/m/n/12 
+)$[] \TU/EBGaramond(0)/m/n/12 đồng biến hay nghịch biến trong
+ []
+
+File: ../toanhocdoisong/pic//10.png Graphic file (type bmp)
+<../toanhocdoisong/pic//10.png>
+File: toanhocds2.pdf Graphic file (type pdf)
+<use toanhocds2.pdf>
+File: ftoanhocds2.pdf Graphic file (type pdf)
+<use ftoanhocds2.pdf>
+File: toanhocds2.pdf Graphic file (type pdf)
+<use toanhocds2.pdf>
+File: ftoanhocds2.pdf Graphic file (type pdf)
+<use ftoanhocds2.pdf>
+File: toanhocds2.pdf Graphic file (type pdf)
+<use toanhocds2.pdf>
+File: ftoanhocds2.pdf Graphic file (type pdf)
+<use ftoanhocds2.pdf>
+[7]
+Overfull \hbox (1.95999pt too wide) detected at line 344
+[]
+ []
+
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 366.
+Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
+m;mapping=tex-text;" at 12.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Italic.otf
+Package microtype Info: Character `156' is missing
+(microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
+(microtype)             Ignoring protrusion settings for this character.
+)
+File: toanhocds1.pdf Graphic file (type pdf)
+<use toanhocds1.pdf>
+File: ftoanhocds1.pdf Graphic file (type pdf)
+<use ftoanhocds1.pdf>
+File: toanhocds1.pdf Graphic file (type pdf)
+<use toanhocds1.pdf>
+File: ftoanhocds1.pdf Graphic file (type pdf)
+<use ftoanhocds1.pdf>
+File: toanhocds1.pdf Graphic file (type pdf)
+<use toanhocds1.pdf>
+File: ftoanhocds1.pdf Graphic file (type pdf)
+<use ftoanhocds1.pdf>
+ [8] (../duongvaotoanhoc/duongvaotoanhoc.tex
+File: ../duongvaotoanhoc/pic//H1.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H1.pdf>
+File: ../duongvaotoanhoc/pic//H2.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H2.pdf>
+
+Overfull \vbox (11.62634pt too high) has occurred while \output is active []
+
+File: ../duongvaotoanhoc/pic//../bannerduongvao.jpg Graphic file (type bmp)
+<../duongvaotoanhoc/pic//../bannerduongvao.jpg>
+File: ../duongvaotoanhoc/pic//../tieude.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//../tieude.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+
+[9]
+File: ../duongvaotoanhoc/pic//H3.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H3.pdf>
+File: ../duongvaotoanhoc/pic//H4.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H4.pdf>
+
+Overfull \hbox (10.87448pt too wide) detected at line 73
+[]
+ []
+
+
+Overfull \hbox (12.75021pt too wide) detected at line 78
+[]
+ []
+
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+[10]
+File: ../duongvaotoanhoc/pic//H5.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H5.pdf>
+
+Overfull \hbox (5.219pt too wide) detected at line 99
+[]
+ []
+
+
+Overfull \hbox (6.64131pt too wide) detected at line 104
+[]
+ []
+
+File: ../duongvaotoanhoc/pic//H6.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H6.pdf>
+File: ../duongvaotoanhoc/pic//H7.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H7.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+[11]
+File: ../duongvaotoanhoc/pic//H8.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H8.pdf>
+File: ../duongvaotoanhoc/pic//H9.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H9.pdf>
+File: ../duongvaotoanhoc/pic//H10.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H10.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+ [12]
+File: ../duongvaotoanhoc/pic//H11.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H11.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+ [13]
+File: ../duongvaotoanhoc/pic//H12.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H12.pdf>
+File: ../duongvaotoanhoc/pic//H13.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H13.pdf>
+File: ../duongvaotoanhoc/pic//H14.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H14.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+ [14]
+File: ../duongvaotoanhoc/pic//H15_1.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H15_1.pdf>
+File: ../duongvaotoanhoc/pic//H15_2.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H15_2.pdf>
+File: ../duongvaotoanhoc/pic//H16.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H16.pdf>
+File: ../duongvaotoanhoc/pic//H17.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H17.pdf>
+File: ../duongvaotoanhoc/pic//H18.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H18.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+ [15]
+File: ../duongvaotoanhoc/pic//H19.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H19.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+ [16]
+File: ../duongvaotoanhoc/pic//H20.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H20.pdf>
+File: ../duongvaotoanhoc/pic//H20.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H20.pdf>
+File: ../duongvaotoanhoc/pic//H22.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H22.pdf>
+File: ../duongvaotoanhoc/pic//H23.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H23.pdf>
+File: ../duongvaotoanhoc/pic//H24.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H24.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+[]\OML/ztmcm/m/it/12 a[]b[]a[]b[]a[]b[]a[]b[] [] a[]b[]a[]b[]$[]\TU/EBGaramond(
+0)/m/n/12 ,
+ []
+
+File: ../duongvaotoanhoc/pic//H25.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H25.pdf>
+File: ../duongvaotoanhoc/pic//H26.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H26.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+[18]
+File: ../duongvaotoanhoc/pic//H27.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H27.pdf>
+File: ../duongvaotoanhoc/pic//H28.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H28.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+ [19]
+File: ../duongvaotoanhoc/pic//H29.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H29.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+ [20]
+File: ../duongvaotoanhoc/pic//H30.pdf Graphic file (type pdf)
+<use ../duongvaotoanhoc/pic//H30.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+File: duongvao2.pdf Graphic file (type pdf)
+<use duongvao2.pdf>
+File: fduongvao2.pdf Graphic file (type pdf)
+<use fduongvao2.pdf>
+ [21])
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+File: duongvao1.pdf Graphic file (type pdf)
+<use duongvao1.pdf>
+File: fduongvao1.pdf Graphic file (type pdf)
+<use fduongvao1.pdf>
+ [22] (../quantoan/quantoan2.tex
+File: ../quantoan/pic//1.png Graphic file (type bmp)
+<../quantoan/pic//1.png>
+File: ../quantoan/pic//2.png Graphic file (type bmp)
+<../quantoan/pic//2.png>
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 23 might be wrong on input line 44.
+
+
+
+Overfull \vbox (11.62634pt too high) has occurred while \output is active []
+
+File: ../quantoan/pic//../bannerquantoan.jpg Graphic file (type bmp)
+<../quantoan/pic//../bannerquantoan.jpg>
+File: ../quantoan/pic//../tieude1.pdf Graphic file (type pdf)
+<use ../quantoan/pic//../tieude1.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+
+[23]
+File: ../quantoan/pic//4.jpg Graphic file (type bmp)
+<../quantoan/pic//4.jpg>
+File: ../quantoan/pic//3.png Graphic file (type bmp)
+<../quantoan/pic//3.png>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+ [24]
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 1$[]\TU/EBGaramond(0)/m/n/12 ]
+ Vladimir I. Arnold (ed.). Arnold’s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+\TU/EBGaramond(0)/m/n/12 Problems. \TU/EBGaramond(0)/m/it/12 Springer–Verlag, B
+erlin–
+ []
+
+File: quantoan2.pdf Graphic file (type pdf)
+<use quantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+File: quantoan2.pdf Graphic file (type pdf)
+<use quantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+File: quantoan2.pdf Graphic file (type pdf)
+<use quantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+[25]
+File: ../quantoan/pic//1a.jpg Graphic file (type bmp)
+<../quantoan/pic//1a.jpg>
+File: ../quantoan/pic//2a.jpeg Graphic file (type bmp)
+<../quantoan/pic//2a.jpeg>
+File: ../quantoan/pic//3a.png Graphic file (type bmp)
+<../quantoan/pic//3a.png>
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 26 might be wrong on input line 126
+.
+
+
+Overfull \vbox (11.62634pt too high) has occurred while \output is active []
+
+File: ../quantoan/pic//../tieude2.pdf Graphic file (type pdf)
+<use ../quantoan/pic//../tieude2.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+
+[26]
+File: ../quantoan/pic//4a.jpg Graphic file (type bmp)
+<../quantoan/pic//4a.jpg>
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 27 might be wrong on input line 139
+.
+
+
+Overfull \vbox (14.62634pt too high) has occurred while \output is active []
+
+File: quantoan2.pdf Graphic file (type pdf)
+<use quantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+File: quantoan2.pdf Graphic file (type pdf)
+<use quantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+File: quantoan2.pdf Graphic file (type pdf)
+<use quantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+
+[27])
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+ [28] (../toancuabi/toancuabi.tex
+File: ../toancuabi/pic2//10.jpg Graphic file (type bmp)
+<../toancuabi/pic2//10.jpg>
+File: ../toancuabi/pic2//11.png Graphic file (type bmp)
+<../toancuabi/pic2//11.png>
+File: ../toancuabi/pic2//12.png Graphic file (type bmp)
+<../toancuabi/pic2//12.png>
+File: ../toancuabi/pic2//13.png Graphic file (type bmp)
+<../toancuabi/pic2//13.png>
+File: ../toancuabi/pic2//14.png Graphic file (type bmp)
+<../toancuabi/pic2//14.png>
+File: ../toancuabi/pic2//15.png Graphic file (type bmp)
+<../toancuabi/pic2//15.png>
+File: ../toancuabi/pic2//16.png Graphic file (type bmp)
+<../toancuabi/pic2//16.png>
+File: ../toancuabi/pic2//17.png Graphic file (type bmp)
+<../toancuabi/pic2//17.png>
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 29 might be wrong on input line 77.
+
+
+
+Overfull \vbox (11.62634pt too high) has occurred while \output is active []
+
 File: ../toancuabi/pic2//../bannertoancuabi.jpg Graphic file (type bmp)
 <../toancuabi/pic2//../bannertoancuabi.jpg>
 File: ../toancuabi/pic2//../tieude10.pdf Graphic file (type pdf)
@@ -3133,9 +3731,8 @@ File: ftoancuabi2.pdf Graphic file (type pdf)
 <use ftoancuabi2.pdf>
 File: ftoancuabi2.pdf Graphic file (type pdf)
 <use ftoancuabi2.pdf>
-[1
 
-]
+[29]
 File: ../toancuabi/pic2//18.png Graphic file (type bmp)
 <../toancuabi/pic2//18.png>
 File: ../toancuabi/pic2//19.png Graphic file (type bmp)
@@ -3172,7 +3769,7 @@ File: toancuabi1.pdf Graphic file (type pdf)
 <use toancuabi1.pdf>
 File: ftoancuabi1.pdf Graphic file (type pdf)
 <use ftoancuabi1.pdf>
- [2]
+ [30]
 File: ../toancuabi/pic2//60.png Graphic file (type bmp)
 <../toancuabi/pic2//60.png>
 File: ../toancuabi/pic2//61.png Graphic file (type bmp)
@@ -3211,7 +3808,7 @@ File: toancuabi2.pdf Graphic file (type pdf)
 <use toancuabi2.pdf>
 File: ftoancuabi2.pdf Graphic file (type pdf)
 <use ftoancuabi2.pdf>
- [3]
+ [31]
 File: ../toancuabi/pic2//73.png Graphic file (type bmp)
 <../toancuabi/pic2//73.png>
 File: ../toancuabi/pic2//74.png Graphic file (type bmp)
@@ -3234,7 +3831,7 @@ File: toancuabi1.pdf Graphic file (type pdf)
 <use toancuabi1.pdf>
 File: ftoancuabi1.pdf Graphic file (type pdf)
 <use ftoancuabi1.pdf>
- [4]
+ [32]
 File: ../toancuabi/pic//Pi9_bai1.png Graphic file (type bmp)
 <../toancuabi/pic//Pi9_bai1.png>
 File: ../toancuabi/pic//Pi9_bai2.png Graphic file (type bmp)
@@ -3259,7 +3856,7 @@ File: toancuabi2.pdf Graphic file (type pdf)
 <use toancuabi2.pdf>
 File: ftoancuabi2.pdf Graphic file (type pdf)
 <use ftoancuabi2.pdf>
- [5]
+ [33]
 File: ../toancuabi/pic//Pi9_bai6.png Graphic file (type bmp)
 <../toancuabi/pic//Pi9_bai6.png>
 File: ../toancuabi/pic//Pi5_bai1.png Graphic file (type bmp)
@@ -3280,7 +3877,7 @@ File: toancuabi1.pdf Graphic file (type pdf)
 <use toancuabi1.pdf>
 File: ftoancuabi1.pdf Graphic file (type pdf)
 <use ftoancuabi1.pdf>
- [6]
+ [34]
 File: ../toancuabi/pic//Pi5_bai3.png Graphic file (type bmp)
 <../toancuabi/pic//Pi5_bai3.png>
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
@@ -3303,7 +3900,7 @@ File: toancuabi2.pdf Graphic file (type pdf)
 <use toancuabi2.pdf>
 File: ftoancuabi2.pdf Graphic file (type pdf)
 <use ftoancuabi2.pdf>
- [7]
+ [35]
 File: ../toancuabi/pic//Pi5_bai5.png Graphic file (type bmp)
 <../toancuabi/pic//Pi5_bai5.png>
 File: ../toancuabi/pic//Pi5_bai6.png Graphic file (type bmp)
@@ -3320,7 +3917,7 @@ File: toancuabi1.pdf Graphic file (type pdf)
 <use toancuabi1.pdf>
 File: ftoancuabi1.pdf Graphic file (type pdf)
 <use ftoancuabi1.pdf>
- [8]
+ [36]
 Underfull \hbox (badness 5260) in paragraph at lines 479--479
 []\OT1/ztmcm/m/n/12 10 \OMS/ztmcm/m/n/12 ^^B \OT1/ztmcm/m/n/12 10$[] \TU/EBGara
 mond(0)/m/n/12 grids, each of the rows and
@@ -3383,35 +3980,11 @@ File: ftoancuabi2.pdf Graphic file (type pdf)
 File: ftoancuabi2.pdf Graphic file (type pdf)
 <use ftoancuabi2.pdf>
 
-[9]
+[37]
 Overfull \hbox (1.6797pt too wide) in paragraph at lines 600--601
 [][] 
  []
 
-Requested font "zptmcm7t" at 10.95pt
-Requested font "zptmcm7t" at 8.0pt
-Requested font "zptmcm7m" at 10.95pt
-Requested font "zptmcm7m" at 8.0pt
-Requested font "zptmcm7y" at 10.95pt
-Requested font "zptmcm7y" at 8.0pt
-Requested font "zptmcm7v" at 10.95pt
-Requested font "zptmcm7v" at 8.0pt
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 660.
-Requested font "ptmb7t" at 10.95pt
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 660.
-Requested font "ptmb7t" at 8.0pt
-Requested font "ptmri7t" at 10.95pt
-Requested font "ptmri7t" at 8.0pt
-Requested font "msam10" at 10.95pt
-Requested font "msam10" at 8.0pt
-Requested font "msbm10" at 10.95pt
-Requested font "msbm10" at 8.0pt
-Requested font "yhcmex10" at 10.95pt
-Requested font "yhcmex10" at 8.0pt
-Requested font "rsfs10" at 10.95pt
-Requested font "rsfs10" at 8.0pt
 File: toancuabi1.pdf Graphic file (type pdf)
 <use toancuabi1.pdf>
 File: ftoancuabi1.pdf Graphic file (type pdf)
@@ -3424,7 +3997,7 @@ File: toancuabi1.pdf Graphic file (type pdf)
 <use toancuabi1.pdf>
 File: ftoancuabi1.pdf Graphic file (type pdf)
 <use ftoancuabi1.pdf>
-[10])
+[38])
 File: toancuabi2.pdf Graphic file (type pdf)
 <use toancuabi2.pdf>
 File: ftoancuabi2.pdf Graphic file (type pdf)
@@ -3437,7 +4010,308 @@ File: toancuabi2.pdf Graphic file (type pdf)
 <use toancuabi2.pdf>
 File: ftoancuabi2.pdf Graphic file (type pdf)
 <use ftoancuabi2.pdf>
- [11] (_main.aux)
+ [39] (../thachthuctoanhoc/thachthuc.tex
+Package mdframed Info: mdframed works in twoside mode on input line 12.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
+LaTeX Font Info:    Trying to load font information for T5+qag on input line 31
+.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\t5qag.fd
+File: t5qag.fd 2009/09/25 v1.2 font definition file for T5/qag
+)
+Requested font "t5-qagb" at 12.0pt
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T5/qag/b/n/12'. Switching off
+(microtype)                protrusion for this font on input line 31.
+
+File: ../thachthuctoanhoc/bannerthachthuc.jpg Graphic file (type bmp)
+<../thachthuctoanhoc/bannerthachthuc.jpg>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+[40])
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+ [41] (../hoccungpi/hoccungpi.tex
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 37.
+Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
+um;mapping=tex-text;" at 8.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Regular.otf
+Requested font "zptmcm7t" at 5.0pt
+Requested font "zptmcm7m" at 5.0pt
+Requested font "zptmcm7y" at 5.0pt
+Requested font "zptmcm7v" at 5.0pt
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+Requested font "ptmb7t" at 5.0pt
+Requested font "ptmri7t" at 5.0pt
+Requested font "msam10" at 5.0pt
+Requested font "msbm10" at 5.0pt
+Requested font "yhcmex10" at 5.0pt
+Requested font "rsfs5" at 5.0pt
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 42 might be wrong on input line 117
+.
+
+
+Overfull \vbox (11.62634pt too high) has occurred while \output is active []
+
+File: ../hoccungpi/pic//../bannerhoccungpi.jpg Graphic file (type bmp)
+<../hoccungpi/pic//../bannerhoccungpi.jpg>
+File: ../hoccungpi/pic//../tieude.pdf Graphic file (type pdf)
+<use ../hoccungpi/pic//../tieude.pdf>
+File: fhoccungpi1.pdf Graphic file (type pdf)
+<use fhoccungpi1.pdf>
+File: fhoccungpi1.pdf Graphic file (type pdf)
+<use fhoccungpi1.pdf>
+File: fhoccungpi1.pdf Graphic file (type pdf)
+<use fhoccungpi1.pdf>
+
+[42]
+File: hoccungpi2.pdf Graphic file (type pdf)
+<use hoccungpi2.pdf>
+File: fhoccungpi2.pdf Graphic file (type pdf)
+<use fhoccungpi2.pdf>
+File: hoccungpi2.pdf Graphic file (type pdf)
+<use hoccungpi2.pdf>
+File: fhoccungpi2.pdf Graphic file (type pdf)
+<use fhoccungpi2.pdf>
+File: hoccungpi2.pdf Graphic file (type pdf)
+<use hoccungpi2.pdf>
+File: fhoccungpi2.pdf Graphic file (type pdf)
+<use fhoccungpi2.pdf>
+ [43]
+File: hoccungpi1.pdf Graphic file (type pdf)
+<use hoccungpi1.pdf>
+File: fhoccungpi1.pdf Graphic file (type pdf)
+<use fhoccungpi1.pdf>
+File: hoccungpi1.pdf Graphic file (type pdf)
+<use hoccungpi1.pdf>
+File: fhoccungpi1.pdf Graphic file (type pdf)
+<use fhoccungpi1.pdf>
+File: hoccungpi1.pdf Graphic file (type pdf)
+<use hoccungpi1.pdf>
+File: fhoccungpi1.pdf Graphic file (type pdf)
+<use fhoccungpi1.pdf>
+ [44]
+Overfull \hbox (1.70059pt too wide) in paragraph at lines 360--362
+ [][] 
+ []
+
+
+Underfull \hbox (badness 5771) in paragraph at lines 416--417
+[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 2$[]\TU/EBGaramond(0)/m/n/12 ]
+Graphes – Trajet minimal – Bac ES
+ []
+
+File: hoccungpi2.pdf Graphic file (type pdf)
+<use hoccungpi2.pdf>
+File: fhoccungpi2.pdf Graphic file (type pdf)
+<use fhoccungpi2.pdf>
+File: hoccungpi2.pdf Graphic file (type pdf)
+<use hoccungpi2.pdf>
+File: fhoccungpi2.pdf Graphic file (type pdf)
+<use fhoccungpi2.pdf>
+File: hoccungpi2.pdf Graphic file (type pdf)
+<use hoccungpi2.pdf>
+File: fhoccungpi2.pdf Graphic file (type pdf)
+<use fhoccungpi2.pdf>
+[45]) (../doisongtoanhoc/doisongtoanhoc.tex
+Overfull \hbox (3.00105pt too wide) in paragraph at lines 15--16
+[]\TU/EBGaramond(0)/m/n/12 Từ ngày $[]\OT1/ztmcm/m/n/12 08\OML/ztmcm/m/it/12 =\
+OT1/ztmcm/m/n/12 08\OML/ztmcm/m/it/12 =\OT1/ztmcm/m/n/12 2023$[] \TU/EBGaramond
+(0)/m/n/12 đến ngày $[]\OT1/ztmcm/m/n/12 12\OML/ztmcm/m/it/12 =\OT1/ztmcm/m/n/1
+2 08\OML/ztmcm/m/it/12 =\OT1/ztmcm/m/n/12 2023$[]\TU/EBGaramond(0)/m/n/12 ,
+ []
+
+File: ../doisongtoanhoc/pic//2.jpg Graphic file (type bmp)
+<../doisongtoanhoc/pic//2.jpg>
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 46 might be wrong on input line 29.
+
+
+
+Overfull \vbox (11.62634pt too high) has occurred while \output is active []
+
+File: ../doisongtoanhoc/pic//../bannerdoisong.jpg Graphic file (type bmp)
+<../doisongtoanhoc/pic//../bannerdoisong.jpg>
+File: ../doisongtoanhoc/pic//../tieude.pdf Graphic file (type pdf)
+<use ../doisongtoanhoc/pic//../tieude.pdf>
+File: fdstoanhoc1.pdf Graphic file (type pdf)
+<use fdstoanhoc1.pdf>
+File: fdstoanhoc1.pdf Graphic file (type pdf)
+<use fdstoanhoc1.pdf>
+File: fdstoanhoc1.pdf Graphic file (type pdf)
+<use fdstoanhoc1.pdf>
+
+[46]
+Underfull \hbox (badness 6125) in paragraph at lines 30--31
+[]$[]\OT1/ztmcm/m/n/12 2\OML/ztmcm/m/it/12 :$[] \TU/EBGaramond(0)/m/n/12 Đinh D
+ũng (Đại học Quốc gia Hà
+ []
+
+File: ../doisongtoanhoc/pic//3.jpg Graphic file (type bmp)
+<../doisongtoanhoc/pic//3.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--48
+[]$[]\OT1/ztmcm/m/n/12 7\OML/ztmcm/m/it/12 :$[] \TU/EBGaramond(0)/m/n/12 Vũ Hà 
+Văn (Yale University, Mỹ):
+ []
+
+Requested font "SimSun/OT:script=hani;language=dflt;" at 12.0pt
+ -> C:/WINDOWS/Fonts/simsun.ttc
+File: dstoanhoc2.pdf Graphic file (type pdf)
+<use dstoanhoc2.pdf>
+File: fdstoanhoc2.pdf Graphic file (type pdf)
+<use fdstoanhoc2.pdf>
+File: dstoanhoc2.pdf Graphic file (type pdf)
+<use dstoanhoc2.pdf>
+File: fdstoanhoc2.pdf Graphic file (type pdf)
+<use fdstoanhoc2.pdf>
+File: dstoanhoc2.pdf Graphic file (type pdf)
+<use dstoanhoc2.pdf>
+File: fdstoanhoc2.pdf Graphic file (type pdf)
+<use fdstoanhoc2.pdf>
+[47]
+File: ../doisongtoanhoc/pic//1.jpg Graphic file (type bmp)
+<../doisongtoanhoc/pic//1.jpg>
+
+Underfull \hbox (badness 5245) in paragraph at lines 85--86
+[]$[]\OT1/ztmcm/m/n/12 13\OML/ztmcm/m/it/12 :$[] \TU/EBGaramond(0)/m/n/12 PGS. 
+TS. Nguyễn Thị Hồng Loan
+ []
+
+)
+File: dstoanhoc1.pdf Graphic file (type pdf)
+<use dstoanhoc1.pdf>
+File: fdstoanhoc1.pdf Graphic file (type pdf)
+<use fdstoanhoc1.pdf>
+File: dstoanhoc1.pdf Graphic file (type pdf)
+<use dstoanhoc1.pdf>
+File: fdstoanhoc1.pdf Graphic file (type pdf)
+<use fdstoanhoc1.pdf>
+File: dstoanhoc1.pdf Graphic file (type pdf)
+<use dstoanhoc1.pdf>
+File: fdstoanhoc1.pdf Graphic file (type pdf)
+<use fdstoanhoc1.pdf>
+ [48] (../gocco/gocco3.tex
+File: ../gocco/pic//1.png Graphic file (type bmp)
+<../gocco/pic//1.png>
+
+Underfull \hbox (badness 6047) in paragraph at lines 29--30
+\TU/EBGaramond(0)/m/n/12 M$[]\OT1/ztmcm/m/n/12 5\OML/ztmcm/m/it/12 =\OT1/ztmcm/
+m/n/12 7$[] $[][]$[] \TU/EBGaramond(0)/m/n/12 M$[]\OT1/ztmcm/m/n/12 3\OML/ztmcm
+/m/it/12 =\OT1/ztmcm/m/n/12 4$[] \TU/EBGaramond(0)/m/n/12 S$[]\OT1/ztmcm/m/n/12
+ 5\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 6$[] $[][]$[] \TU/EBGaramond(0)/m/n/12 
+M$[]\OT1/ztmcm/m/n/12 4\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 6$[] \TU/EBGaramon
+d(0)/m/n/12 S$[]\OT1/ztmcm/m/n/12 6\OML/ztmcm/m/it/12 =\OT1/ztmcm/m/n/12 5$[]
+ []
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 49 might be wrong on input line 30.
+
+
+
+Overfull \vbox (11.62634pt too high) has occurred while \output is active []
+
+File: ../gocco/pic//../bannergocco.jpg Graphic file (type bmp)
+<../gocco/pic//../bannergocco.jpg>
+File: ../gocco/pic//../tieude2.pdf Graphic file (type pdf)
+<use ../gocco/pic//../tieude2.pdf>
+File: fgocco2.pdf Graphic file (type pdf)
+<use fgocco2.pdf>
+File: fgocco2.pdf Graphic file (type pdf)
+<use fgocco2.pdf>
+File: fgocco2.pdf Graphic file (type pdf)
+<use fgocco2.pdf>
+
+[49]
+File: ../gocco/pic//2.png Graphic file (type bmp)
+<../gocco/pic//2.png>
+
+Underfull \hbox (badness 7869) in paragraph at lines 46--47
+[]$[][]$[] \TU/EBGaramond(0)/m/n/12 M$[]\OT1/ztmcm/m/n/12 5\OML/ztmcm/m/it/12 =
+\OT1/ztmcm/m/n/12 3$[] \TU/EBGaramond(0)/m/n/12 Tg$[]\OT1/ztmcm/m/n/12 6\OML/zt
+mcm/m/it/12 =\OT1/ztmcm/m/n/12 1$[] $[][]$[] \TU/EBGaramond(0)/m/n/12 P$[]\OT1/
+ztmcm/m/n/12 5 \OMS/ztmcm/m/n/12 ^^@ \OT1/ztmcm/m/n/12 1$[] \TU/EBGaramond(0)/m
+/n/12 M$[]\OT1/ztmcm/m/n/12 5\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 7$[]$[](\OMS
+/ztmcm/m/n/12 ^^C\OT1/ztmcm/m/n/12 )$[]
+ []
+
+File: ../gocco/pic//3.png Graphic file (type bmp)
+<../gocco/pic//3.png>
+File: gocco1.pdf Graphic file (type pdf)
+<use gocco1.pdf>
+File: fgocco1.pdf Graphic file (type pdf)
+<use fgocco1.pdf>
+File: gocco1.pdf Graphic file (type pdf)
+<use gocco1.pdf>
+File: fgocco1.pdf Graphic file (type pdf)
+<use fgocco1.pdf>
+File: gocco1.pdf Graphic file (type pdf)
+<use gocco1.pdf>
+File: fgocco1.pdf Graphic file (type pdf)
+<use fgocco1.pdf>
+[50]
+File: ../gocco/pic//4.png Graphic file (type bmp)
+<../gocco/pic//4.png>
+File: ../gocco/pic//5.png Graphic file (type bmp)
+<../gocco/pic//5.png>
+
+Underfull \hbox (badness 6173) in paragraph at lines 82--90
+[][]$[] \TU/EBGaramond(0)/m/n/12 M$[]\OT1/ztmcm/m/n/12 7\OML/ztmcm/m/it/12 =\OT
+1/ztmcm/m/n/12 5$[] \TU/EBGaramond(0)/m/n/12 Tg$[]\OT1/ztmcm/m/n/12 4\OML/ztmcm
+/m/it/12 =\OT1/ztmcm/m/n/12 1$[] $[][]$[] \TU/EBGaramond(0)/m/n/12 M$[]\OT1/ztm
+cm/m/n/12 5\OML/ztmcm/m/it/12 =\OT1/ztmcm/m/n/12 7$[] \TU/EBGaramond(0)/m/n/12 
+Tg$[]\OT1/ztmcm/m/n/12 4\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 1$[] $[][]$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--90
+\TU/EBGaramond(0)/m/n/12 M$[]\OT1/ztmcm/m/n/12 7\OML/ztmcm/m/it/12 =\OT1/ztmcm/
+m/n/12 8$[] \TU/EBGaramond(0)/m/n/12 Tg$[]\OT1/ztmcm/m/n/12 4\OML/ztmcm/m/it/12
+ =\OT1/ztmcm/m/n/12 1$[] $[][]$[] \TU/EBGaramond(0)/m/n/12 M$[]\OT1/ztmcm/m/n/1
+2 8\OML/ztmcm/m/it/12 =\OT1/ztmcm/m/n/12 7$[] \TU/EBGaramond(0)/m/n/12 X$[]\OT1
+/ztmcm/m/n/12 8\OML/ztmcm/m/it/12 =\OT1/ztmcm/m/n/12 2$[] $[][]$[]
+ []
+
+)
+File: gocco2.pdf Graphic file (type pdf)
+<use gocco2.pdf>
+File: fgocco2.pdf Graphic file (type pdf)
+<use fgocco2.pdf>
+File: gocco2.pdf Graphic file (type pdf)
+<use gocco2.pdf>
+File: fgocco2.pdf Graphic file (type pdf)
+<use fgocco2.pdf>
+File: gocco2.pdf Graphic file (type pdf)
+<use gocco2.pdf>
+File: fgocco2.pdf Graphic file (type pdf)
+<use fgocco2.pdf>
+ [51] (_main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3448,12 +4322,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 70166 strings out of 410939
- 1598354 string characters out of 2823530
- 2658143 words of memory out of 3000000
- 89668 multiletter control sequences out of 15000+600000
- 508086 words of font info for 140 fonts, out of 8000000 for 9000
+ 71589 strings out of 410939
+ 1635632 string characters out of 2823530
+ 2694212 words of memory out of 3000000
+ 90971 multiletter control sequences out of 15000+600000
+ 513646 words of font info for 153 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 104i,12n,120p,1282b,920s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 104i,15n,120p,1418b,1097s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on _main.pdf (11 pages).
+Output written on _main.pdf (51 pages).
