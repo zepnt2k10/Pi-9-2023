@@ -31,11 +31,11 @@
 	\end{align*}
 	Ta định nghĩa {\it đĩa mở} với tâm $\mathbf{x} \in \mathbb{R}^2$ và bán kính $r > 0$ bởi
 	\begin{align*}
-		\mathbb{D}(\mathbf{x}, r) = \{ \in \mathbb{R} \in \mathbb{R}^2:  \left\|\mathbf{x} - \mathbf{y}\right\| < r\}
+		\mathbb{D}(\mathbf{x}, r) = \{ y \in \mathbb{R}^2:  \left\|\mathbf{x} - \mathbf{y}\right\| < r\}
 	\end{align*}
 	(đó là hình tròn tâm $\mathbf{x}$ bán kính $r$ không kể biên), cũng như {\it đĩa đóng} tâm $\mathbf{x}$ bán kính $r$ bởi
 	\begin{align*}
-		\overline{\mathbb{D}}(\mathbf{x}, r) = \{ \in \mathbb{R} \in \mathbb{R}^2:  \left\|\mathbf{x} - \mathbf{y}\right\| \le r\}
+		\overline{\mathbb{D}}(\mathbf{x}, r) = \{ y \in \mathbb{R}^2:  \left\|\mathbf{x} - \mathbf{y}\right\| \le r\}
 	\end{align*}
 	(đó là hình tròn tâm $\mathbf{x}$ bán kính $r$ kể cả biên). Với $\mathbf{x} = (0,0)$ là gốc tọa độ và $r = 1$, ta sẽ ký hiệu đơn giản $\mathbb{D} = \mathbb{D}((0,0),1)$, $\overline{\mathbb{D}} = \overline{\mathbb{D}}((0,0),1)$ và gọi chúng lần lượt là {\it đĩa mở đơn vị} và {\it đĩa đóng đơn vị}. Xét không gian $X = \overline{\mathbb{D}}$. Với $\mathbf{x} \in \mathbb{D}$, một tập con của $\overline{\mathbb{D}}$ là một lân cận của $\mathbf{x}$ nếu nó chứa một đĩa $\mathbb{D}(\mathbf{x},r)$ với $r > 0$ đủ nhỏ. Tuy nhiên, với $\mathbf{x} \in \overline{\mathbb{D}} \setminus \mathbb{D}$, một tập con của $\overline{\mathbb{D}}$ là một lân cận của $\mathbf{x}$ nếu nó chứa phần giao của một đĩa như vậy với $\overline{\mathbb{D}}$, giao này không phải là một đĩa (xem Hình $2$).
 	\begin{figure}[H]
@@ -67,7 +67,7 @@
 		\caption{\small\textit{\color{duongvaotoanhoc}Hình $4$: Hình hộp và tứ điện đồng phôi với mặt cầu.}}
 		\vspace*{-10pt}
 	\end{figure}
-	Một ví dụ khác: đĩa mở đơn vị $\mathbb{D} = \{(x,y) \in \mathbb{S}^2: x^2 + y^2 < 1\}$ đồng phôi với toàn bộ mặt phẳng $\mathbb{R}^2$ (mặt dù $\mathbb{D}$ có vẻ ``hữu hạn'' còn $\mathbb{S}^2$) thì vô hạn. Thật vậy, ánh xạ
+	Một ví dụ khác: đĩa mở đơn vị $\mathbb{D} = \{(x,y) \in \mathbb{R}^2: x^2 + y^2 < 1\}$ đồng phôi với toàn bộ mặt phẳng $\mathbb{R}^2$ (mặt dù $\mathbb{D}$ có vẻ ``hữu hạn'' còn $\mathbb{R}^2$ thì vô hạn). Thật vậy, ánh xạ
 	\begin{align*}
 		f\!:\! \mathbb{D} \!\to\! \mathbb{R}^2,  f(x,y) \!=\! \left(\!\!\frac{x}{1 \!-\! x^2 \!-\! y^2}, \frac{y}{1 \!-\! x^2 \!-\! y^2}\!\right)
 	\end{align*}
@@ -160,7 +160,7 @@
 	\vskip 0.1cm
 	$\bullet$ $X$ {\it liên thông}, nghĩa là với mọi $x, y \in X$, tồn tại một ánh xạ liên tục $\gamma: [0,1] \to X$ sao cho $\gamma(0) = x$ và $\gamma(1) = y$ (ta gọi $\gamma$ là một {\it đường} trên $X$ với điểm đầu $x$ và điểm cuối $y$);
 	\vskip 0.1cm
-	$\bullet$ $X$ thừa nhận ít nhất một tam giác hóa bởi một dãy (hữu hạn hoặc vô hạn) các tam giác cong $T_1,T_2,T_3,\ldots$
+	$\bullet$ $X$ thừa nhận ít nhất một tam giác phân bởi một dãy (hữu hạn hoặc vô hạn) các tam giác cong $T_1,T_2,T_3,\ldots$
 	\vskip 0.1cm
 	Tính liên thông trong định nghĩa trên cũng có thể phát biểu lại như sau: với mọi $x,y \in X$ và mọi tam giác phân $\mathscr{T}$ của $X$, tồn tại một dãy hữu hạn $T_0,\ldots,T_n \in \mathscr{T}$ sao cho $x \in T_0$, $y \in T_n$ và $T_{i-1} \cap T_i \neq \varnothing$ với $1 \le i \le n$. 
 	\vskip 0.1cm
@@ -176,7 +176,7 @@
 		\caption{\small\textit{\color{duongvaotoanhoc}Hình $11$: $(0,0,0)$ là một điểm kỳ dị của mặt nón.}}
 		\vspace*{-10pt}
 	\end{figure}
-	Nếu mặt $X$ thừa nhận một tam giác hóa bởi một số hữu hạn các tam giác cong, ta nói $X$ là một mặt {\it compact}. Ta thấy ngay rằng tứ diện, hình hộp, đĩa đóng $\overline{\mathbb{D}}$ và mặt cầu $\mathbb{S}$ là các mặt compact. Dễ thấy mặt phẳng $\mathbb{R}^2$ không thể được tam giác phân bởi một số hữu hạn các tam giác cong, vì thế $\mathbb{R}^2$ không compact. Mà $\mathbb{D} \approx \mathbb{R}^2$ và tính compact là một bất biến tôpô nên đĩa mở $\mathbb{D}$ cũng không compact.
+	Nếu mặt $X$ thừa nhận một tam giác phân bởi một số hữu hạn các tam giác cong, ta nói $X$ là một mặt {\it compact}. Ta thấy ngay rằng tứ diện, hình hộp, đĩa đóng $\overline{\mathbb{D}}$ và mặt cầu $\mathbb{S}$ là các mặt compact. Dễ thấy mặt phẳng $\mathbb{R}^2$ không thể được tam giác phân bởi một số hữu hạn các tam giác cong, vì thế $\mathbb{R}^2$ không compact. Mà $\mathbb{D} \approx \mathbb{R}^2$ và tính compact là một bất biến tôpô nên đĩa mở $\mathbb{D}$ cũng không compact.
 	\vskip 0.1cm
 	$\pmb{3.}$ \textbf{\color{duongvaotoanhoc}Tính đóng và định hướng. Trải phẳng}
 	\vskip 0.1cm
@@ -202,7 +202,7 @@
 		\caption{\small\textit{\color{duongvaotoanhoc}Hình $12$: Xây dựng mặt xuyến $\mathbb{T}$ bằng cách dán các cặp cạnh đối của hình vuông.}}
 		\vspace*{-10pt}
 	\end{figure}
-	Trong Hình $12$, ta thể hiện chiều khi dán các cặp cạnh đối bằng các mũi tên. Chú ý rằng $4$ đỉnh của hình vuông sau cùng chỉ còn là 1 điểm trên $\mathbb{T}$. Đây là một {\it trải phẳng} của $\mathbb{T}$, thứ ta sẽ nói rõ hơn ở dưới. Một tam giác phân của $\mathbb{T}$ có thể được cho bởi Hình $13$ (khi đếm số đỉnh và số cạnh, chú ý đến các cạnh đã được dán lại với nhau). Nói riêng, $\mathbb{T}$ compact, vì thế đóng.
+	Trong Hình $12$, ta thể hiện chiều khi dán các cặp cạnh đối bằng các mũi tên. Chú ý rằng $4$ đỉnh của hình vuông sau cùng chỉ còn là $1$ điểm trên $\mathbb{T}$. Đây là một {\it trải phẳng} của $\mathbb{T}$, thứ ta sẽ nói rõ hơn ở dưới. Một tam giác phân của $\mathbb{T}$ có thể được cho bởi Hình $13$ (khi đếm số đỉnh và số cạnh, chú ý đến các cạnh đã được dán lại với nhau). Nói riêng, $\mathbb{T}$ compact, vì thế đóng.
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering\captionsetup{labelformat=empty, justification=centering}
@@ -210,7 +210,7 @@
 		\caption{\small\textit{\color{duongvaotoanhoc}Hình $13$: Tam giác phân mặt xuyến bằng $9$ đỉnh, $27$ cạnh và $18$ tam giác cong.}}
 		\vspace*{-10pt}
 	\end{figure}
-	Tổng quát hơn, cho $X$ là một mặt compact tùy ý và $\mathscr{T}$ là một tam giác phân của $X$. Ta đặt tất cả các tam giác cong của $\mathscr{T}$ (kể cả biên) vào các vị trí rời nhau trên mặt phẳng. Sau đó, ta lần lượt dán các tam giác cong ít nhất một cặp cạnh chung theo đúng chiều của cặp cạnh chung đó, rồi xóa cặp cạnh chung đó đi. Sau một số hữu hạn thao tác như vậy, do tính compact và tính liên thông của $X$, ta thu được một ``đa giác'' mà ở đó một số cặp cạnh được đồng nhất với nhau theo chiều nào đó (chẳng hạn, sau khi dán tất cả các cặp cạnh có thể từ tam giác phân ở Hình $13$ để thu được Hình $12$, ta còn lại một ``tứ giác'' trong đó các cặp cạnh đối được đồng nhất với nhau). Đó là một {\it trải phẳng} của mặt $X$. Chú ý rằng có nhiều thứ tự thực hiện phép dán các cặp cạnh chung, nên một mặt có thể có những trải phẳng khác nhau. Chú ý thêm rằng hoàn toàn có thể có những cạnh chỉ xuất hiện một lần, những cạnh này tạo thành biên của mặt $X$. Nói riêng, nếu mặt $X$ đóng (không có biên) thì đa giác sau cùng thu được có số cạnh chẵn. 
+	Tổng quát hơn, cho $X$ là một mặt compact tùy ý và $\mathscr{T}$ là một tam giác phân của $X$. Ta đặt tất cả các tam giác cong của $\mathscr{T}$ (kể cả biên) vào các vị trí rời nhau trên mặt phẳng. Sau đó, ta lần lượt dán các tam giác cong có ít nhất một cặp cạnh chung theo đúng chiều của cặp cạnh chung đó, rồi xóa cặp cạnh chung đó đi. Sau một số hữu hạn thao tác như vậy, do tính compact và tính liên thông của $X$, ta thu được một ``đa giác'' mà ở đó một số cặp cạnh được đồng nhất với nhau theo chiều nào đó (chẳng hạn, sau khi dán tất cả các cặp cạnh có thể từ tam giác phân ở Hình $13$ để thu được Hình $12$, ta còn lại một ``tứ giác'' trong đó các cặp cạnh đối được đồng nhất với nhau). Đó là một {\it trải phẳng} của mặt $X$. Chú ý rằng có nhiều thứ tự thực hiện phép dán các cặp cạnh chung, nên một mặt có thể có những trải phẳng khác nhau. Chú ý thêm rằng hoàn toàn có thể có những cạnh chỉ xuất hiện một lần, những cạnh này tạo thành biên của mặt $X$. Nói riêng, nếu mặt $X$ đóng (không có biên) thì đa giác sau cùng thu được có số cạnh chẵn. 
 	\vskip 0.1cm
 	Chẳng hạn, từ phép tam giác phân bởi $2$ tam giác cong, ta thu được trải phẳng của mặt cầu $\mathbb{S}$ như ở Hình $14$, bằng cách dán $2$ cặp cạnh kề của hình vuông.
 	\begin{figure}[H]
@@ -267,9 +267,9 @@
 	\vskip 0.1cm
 	Một tính chất nữa chúng ta nhắc đến (mà không chứng minh) là:
 	\begin{center}
-		{\it Tổng liên thông của hai mặt hai hướng lại là một mặt hai hướng. Tổng liên thông của một mặt một hướng với một mặt hai hướng là một mặt một hướng.}
+		{\it Tổng liên thông của hai mặt hai phía lại là một mặt hai phía. Tổng liên thông của một mặt một phía với một mặt hai phía là một mặt một phía.}
 	\end{center}
-	Tuy nhiên, tổng liên thông của hai mặt một hướng vẫn có thể là một mặt một hướng. Chẳng hạn, Hình $19$ cho thấy rằng $\mathbb{P} \# \mathbb{P} \approx \mathbb{K}$ (chú ý rằng ta đã thực hiện hai tao tác trên trải phẳng là {\it cắt đa giác để tạo ra một cặp cạnh mới} và {\it dán dọc theo một cặp cạnh khác}). 
+	Tuy nhiên, tổng liên thông của hai mặt một phía vẫn có thể là một mặt một phía. Chẳng hạn, Hình $19$ cho thấy rằng $\mathbb{P} \# \mathbb{P} \approx \mathbb{K}$ (chú ý rằng ta đã thực hiện hai tao tác trên trải phẳng là {\it cắt đa giác để tạo ra một cặp cạnh mới} và {\it dán dọc theo một cặp cạnh khác}). 
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering\captionsetup{labelformat=empty, justification=centering}
@@ -277,7 +277,7 @@
 		\caption{\small\textit{\color{duongvaotoanhoc}Hình $19$: Tổng liên thông của hai mặt phẳng xạ ảnh là (chính xác hơn, đồng phôi với) chai Klein.}}
 		\vspace*{-10pt}
 	\end{figure}
-	Tổng liên thông có tính giao hoán (sai khác đồng phôi), $X \# Y \approx Y \# X$, cũng như tính kết hợp, $(X \# Y) \# Z \approx X \# (Y \# Z)$. Chúng cho phép ta định nghĩa tổng liên thông của một số hữu hạn bất kỳ các mặt. Với $g$ là số nguyên dương, ta sẽ ký hiệu tổng liên thông của $g$ mặt (đồng phôi với) $X$ bởi $X^{\# g}$. Mặt cầu $\mathbb{S}$ đóng vai trò như phần tử trung lập của tổng liên thông (vì thế, ta quy ước $X^{\# 0} := \mathbb{S}$). Thật vậy, xét một mặt $X$ tùy ý và một đĩa $\overline{\mathbb{D}} \approx D \subset X^\circ$. Xét tam giác hóa ở Hình $8$, nghĩa là $\mathbb{S} = U \cup V$, trong đó $U \approx V \approx \overline{\mathbb{D}}$ là hai bán cầu (đóng), và $U \cap V = \partial U = \partial V$ là một đường tròn (đường xích đạo). Rõ ràng, khi dán $X \setminus D^\circ$ với $\mathbb{S} \setminus U^\circ = V$ dọc theo $\partial D \approx \partial V$, ta thu được một mặt đồng phôi với $X$, vì $V^\circ \approx \mathbb{D} \approx D^\circ$. Vậy $X \# \mathbb{S} \approx X$.
+	Tổng liên thông có tính giao hoán (sai khác đồng phôi), $X \# Y \approx Y \# X$, cũng như tính kết hợp, $(X \# Y) \# Z \approx X \# (Y \# Z)$. Chúng cho phép ta định nghĩa tổng liên thông của một số hữu hạn bất kỳ các mặt. Với $g$ là số nguyên dương, ta sẽ ký hiệu tổng liên thông của $g$ mặt (đồng phôi với) $X$ bởi $X^{\# g}$. Mặt cầu $\mathbb{S}$ đóng vai trò như phần tử trung lập của tổng liên thông (vì thế, ta quy ước $X^{\# 0} := \mathbb{S}$). Thật vậy, xét một mặt $X$ tùy ý và một đĩa $\overline{\mathbb{D}} \approx D \subset X^\circ$. Xét tam giác phân ở Hình $8$, nghĩa là $\mathbb{S} = U \cup V$, trong đó $U \approx V \approx \overline{\mathbb{D}}$ là hai bán cầu (đóng), và $U \cap V = \partial U = \partial V$ là một đường tròn (đường xích đạo). Rõ ràng, khi dán $X \setminus D^\circ$ với $\mathbb{S} \setminus U^\circ = V$ dọc theo $\partial D \approx \partial V$, ta thu được một mặt đồng phôi với $X$, vì $V^\circ \approx \mathbb{D} \approx D^\circ$. Vậy $X \# \mathbb{S} \approx X$.
 	\vskip 0.1cm
 	Một họ các mặt mới mà ta thu được bằng phép toán ``$\#$'' là ``mặt xuyến với $g$ quai cầm'' $\mathbb{T}^{\# g}$, với $g \ge 1$. Chẳng hạn, tổng liên thông $\mathbb{T}^{\#2} \approx \mathbb{T} \# \mathbb{T}$ được mô tả như trong Hình $20$. Trải phẳng của nó là một bát giác như trong Hình $21$.
 	\begin{figure}[H]
@@ -447,9 +447,9 @@
 	\begin{align*}
 		\chi(X^{\# g}) = g \cdot \chi(X) + 2 - 2g
 	\end{align*}
-	với $g \ge 1$. Từ đó ta có $\chi(\mathbb{T}^{\# g}) = 2-2g \le 0$. Do đó, mặt $\mathbb{S}$ cùng các mặt $\mathbb{T}^g$, với $g \ge 1$, đôi một không đồng phôi (nhắc lại rằng tất cả các mặt này đều là mặt hai hướng).
+	với $g \ge 1$. Từ đó ta có $\chi(\mathbb{T}^{\# g}) = 2-2g \le 0$. Do đó, mặt $\mathbb{S}$ cùng các mặt $\mathbb{T}^g$, với $g \ge 1$, đôi một không đồng phôi (nhắc lại rằng tất cả các mặt này đều là mặt hai phía).
 	\vskip 0.1cm
-	Ngoài ra, từ kết quả $\mathbb{P} \# \mathbb{T} \approx \mathbb{P}^{\# 3}$, ta tính được $\chi(\mathbb{P}) = 1$, suy ra $\chi(\mathbb{T}^{\# g}) = 2-g$. Do đó, các mặt $\mathbb{P}^g$, với $g \ge 1$, đôi một không đồng phôi (nhắc lại rằng tất cả các mặt này đều là mặt một hướng). Điều này kết thúc chứng minh của định lý phân loại tôpô cho các mặt đóng.
+	Ngoài ra, từ kết quả $\mathbb{P} \# \mathbb{T} \approx \mathbb{P}^{\# 3}$, ta tính được $\chi(\mathbb{P}) = 1$, suy ra $\chi(\mathbb{T}^{\# g}) = 2-g$. Do đó, các mặt $\mathbb{P}^g$, với $g \ge 1$, đôi một không đồng phôi (nhắc lại rằng tất cả các mặt này đều là mặt một phía). Điều này kết thúc chứng minh của định lý phân loại tôpô cho các mặt đóng.
 	\vskip 0.1cm
 	Ta kết thúc bài viết bằng việc nhắc đến khái niệm sau đây. Với $X$ là một mặt đóng, nếu $X$ là mặt hai phía thì tồn tại duy nhất số tự nhiên $g$ sao cho $\chi(X) = 2-2g$, hay $X \approx \mathbb{T}^{\#g}$ (nhắc lại quy ước $\mathbb{T}^{\# 0} = \mathbb{S}$). Số tự nhiên $g$ này được gọi là {\it giống} (genus) của mặt $X$, nó chính là ``số quai cầm'' của $X$ (mặt cầu không có quai cầm, tổng liên thông $\mathbb{T}^{\# g}$ có $g$ quai cầm). Theo tinh thần này, nếu $X$ là mặt một phía thì tồn tại duy nhất số nguyên dương $g$ sao cho $\chi(X) = 2-g$ (ta có $X \approx \mathbb{P}^{\# g}$). Ta cũng gọi $g$ là giống của $X$ trong trường hợp này (một số nơi gọi số nguyên này là {\it á giống}). Định lý chính của bài viết này nói rằng, mặt đóng $X$ được xác định duy nhất (sai khác đồng phôi) khi ta biết tính khả định hướng và giống của nó.
 \end{multicols}
