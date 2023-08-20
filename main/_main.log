@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 22.1) (preloaded format=xelatex 2022.2.16)  18 AUG 2023 14:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 22.1) (preloaded format=xelatex 2022.2.16)  20 AUG 2023 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2909,7 +2909,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 82.
 
-(../toanhocdoisong/toanhocdoisong.tex
+(../quantoan/quantoan2.tex
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  5.
 
@@ -3067,22 +3067,16 @@ nd/EBGaramond-Italic.otf
 Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 17.
-Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
-mapping=tex-text;" at 12.0pt
- -> C:/Users/iamsi/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramo
-nd/EBGaramond-Bold.otf
-File: ../toanhocdoisong/pic//1.jpg Graphic file (type bmp)
-<../toanhocdoisong/pic//1.jpg>
+File: ../quantoan/pic//1.png Graphic file (type bmp)
+<../quantoan/pic//1.png>
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 23.
+(Font)              scaled to size 10.95pt on input line 21.
 Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
 um;mapping=tex-text;" at 10.95pt
  -> C:/Users/iamsi/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramo
 nd/EBGaramond-Regular.otf
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 23.
+(Font)              scaled to size 10.95pt on input line 21.
 Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
 m;mapping=tex-text;" at 10.95pt
  -> C:/Users/iamsi/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramo
@@ -3099,10 +3093,10 @@ Requested font "zptmcm7y" at 8.0pt
 Requested font "zptmcm7v" at 10.95pt
 Requested font "zptmcm7v" at 8.0pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
 Requested font "ptmb7t" at 10.95pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
 Requested font "ptmb7t" at 8.0pt
 Requested font "ptmri7t" at 10.95pt
 Requested font "ptmri7t" at 8.0pt
@@ -3114,6 +3108,22 @@ Requested font "yhcmex10" at 10.95pt
 Requested font "yhcmex10" at 8.0pt
 Requested font "rsfs10" at 10.95pt
 Requested font "rsfs10" at 8.0pt
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 24.
+Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
+m;mapping=tex-text;" at 12.0pt
+ -> C:/Users/iamsi/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramo
+nd/EBGaramond-Italic.otf
+Package microtype Info: Character `156' is missing
+(microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
+(microtype)             Ignoring protrusion settings for this character.
+File: ../quantoan/pic//2.png Graphic file (type bmp)
+<../quantoan/pic//2.png>
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 1 might be wrong on input line 44.
+
 
 Overfull \vbox (11.62634pt too high) has occurred while \output is active []
 
@@ -3133,177 +3143,136 @@ Package microtype Info: Loading generic protrusion settings for font family
 Requested font "[lmsans8-regular]:mapping=tex-text;" at 8.0pt
  -> C:/Users/iamsi/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm/lmsan
 s8-regular.otf
-File: ../toanhocdoisong/pic//../bannertoanhocdoisong.jpg Graphic file (type bmp
-)
-<../toanhocdoisong/pic//../bannertoanhocdoisong.jpg>
-File: ../toanhocdoisong/pic//../tieude.pdf Graphic file (type pdf)
-<use ../toanhocdoisong/pic//../tieude.pdf>
-File: ftoanhocds2.pdf Graphic file (type pdf)
-<use ftoanhocds2.pdf>
-File: ftoanhocds2.pdf Graphic file (type pdf)
-<use ftoanhocds2.pdf>
-File: ftoanhocds2.pdf Graphic file (type pdf)
-<use ftoanhocds2.pdf>
+File: ../quantoan/pic//../bannerquantoan.jpg Graphic file (type bmp)
+<../quantoan/pic//../bannerquantoan.jpg>
+File: ../quantoan/pic//../tieude1.pdf Graphic file (type pdf)
+<use ../quantoan/pic//../tieude1.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
 [1
 
 ]
-File: ../toanhocdoisong/pic//2.png Graphic file (type bmp)
-<../toanhocdoisong/pic//2.png>
-File: ../toanhocdoisong/pic//3.png Graphic file (type bmp)
-<../toanhocdoisong/pic//3.png>
-File: ../toanhocdoisong/pic//4.png Graphic file (type bmp)
-<../toanhocdoisong/pic//4.png>
-File: toanhocds1.pdf Graphic file (type pdf)
-<use toanhocds1.pdf>
-File: ftoanhocds1.pdf Graphic file (type pdf)
-<use ftoanhocds1.pdf>
-File: toanhocds1.pdf Graphic file (type pdf)
-<use toanhocds1.pdf>
-File: ftoanhocds1.pdf Graphic file (type pdf)
-<use ftoanhocds1.pdf>
-File: toanhocds1.pdf Graphic file (type pdf)
-<use toanhocds1.pdf>
-File: ftoanhocds1.pdf Graphic file (type pdf)
-<use ftoanhocds1.pdf>
+File: ../quantoan/pic//4.jpg Graphic file (type bmp)
+<../quantoan/pic//4.jpg>
+File: ../quantoan/pic//3.png Graphic file (type bmp)
+<../quantoan/pic//3.png>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
  [2]
-Overfull \hbox (3.88408pt too wide) detected at line 114
-[]
- []
-
-
-Overfull \hbox (7.16074pt too wide) detected at line 128
-[]
- []
-
-File: toanhocds2.pdf Graphic file (type pdf)
-<use toanhocds2.pdf>
-File: ftoanhocds2.pdf Graphic file (type pdf)
-<use ftoanhocds2.pdf>
-File: toanhocds2.pdf Graphic file (type pdf)
-<use toanhocds2.pdf>
-File: ftoanhocds2.pdf Graphic file (type pdf)
-<use ftoanhocds2.pdf>
-File: toanhocds2.pdf Graphic file (type pdf)
-<use toanhocds2.pdf>
-File: ftoanhocds2.pdf Graphic file (type pdf)
-<use ftoanhocds2.pdf>
-[3]
-Overfull \hbox (1.99701pt too wide) detected at line 142
-[]
- []
-
-File: ../toanhocdoisong/pic//5.png Graphic file (type bmp)
-<../toanhocdoisong/pic//5.png>
-File: ../toanhocdoisong/pic//6.png Graphic file (type bmp)
-<../toanhocdoisong/pic//6.png>
-File: toanhocds1.pdf Graphic file (type pdf)
-<use toanhocds1.pdf>
-File: ftoanhocds1.pdf Graphic file (type pdf)
-<use ftoanhocds1.pdf>
-File: toanhocds1.pdf Graphic file (type pdf)
-<use toanhocds1.pdf>
-File: ftoanhocds1.pdf Graphic file (type pdf)
-<use ftoanhocds1.pdf>
-File: toanhocds1.pdf Graphic file (type pdf)
-<use toanhocds1.pdf>
-File: ftoanhocds1.pdf Graphic file (type pdf)
-<use ftoanhocds1.pdf>
-[4]
-File: ../toanhocdoisong/pic//7.png Graphic file (type bmp)
-<../toanhocdoisong/pic//7.png>
-File: ../toanhocdoisong/pic//8.png Graphic file (type bmp)
-<../toanhocdoisong/pic//8.png>
-File: ../toanhocdoisong/pic//9.jpg Graphic file (type bmp)
-<../toanhocdoisong/pic//9.jpg>
-File: toanhocds2.pdf Graphic file (type pdf)
-<use toanhocds2.pdf>
-File: ftoanhocds2.pdf Graphic file (type pdf)
-<use ftoanhocds2.pdf>
-File: toanhocds2.pdf Graphic file (type pdf)
-<use toanhocds2.pdf>
-File: ftoanhocds2.pdf Graphic file (type pdf)
-<use ftoanhocds2.pdf>
-File: toanhocds2.pdf Graphic file (type pdf)
-<use toanhocds2.pdf>
-File: ftoanhocds2.pdf Graphic file (type pdf)
-<use ftoanhocds2.pdf>
- [5]
-Overfull \hbox (1.6797pt too wide) in paragraph at lines 243--244
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
-[]\TU/EBGaramond(0)/m/n/12 Vì $[]\OML/ztmcm/m/it/12 f\OT1/ztmcm/m/n/12 (\OML/zt
-mcm/m/it/12 x\OT1/ztmcm/m/n/12 )$[] \TU/EBGaramond(0)/m/n/12 là hàm mật độ xác 
-suất nên
- []
-
-
-Overfull \hbox (5.16707pt too wide) detected at line 268
-[]
- []
-
-File: toanhocds1.pdf Graphic file (type pdf)
-<use toanhocds1.pdf>
-File: ftoanhocds1.pdf Graphic file (type pdf)
-<use ftoanhocds1.pdf>
-File: toanhocds1.pdf Graphic file (type pdf)
-<use toanhocds1.pdf>
-File: ftoanhocds1.pdf Graphic file (type pdf)
-<use ftoanhocds1.pdf>
-File: toanhocds1.pdf Graphic file (type pdf)
-<use toanhocds1.pdf>
-File: ftoanhocds1.pdf Graphic file (type pdf)
-<use ftoanhocds1.pdf>
-[6]
-Underfull \hbox (badness 5607) in paragraph at lines 299--300
-[]\OML/ztmcm/m/it/12 C\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 S\OT1/ztmcm/m/n/12 
-)$[] \TU/EBGaramond(0)/m/n/12 đồng biến hay nghịch biến trong
- []
-
-File: ../toanhocdoisong/pic//10.png Graphic file (type bmp)
-<../toanhocdoisong/pic//10.png>
-File: toanhocds2.pdf Graphic file (type pdf)
-<use toanhocds2.pdf>
-File: ftoanhocds2.pdf Graphic file (type pdf)
-<use ftoanhocds2.pdf>
-File: toanhocds2.pdf Graphic file (type pdf)
-<use toanhocds2.pdf>
-File: ftoanhocds2.pdf Graphic file (type pdf)
-<use ftoanhocds2.pdf>
-File: toanhocds2.pdf Graphic file (type pdf)
-<use toanhocds2.pdf>
-File: ftoanhocds2.pdf Graphic file (type pdf)
-<use ftoanhocds2.pdf>
-[7]
-Overfull \hbox (1.95999pt too wide) detected at line 344
-[]
- []
-
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 366.
-Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
-m;mapping=tex-text;" at 12.0pt
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 81.
+Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
+mapping=tex-text;" at 12.0pt
  -> C:/Users/iamsi/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramo
-nd/EBGaramond-Italic.otf
-Package microtype Info: Character `156' is missing
-(microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
-(microtype)             Ignoring protrusion settings for this character.
-)
-File: toanhocds1.pdf Graphic file (type pdf)
-<use toanhocds1.pdf>
-File: ftoanhocds1.pdf Graphic file (type pdf)
-<use ftoanhocds1.pdf>
-File: toanhocds1.pdf Graphic file (type pdf)
-<use toanhocds1.pdf>
-File: ftoanhocds1.pdf Graphic file (type pdf)
-<use ftoanhocds1.pdf>
-File: toanhocds1.pdf Graphic file (type pdf)
-<use toanhocds1.pdf>
-File: ftoanhocds1.pdf Graphic file (type pdf)
-<use ftoanhocds1.pdf>
- [8] (_main.aux)
+nd/EBGaramond-Bold.otf
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 1$[]\TU/EBGaramond(0)/m/n/12 ]
+ Vladimir I. Arnold (ed.). Arnold’s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+\TU/EBGaramond(0)/m/n/12 Problems. \TU/EBGaramond(0)/m/it/12 Springer–Verlag, B
+erlin–
+ []
+
+File: quantoan2.pdf Graphic file (type pdf)
+<use quantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+File: quantoan2.pdf Graphic file (type pdf)
+<use quantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+File: quantoan2.pdf Graphic file (type pdf)
+<use quantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+[3]
+File: ../quantoan/pic//1a.jpg Graphic file (type bmp)
+<../quantoan/pic//1a.jpg>
+File: ../quantoan/pic//2a.jpeg Graphic file (type bmp)
+<../quantoan/pic//2a.jpeg>
+File: ../quantoan/pic//3a.png Graphic file (type bmp)
+<../quantoan/pic//3a.png>
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 4 might be wrong on input line 126.
+
+
+
+Overfull \vbox (11.62634pt too high) has occurred while \output is active []
+
+File: ../quantoan/pic//../tieude2.pdf Graphic file (type pdf)
+<use ../quantoan/pic//../tieude2.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+
+[4]
+File: ../quantoan/pic//4a.jpg Graphic file (type bmp)
+<../quantoan/pic//4a.jpg>
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 5 might be wrong on input line 139.
+
+
+
+Overfull \vbox (14.62634pt too high) has occurred while \output is active []
+
+File: quantoan2.pdf Graphic file (type pdf)
+<use quantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+File: quantoan2.pdf Graphic file (type pdf)
+<use quantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+File: quantoan2.pdf Graphic file (type pdf)
+<use quantoan2.pdf>
+File: fquantoan2.pdf Graphic file (type pdf)
+<use fquantoan2.pdf>
+
+[5])
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+File: quantoan1.pdf Graphic file (type pdf)
+<use quantoan1.pdf>
+File: fquantoan1.pdf Graphic file (type pdf)
+<use fquantoan1.pdf>
+ [6] (_main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3314,12 +3283,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69292 strings out of 410969
- 1580048 string characters out of 2823810
- 2650854 words of memory out of 3000000
- 88760 multiletter control sequences out of 15000+600000
+ 69235 strings out of 410969
+ 1578033 string characters out of 2823810
+ 2651854 words of memory out of 3000000
+ 88705 multiletter control sequences out of 15000+600000
  508078 words of font info for 139 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 104i,15n,120p,1132b,782s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 104i,11n,120p,1151b,698s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on _main.pdf (8 pages).
+Output written on _main.pdf (6 pages).
