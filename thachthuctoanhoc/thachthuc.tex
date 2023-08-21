@@ -22,7 +22,7 @@
 \end{tBox}
 \begin{center}
 	\vspace*{-5pt}
-	\textbf{\color{thachthuctoanhoc}\color{thachthuctoanhoc}\color{thachthuctoanhoc}THÁCH THỨC KỲ NÀY}
+	\textbf{\color{thachthuctoanhoc}\color{thachthuctoanhoc}\color{thachthuctoanhoc}\color{thachthuctoanhoc}THÁCH THỨC KỲ NÀY}
 	\vspace*{-5pt}
 \end{center}
 \begin{multicols}{2}
@@ -210,8 +210,662 @@
 		\textit{Tô Trung Hiếu, Nghệ An (st)}
 	\end{flushright}
 \end{multicols}
-%\newpage
-%\centerline{{\large{\textbf{\color{thachthuctoanhoc}GIẢI BÀI KỲ TRƯỚC}}}}
-%\vspace*{-5pt}
-%\begin{multicols}{2}
-%\end{multicols}	
+\newpage
+\centerline{{\large{\textbf{\color{thachthuctoanhoc}\color{thachthuctoanhoc}GIẢI BÀI KỲ TRƯỚC}}}}
+\vspace*{-5pt}
+\begin{multicols}{2}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P701.}}
+	(Mức $B$) Một chiếc hộp đựng một số viên bi, gồm bi xanh và bi đỏ. Biết rằng, số bi đỏ ít hơn số bi xanh; tổng của số bi xanh và hai lần số bi đỏ lớn hơn $24$; tổng của số bi đỏ và hai lần số bi xanh nhỏ hơn $28$. Hỏi, trong hộp có bao nhiêu viên bi xanh và bao nhiêu viên bi đỏ?
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{của người chấm bài})\textbf{\color{thachthuctoanhoc}.}
+	\vskip 0.05cm
+	Gọi $x$ và $y$, tương ứng, là số bi xanh và số bi đỏ có trong hộp.
+	\vskip 0.05cm
+	Theo giả thiết của bài ra, $x$, $y$ là các số nguyên dương, thỏa mãn đồng thời các điều kiện sau:
+	\begin{align*}
+		y &< x, \tag{$1$}\\
+		x + 2y &> 24, \tag{$2$}\\
+		2x + y &< 28. \tag{$3$}  
+	\end{align*}
+	Từ ($1$) và ($2$), ta có:
+	\begin{align*}
+		24 < x + 2y < x + 2x = 3x;
+	\end{align*}
+	suy ra, $x > 8$. Mà $x \in \mathbb{N^*}$  nên $x \ge  9$. \hfill ($4$)
+	\vskip 0.05cm
+	Từ ($2$) và ($3$), ta có:
+	\begin{align*}
+		12 - \frac{x}{2} < y < 28-2x; \tag{$5$}
+	\end{align*}
+	suy ra, $3x < 32$. Mà $x \in \mathbb{N^*}$, nên $x \le 10$. \hfill ($6$)
+	\vskip 0.05cm
+	Từ ($4$) và ($6$), với lưu ý $x \in \mathbb{N^*}$,  ta được \linebreak $x \in \{9; 10\}$.
+	\vskip 0.05cm
+	-- Với $x = 9$, từ ($5$) ta được:
+	\begin{align*}
+		\frac{15}{2} < y < 10.
+	\end{align*}
+	Từ đó, do $y \in \mathbb{N^*}$ và $y < x = 9$, suy ra $y = 8$.
+	\vskip 0.05cm
+	-- Với $x = 10$, từ ($5$) ta được:
+	\begin{align*}
+		7 < y < 8,
+	\end{align*}
+	là điều vô lý (do $y \in \mathbb{N^*}$).
+	\vskip 0.05cm
+	Vì vậy, $x = 9$ và $y = 8$.
+	\vskip 0.05cm
+	Ngược lại, bằng kiểm tra trực tiếp, dễ thấy, $x = 9$ và $y = 8$ thỏa mãn tất cả các điều kiện ($1$), ($2$), ($3$).
+	\vskip 0.05cm
+	Vậy, trong hộp có $9$ viên bi xanh và $8$ viên bi đỏ.
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
+	\vskip 0.05cm	
+	Bài đã ra là một bài toán đơn giản. Tuy vậy, trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có một lời giải sai, do người giải bài đã mắc các nhầm lẫn rất sơ đẳng trong tính toán. Bên cạnh đó, một số lời giải không được chấp nhận là lời giải hoàn chỉnh (tuy có kết quả đúng), do người giải bài không thử lại các giá trị $x$, $y$ (theo ký hiệu ở Lời giải trên), mặc dù các bước suy luận để tìm ra các giá trị đó đều là phép ``suy ra".
+	\begin{flushright}
+		\textbf{\color{thachthuctoanhoc}Lê Huy}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P702.}}
+	(Mức $B$) Xét các số nguyên dương $a,b,n,$  với $a<n.$ Chứng minh rằng, nếu  $\dfrac{an^2+1}{bn+1}$ là một số nguyên thì $b=an$. 
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của bạn Lương Hữu Bách, lớp $9$A$1$, trường THCS Nguyễn Trãi, Tp. Sơn La, Tỉnh Sơn La})\textbf{\color{thachthuctoanhoc}.}
+	\vskip 0.05cm
+	Giả sử $\dfrac{{a{n^2} + 1}}{{bn + 1}}$ là một số nguyên.
+	\vskip 0.05cm
+	Khi đó, $\left. {bn + 1} \right|a{n^2} + 1$;  do đó
+	\begin{align*}
+		\left. {bn \!+\! 1} \right|b\left( {a{n^2} \!+\! 1} \right) \!=\! an\left( {bn \!+\! 1} \right) \!-\! \left( {an \!-\! b} \right)
+	\end{align*}
+	và     
+	\begin{align*}
+		\left. {bn \!+\! 1} \right|{b^2}\left(\!{a{n^2} \!+\! 1} \!\right) \!=\! a\left( \!{{b^2}{n^2} \!-\! 1}\! \right) \!+\! \left(\!{a \!+\! {b^2}} \right).
+	\end{align*}                                     
+	Suy ra
+	\begin{align*}
+		\left. {bn + 1} \right|an - b \tag{$1$}
+	\end{align*}
+	và 
+	\begin{align*}
+		\left. {bn + 1} \right|a + {b^2}. \tag{$2$}
+	\end{align*}
+	Do $a, n \in \mathbb{N^*}$, nên từ giả thiết $a < n$ suy ra $n \ge  a + 1$. Vì thế, với lưu ý $a + b^2 > 0$,  từ ($2$) ta có:
+	\begin{align*}
+		a + {b^2} \ge bn + 1 \ge b\left( {a + 1} \right) + 1 > ab + b.
+	\end{align*}
+	Suy ra $a - ab + {b^2} - b > 0,$  hay
+	\begin{align*}
+		\left( {b - 1} \right)\left( {b - a} \right) > 0.
+	\end{align*}
+	Từ đó, do $b \ge 1$ nên $b > 1$; suy ra, $a < b$. Vì vậy
+	\begin{align*}
+		- \left( {bn + 1} \right) <  - b < an - b < bn + 1. \tag{$3$}
+	\end{align*}
+	Từ ($1$) và ($3$), suy ra $an - b = 0$, hay $an = b$, là điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
+	\vskip 0.05cm
+	Tất cả các lời giải, mà Tạp chí đã nhận được từ bạn đọc, đều là lời giải hoàn chỉnh.
+	\begin{flushright}
+		\textbf{\color{thachthuctoanhoc}Lưu Thị Thanh Hà}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P703.}}
+	(Mức $B$) Cho hình vuông $ABCD$ có tâm là $O$. Gọi $E$ là trung điểm của $BC$ và  $I$ là hình chiếu vuông góc của $B$ trên $AE$. Chứng minh rằng, phân giác của góc $IDC$ đi qua trung điểm của $OC$. 
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{của người chấm bài})\textbf{\color{thachthuctoanhoc}.}
+	\begin{center}
+		\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+		\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+		\definecolor{qqqqff}{rgb}{0.,0.,1.}
+		\begin{tikzpicture}[scale=0.6,thachthuctoanhoc]
+			\draw[pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (5.,0.7171572875253809) -- (5.282842712474619,0.7171572875253809) -- (5.282842712474619,1.) -- (5.,1.) -- cycle; 
+			\draw[pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (9.,-2.7171572875253807) -- (8.717157287525382,-2.7171572875253807) -- (8.717157287525382,-3.) -- (9.,-3.) -- cycle; 
+			\draw[pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (7.273508893593265,1.5470177871865296) -- (7.526491106406736,1.4205266807797945) -- (7.652982212813471,1.6735088935932647) -- (7.4,1.8) -- cycle; 
+			\draw[pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (1.2828427124746191,-3.) -- (1.2828427124746191,-2.7171572875253807) -- (1.,-2.7171572875253807) -- (1.,-3.) -- cycle; 
+			\draw [shift={(1.,-3.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (0.:0.8) arc (0.:18.43494882292201:0.8) -- cycle;
+			\draw [shift={(1.,-3.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (18.43494882292201:0.6) arc (18.43494882292201:36.86989764584401:0.6) -- cycle;
+			\draw [shift={(1.,5.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-26.56505117707799:0.6) arc (-26.56505117707799:0.:0.6) -- cycle;
+			\draw [shift={(9.,5.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-116.56505117707799:0.6) arc (-116.56505117707799:-90.:0.6) -- cycle;
+			\draw [shift={(1.,5.)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-90.:0.6) arc (-90.:-63.43494882292201:0.6) -- cycle;
+			\draw  (1.,-3.)-- (1.,5.);
+			\draw  (0.91,0.93) -- (1.09,0.93);
+			\draw  (0.91,1.) -- (1.09,1.);
+			\draw  (0.91,1.07) -- (1.09,1.07);
+			\draw  (9.,5.)-- (1.,5.);
+			\draw  (1.,5.)-- (9.,1.);
+			\draw  (1.,-3.)-- (9.,1.);
+			\draw  (7.4,1.8)-- (9.,-3.);
+			\draw  (7.4,1.8)-- (1.,-3.);
+			\draw  (4.31,-0.63) -- (4.202,-0.486);
+			\draw  (4.254,-0.672) -- (4.146,-0.528);
+			\draw  (4.198,-0.714) -- (4.09,-0.57);
+			\draw (0.55,5.88) node[anchor=north west] {$A$};
+			\draw (8.98,5.74) node[anchor=north west] {$B$};
+			\draw (9.,-2.96) node[anchor=north west] {$C$};
+			\draw (0.52,-2.99) node[anchor=north west] {$D$};
+			\draw (9.12,1.48) node[anchor=north west] {$E$};
+			\draw (7.08,2.8) node[anchor=north west] {$I$};
+			\draw (4.1,1.42) node[anchor=north west] {$O$};
+			\draw (4.8,-2.99) node[anchor=north west] {$F$};
+			\draw  (5.,1.)-- (7.4,1.8);
+			\draw  (5.,1.)-- (9.,1.);
+			\draw  (5.,1.)-- (5.,-3.);
+			\draw  (9.,1.)-- (9.,5.);
+			\draw  (8.91,2.965) -- (9.09,2.965);
+			\draw  (8.91,3.035) -- (9.09,3.035);
+			\draw  (9.,1.)-- (9.,-3.);
+			\draw  (9.09,-0.965) -- (8.91,-0.965);
+			\draw  (9.09,-1.035) -- (8.91,-1.035);
+			\draw  (9.,-3.)-- (5.,-3.);
+			\draw  (7.035,-3.09) -- (7.035,-2.91);
+			\draw  (6.965,-3.09) -- (6.965,-2.91);
+			\draw  (5.,-3.)-- (1.,-3.);
+			\draw  (3.035,-3.09) -- (3.035,-2.91);
+			\draw  (2.965,-3.09) -- (2.965,-2.91);
+			\draw  (9.,5.)-- (5.,-3.);
+			\draw  (7.,-1.)-- (1.,-3.);
+			\draw (7.08,-0.46) node[anchor=north west] {$J$};
+			\draw  (5.,1.)-- (1.,5.);
+			\draw [color=qqqqff] (7.,-1.)-- (5.,1.);
+			\draw [color=qqqqff] (5.936360389693209,-0.06363961030678982) -- (6.063639610306788,0.06363961030678982);
+			\draw [color=qqqqff] (7.,-1.)-- (9.,-3.);
+			\draw [color=qqqqff] (8.06363961030679,-1.936360389693211) -- (7.93636038969321,-2.0636396103067907);
+			\draw  (5.,-3.)-- (1.,5.);
+			\draw [shift={(1.,5.)},color=qqwuqq] (-26.56505117707799:0.6) arc (-26.56505117707799:0.:0.6);
+			\draw [shift={(1.,5.)},color=qqwuqq] (-26.56505117707799:0.5) arc (-26.56505117707799:0.:0.5);
+			\draw [shift={(9.,5.)},color=qqwuqq] (-116.56505117707799:0.6) arc (-116.56505117707799:-90.:0.6);
+			\draw [shift={(9.,5.)},color=qqwuqq] (-116.56505117707799:0.5) arc (-116.56505117707799:-90.:0.5);
+			\draw [shift={(1.,5.)},color=qqwuqq] (-90.:0.6) arc (-90.:-63.43494882292201:0.6);
+			\draw [shift={(1.,5.)},color=qqwuqq] (-90.:0.5) arc (-90.:-63.43494882292201:0.5);
+			\draw [fill = white] (1.,-3.) circle (1.5pt);
+			\draw [fill = white] (9.,-3.) circle (1.5pt);
+			\draw [fill = white] (1.,-3.) circle (1.5pt);
+			\draw [fill = white] (1.,5.) circle (1.5pt);
+			\draw [fill = white] (9.,5.) circle (1.5pt);
+			\draw [fill = white] (1.,5.) circle (1.5pt);
+			\draw [fill = white] (9.,1.) circle (1.5pt);
+			\draw [fill = white] (5.,-3.) circle (1.5pt);
+			\draw [fill = white] (5.,1.) circle (1.5pt);
+			\draw [fill = white] (7.4,1.8) circle (1.5pt);
+			\draw [fill = white] (7.,-1.) circle (1.5pt);
+		\end{tikzpicture}
+	\end{center}
+	Gọi $F$ là giao điểm của đường thẳng $BI$ và cạnh $CD$; $J$ là trung điểm của $OC$.
+	\vskip 0.05cm
+	Xét hai tam giác vuông $ABE$ và $BCF$, ta có:
+	\begin{align*}
+		AB &= BC,\\
+		\angle BAE \!&=\! {90^{\circ}} \!-\! \angle BEA \!=\! \angle CBF \,\, \text{(do $BI \bot AE$)}.
+	\end{align*}
+	Do đó, $\Delta ABE = \Delta BCF$; suy ra
+	\begin{align*}
+		CF &\!=\! BE \!=\! \frac{1}{2} BC \,\,(\text{do $E$ là trung điểm của $BC$})\\
+		&\!=\! \frac{1}{2}CD \,\,(\text{do $BC = CD$}).
+	\end{align*}
+	Vì thế, $F$ là trung điểm của cạnh $CD$. Suy ra, tứ giác $OECF$ là một hình vuông. Do đó
+	\begin{align*}
+		\angle EIF &= 90^\circ \,\,(\text{vì $AE$ vuông góc $BF$ tại $I$})\\
+		&= \angle EOF = \angle ECF.
+	\end{align*}
+	Vì vậy, năm điểm $E, I, O, F, C$ cùng nằm trên đường tròn đường kính $EF$, hay, đường tròn đường kính $OC$ (do $OC = EF$). Suy ra, $J$ thuộc trung trực của $IC$. \hfill ($1$)
+	\vskip 0.05cm
+	Tiếp theo, do $ABCD$ là hình vuông và $E$ là trung điểm $BC$, nên tam giác $AED$ cân \linebreak tại $E$.\hfill ($2$)
+	\vskip 0.05cm
+	Suy ra
+	\begin{align*}
+		\angle EAD = \angle ADE. \tag{$3$}
+	\end{align*}
+	Do tam giác $ABE$ vuông tại $B$ và $BI \bot AE$, nên
+	\begin{align*}
+		A{D^2} = A{B^2} = AI \cdot AE;
+	\end{align*}
+	do đó, $\dfrac{{AI}}{{AD}} = \dfrac{{AD}}{{AE}}$.
+	\vskip 0.05cm
+	Từ ($3$) và ($4$), suy ra $\Delta ADI \sim \Delta AED$. Vì thế
+	\begin{align*}
+		\frac{{DA}}{{DI}} = \frac{{EA}}{{ED}} = 1\,\,\,({\text{do }}(2)).
+	\end{align*}
+	Suy ra, $DI = DA = DC$. Do đó, $IDC$ là tam giác cân tại $D$. Từ đây và ($1$), suy ra $DJ$ là trung trực của $IC$; và vì thế, $DJ$ cũng là phân giác của góc $IDC$. Ta có điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
+	\vskip 0.05cm
+	Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có một lời giải tuy có ý giải đúng, nhưng không hoàn chỉnh, do người giải bài xét phép quay, nhưng không nêu chiều quay.
+	\vskip 0.05cm
+	\hfill	\textbf{\color{thachthuctoanhoc}Hạ Vũ Anh}
+	\vskip 0.05cm
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P704.}}
+	(Mức $B$) Điền vào mỗi ô vuông con của bảng ô vuông kích thước $20\times 22$ một số nguyên dương không vượt quá $10$, sao cho hai số được điền ở hai ô có đỉnh chung nguyên tố cùng nhau. Chứng minh rằng, có ít nhất $74$ ô vuông con được điền số như nhau.
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{theo lời giải của các bạn: Trịnh Bá Hiếu, lớp $8$A, trường THCS Lê Hồng Phong, Huyện Hưng Nguyên, Tỉnh Nghệ An; và Hoàng Nguyễn Gia Bảo, lớp $11$T$1$, trường THPT chuyên Nguyễn Quang Diêu, Tỉnh Đồng Tháp})\textbf{\color{thachthuctoanhoc}.}
+	\vskip 0.05cm
+	Dễ thấy, trong một bảng con $2 \times 2$ tùy ý của bảng ô vuông đã cho, bất kì hai ô vuông con nào cũng có đỉnh chung. Do đó, với cách điền số của đề bài, trong mỗi bảng con $2 \times 2$ của bảng ô vuông đã cho, chỉ có tối đa một số chẵn và tối đa một số chia hết cho $3$.
+	\vskip 0.05cm
+	Từ đó, do bảng $20 \times 22$ có thể được phân chia thành $110$ bảng con $2 \times 2$, suy ra, trong toàn bảng đã cho có tối đa $110$ ô vuông con được điền một số chẵn, và có tối đa $110$ ô vuông con được điền một số chia hết cho $3$. Vì vậy, trong bảng đã cho có ít nhất
+	\begin{align*}
+		20 \cdot 22 - 2 \cdot 110 = 220
+	\end{align*}
+	ô vuông con được điền một số lẻ không chia hết cho $3$. \hfill ($*$)
+	\vskip 0.05cm
+	Do các số được dùng để điền vào bảng là các số nguyên dương không vượt quá $10$, và trong $10$ số nguyên dương đầu tiên chỉ có ba số $1$, $5$, $7$ là các số lẻ không chia hết cho $3$, nên theo ($*$), trong bảng đã cho có ít nhất $220$ ô vuông con được điền các số $1$, $5$, $7$. Vì thế, theo nguyên lí Dirichlet, phải có ít nhất
+	\begin{align*}
+		\left[ {\frac{{220}}{3}} \right] + 1 = 74
+	\end{align*}
+	ô vuông con được điền cùng một số (trong các số $1$, $5$, $7$).
+	\vskip 0.05cm
+	Ta có điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
+	\vskip 0.05cm
+	Tất cả các lời giải Tạp chí đã nhận được từ bạn đọc đều là lời giải đúng và hoàn chỉnh.
+	\begin{flushright}
+		\textbf{\color{thachthuctoanhoc}Nguyễn Khắc Minh}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P705.}}
+	(Mức $B$) Cho hai số nguyên dương $m, n$ thỏa mãn:
+	\vskip 0.05cm
+	-- $m$ không chia hết cho $101$.
+	\vskip 0.05cm
+	-- Tồn tại $50$ ước dương của $n$, mà số dư trong các phép chia $50$ ước này cho $101$ là: $51, 52, 53, \ldots, 100.$ 
+	\vskip 0.05cm
+	Chứng minh rằng, tồn tại ước dương $d$ của $n^2$, mà $m-d$ chia hết cho $101$.
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của bạn Lương Hữu Bách, lớp $9$A$1$, trường THCS Nguyễn Trãi, Tp. Sơn La, Tỉnh Sơn La})\textbf{\color{thachthuctoanhoc}.}
+	\vskip 0.05cm
+	Gọi $d_1, d_2, \ldots, d_{50}$ là $50$ ước dương của $n$, mà khi lần lượt chia các ước này cho $101$, ta được các số dư tương ứng là $51, 52, \ldots, 100$.
+	\vskip 0.05cm
+	Khi đó, với mỗi $k \in \{1; 2; \ldots; 50\}$, ta có:
+	\begin{align*}
+		{d_k}{d_{50}} &\equiv \left( {50 + k} \right) \cdot 100 \equiv \left( {k - 51} \right) \cdot \left( { - 1} \right) \\
+		&\equiv 51 - k\left( {\bmod 101} \right).
+	\end{align*}
+	Suy ra, khi lần lượt chia các số  ${d_{50}}{d_{50}},$ ${d_{49}}{d_{50}}, \ldots,{d_1}{d_{50}},d_1, d_2,\ldots,d_{50}$   cho $101$, ta sẽ được các số dư tương ứng là $1, 2,\ldots,$ $50, 51, 52, \ldots, 100$.
+	\vskip 0.05cm
+	Từ đó, do $m$ không chia hết cho $101$ nên $m$ có cùng số dư với một trong các số  $d_{50}d_{50},d_{49}d_{50}, \ldots,d_1d_{50},d_1,d_2, \ldots,d_{50},$ trong phép chia cho $101$. Gọi số này là $d$; ta có, $d$ là một ước dương của $n^2$ (do tất cả $100$ số vừa nêu đều là ước dương của $n^2$) và $m - d$ chia hết cho $101$. Đây là điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
+	\vskip 0.05cm
+	Tất cả các lời giải, mà Tạp chí đã nhận được từ bạn đọc, đều là lời giải đúng và hoàn chỉnh.
+	\begin{flushright}
+		\textbf{\color{thachthuctoanhoc}Lưu Thị Thanh Hà}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P706.}}
+	(Mức $B$) Cho $a, b, c$ là các số thực dương thỏa mãn $a b c=1$. Chứng minh rằng
+	\begin{align*}
+		&\sqrt{\dfrac{a^2\!+\!3}{\left(a^3\!+\!b^3\right)\!\left(a^3\!+\!c^3\right)}}\!+\!\sqrt{\dfrac{b^2\!+\!3}{\left(b^3\!+\!c^3\right)\!\left(b^3\!+\!a^3\right)}}\\
+		&+\sqrt{\dfrac{c^2\!+\!3}{\left(c^3\!+\!a^3\right)\!\left(c^3\!+\!b^3\right)}} \leq 3.
+	\end{align*}
+	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của tác giả bài toán})\textbf{\color{thachthuctoanhoc}.}
+	\vskip 0.05cm
+	Kí hiệu $P$ là biểu thức ở vế trái của bất đẳng thức cần chứng minh.
+	\vskip 0.05cm
+	Với $x, y$ là hai số thực dương tùy ý, ta có:
+	\begin{align*}
+		{x^2} - xy + {y^2} &= \frac{3}{4}{(x - y)^2} + \frac{1}{4}{(x + y)^2}\\ &\ge \frac{1}{4}{(x + y)^2}.
+	\end{align*}
+	Vì thế, do $a, b, c > 0$ nên
+	\begin{align*}
+		&\left( {{a^2} - ab + {b^2}} \right)\left( {{a^2} - ac + {c^2}} \right)\\ 
+		\ge &\frac{1}{{16}}{\left( {a + b} \right)^2}{\left( {a + c} \right)^2}. \tag{$1$}
+	\end{align*}
+	Lại do $a, b, c > 0$ nên theo bất đẳng thức trung bình cộng -- trung bình nhân cho ba số dương, ta có:
+	\begin{align*}
+		\left( {a + b} \right)\left( {a + c} \right) &= {a^2} + \left( {ab + bc + ca} \right) \\
+		&\ge {a^2} + 3\sqrt[3]{{{a^2}{b^2}{c^2}}} \\
+		&= {a^2} + 3 \,\,({\text{do }}abc = 1).
+	\end{align*}
+	Từ ($1$) và ($2$), suy ra
+	\begin{align*}
+		&\left( {{a^3} + {b^3}} \right)\left( {{a^3} + {c^3}} \right) \\
+		= &\left( {a \!+\! b} \right)\!\left( {a \!+\! c} \right)\left( {{a^2} \!-\! ab \!+\! {b^2}} \right)\!\left( {{a^2} \!-\! ac \!+\! {c^2}} \right) \\
+		\ge &\frac{1}{{16}}\left( {{a^2} + 3} \right){\left( {a + b} \right)^2}{\left( {a + c} \right)^2}.
+	\end{align*}
+	Do đó
+	\begin{align*}
+		\sqrt {\!\!\frac{{{a^2} \!+\! 3}}{{\left( {{a^3} \!+\! {b^3}} \right)\!\left( {{a^3} \!+\! {c^3}} \right)}}}  \!\le\! \frac{4}{{\left( {a \!+\! b} \right)\!\left( {a \!+\! c} \right)}}. \tag{$3$}
+	\end{align*}
+	Bằng cách hoàn toàn tương tự, ta cũng chứng minh được:
+	\begin{align*}
+		\sqrt {\!\!\frac{{{b^2} \!+\! 3}}{{\left( {{b^3} \!+\! {c^3}} \right)\!\left( {{b^3} \!+\! {a^3}} \right)}}}  \!\le\! \frac{4}{{\left( {b \!+\! c} \right)\!\left( {b \!+\! a} \right)}}, \tag{$4$}\\
+		\sqrt {\!\!\frac{{{c^2} \!+\! 3}}{{\left( {{c^3} \!+\! {a^3}} \right)\!\left( {{c^3} \!+\! {b^3}} \right)}}}  \!\le\! \frac{4}{{\left( {c \!+\! a} \right)\!\left( {c \!+\! b} \right)}}. \tag{$5$}
+	\end{align*}
+	Cộng các bất đẳng thức ($3$), ($4$), ($5$), vế theo vế, ta được:
+	\begin{align*}
+		P \le &\frac{4}{{\left( {a + b} \right)\left( {a + c} \right)}} + \frac{4}{{\left( {b + c} \right)\left( {b + a} \right)}} \\
+		&+ \frac{4}{{\left( {c + a} \right)\left( {c + b} \right)}} \\
+		= &\frac{{8\left( {a + b + c} \right)}}{{\left( {a + b} \right)\left( {b + c} \right)\left( {c + a} \right)}}. \tag{$6$}
+	\end{align*}
+	Tiếp theo, do $a, b, c > 0$ nên theo bất đẳng thức trung bình cộng -- trung bình nhân cho ba số dương, ta có:
+	\begin{align*}
+		&\left( {a + b + c} \right)\left( {ab + bc + ca} \right)\\
+		 \ge \,&3\sqrt[3]{{abc}} \cdot 3\sqrt[3]{{{a^2}{b^2}{c^2}}} = 9abc;
+	\end{align*}
+	suy ra
+	\begin{align*}
+		abc \le \frac{{\left( {a + b + c} \right)\left( {ab + bc + ca} \right)}}{9}.
+	\end{align*}
+	Do đó
+	\begin{align*}
+		&\left( {a + b} \right)\left( {b + c} \right)\left( {c + a} \right) \\
+		= &\left( {a + b + c} \right)\left( {ab + bc + ca} \right) - abc\\
+		\ge& \left( {a + b + c} \right)\left( {ab + bc + ca} \right) \\
+		&- \frac{{\left( {a + b + c} \right)\left( {ab + bc + ca} \right)}}{9}\\
+		= &\frac{{8\left( {a + b + c} \right)\left( {ab + bc + ca} \right)}}{9}\\
+		\ge& \frac{{8\left( {a + b + c} \right) \cdot 3\sqrt[3]{{{a^2}{b^2}{c^2}}}}}{9}\\
+		\ge &\frac{{8\left( {a + b + c} \right)}}{3}\,\,({\text{do }}abc = 1).
+	\end{align*}
+	Từ ($6$) và ($7$), suy ra
+	\begin{align*}
+		P \le \frac{{8\left( {a + b + c} \right)}}{{\frac{8}{3}\left( {a + b + c} \right)}} = 3.
+	\end{align*}
+	Ta có điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
+	\vskip 0.05cm
+	$\pmb{1.}$ Từ các đánh giá ở Lời giải trên, dễ thấy, dấu ``$=$" ở bất đẳng thức của đề bài xảy ra khi và chỉ khi $a = b = c = 1$.
+	\vskip 0.05cm
+	$\pmb{2.}$ Ngoài cách chứng minh được nêu ở Lời giải trên, còn có thể chứng minh bất đẳng thức của đề bài bằng các cách khác.
+	\vskip 0.05cm
+	$\pmb{3.}$ Tất cả lời giải Tạp chí nhận được từ bạn đọc đều là lời giải đúng và hoàn chỉnh.
+	\vskip 0.15cm
+	\hfill	\textbf{\color{thachthuctoanhoc}Võ Quốc Bá Cẩn}
+	\vskip 0.15cm
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P707.}}
+	(Mức $A$) Chứng minh rằng, với mỗi số nguyên $a$, tồn tại số thực $x$, sao cho  
+	\begin{align*}
+		a=\left\lfloor +\dfrac12\right\rfloor+\left\lfloor\sqrt{2}x\right\rfloor.
+	\end{align*}
+	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của bạn Hồ Trần Khánh Linh, lớp $12$ Toán $2$, trường THPT Chuyên, ĐHSP Hà Nội})\textbf{\color{thachthuctoanhoc}.}
+	\vskip 0.05cm
+	Xét số nguyên $a$ tùy ý. Chọn $x = \frac{{a + \frac{1}{2}}}{{1 + \sqrt 2 }}.$  Ta có:
+	\begin{align*}
+		a = x + \sqrt 2 x - \frac{1}{2}. \tag{$1$}
+	\end{align*}
+	Vì $a \in \mathbb{Z}$  nên $a + \frac{1}{2}$ là một số hữu tỷ khác $0$. Do đó, $x$ là một số vô tỷ; suy ra, $x + \frac{1}{2}$ là một số vô tỷ. Vì vậy
+	\begin{align*}
+		\left[ {x + \frac{1}{2}} \right] < x + \frac{1}{2}.
+	\end{align*}
+	Suy ra
+	\begin{align*}
+		&\left( {\left( {x + \frac{1}{2}} \right) - 1} \right) + \left( {\sqrt 2 x - 1} \right) \\
+		< &\left[ {x \!+\! \frac{1}{2}} \right] \!+\! \left[ {\sqrt 2 x} \right] \!<\! \left( {x \!+\! \frac{1}{2}} \right) \!+\! \sqrt 2 x. \tag{$2$}
+	\end{align*}
+	Từ ($1$) và ($2$), ta được:
+	\begin{align*}
+		a - 1 < \left[ {x + \frac{1}{2}} \right] + \left[ {\sqrt 2 x} \right] < a + 1.
+	\end{align*}
+	Vì vậy, $\left[ {x + \frac{1}{2}} \right] + \left[ {\sqrt 2 x} \right] = a$.
+	\vskip 0.05cm   
+	Ta có điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
+	\vskip 0.05cm
+	Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có một lời giải sai, do người giải bài đã \textit{ngộ nhận} rằng
+	\begin{align*}
+		 \left\lceil x \right\rceil  - \left[ x \right] = 1, \text{ với mọi số thực } x.
+	\end{align*}
+	(Với $x \in \mathbb{R}, \left\lceil x \right\rceil $    ký hiệu số nguyên nhỏ nhất không nhỏ hơn $x$.)
+	\vskip 0.05cm
+	\textit{Lưu ý rằng, khẳng định vừa nêu trên \textbf{\color{thachthuctoanhoc}chỉ đúng}, nếu $x$ không phải là số nguyên!}
+	\begin{flushright}
+		\textbf{\color{thachthuctoanhoc}Trần Nam Dũng}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P708.}}
+	(Mức $A$) Tìm số thực $M$ lớn nhất sao cho bất đẳng thức 
+	\begin{align*}
+		\dfrac{1}{{a + 2}} + \dfrac{1}{{b + 2}} + \dfrac{1}{{c + 2}} > M
+	\end{align*}
+	luôn đúng với mọi bộ ba số thực không âm $(a,b,c)$ thoả mãn  
+	\begin{align*}
+		a+b+c=ab+bc+ca>0.
+	\end{align*}
+	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{của người chấm bài})\textbf{\color{thachthuctoanhoc}.}
+	\vskip 0.05cm
+	Giả sử $M$ là số thực, sao cho
+	\begin{align*}
+		\frac{1}{{a + 2}} + \frac{1}{{b + 2}} + \frac{1}{{c + 2}} > M,
+	\end{align*}
+	với mọi $a, b, c \ge  0$, thỏa mãn 
+	\begin{align*}
+		a + b + c = ab + bc + ca > 0.
+	\end{align*}
+	Xét số thực $x$ tùy ý thuộc khoảng $\left( {\frac{1}{2}; + \infty } \right).$
+	\vskip 0.05cm 
+	Chọn  $a = \frac{1}{2}, b = x$ và $c = \frac{x+1}{2x-1}$.
+	\vskip 0.05cm
+	Bằng cách kiểm tra trực tiếp, dễ thấy, $a + b + c = ab + bc + ca > 0$. Do đó
+	\begin{align*}
+		\frac{1}{{\frac{1}{2} + 2}} + \frac{1}{{x + 2}} + \frac{1}{{\frac{{x + 1}}{{2x - 1}} + 2}} > M,
+	\end{align*}
+	hay                                                                         \begin{align*}
+		\frac{2}{5} + \frac{1}{{x + 2}} + \frac{{2x - 1}}{{5x - 1}} > M. \tag{$1$}
+	\end{align*}
+	Ở ($1$), cho $x \to {\left( {\frac{1}{2}} \right)^ + },$ ta được: $M \le \frac{4}{5}$. \hfill ($2$)
+	\vskip 0.05cm
+	Tiếp theo, ta sẽ chứng minh
+	\begin{align*}
+		\frac{1}{{a + 2}} + \frac{1}{{b + 2}} + \frac{1}{{c + 2}} > \frac{4}{5}, \tag{$3$}
+	\end{align*}
+	với mọi $a, b, c \ge  0$, thỏa mãn
+	\begin{align*}
+		a + b + c = ab + bc + ca > 0. \tag{$4$}
+	\end{align*}
+	Thật vậy, không mất tổng quát, giả sử \linebreak$c = \max\{a,b,c\}$;  ta có $c > 0$.
+	\vskip 0.05cm
+	Ký hiệu $P$ là vế trái của bất đẳng thức ($3$).
+	\vskip 0.05cm
+	Xét hai trường hợp sau:
+	\vskip 0.05cm
+	$\bullet$ \textit{Trường hợp $1$:} $0 \le a + b \le 1$.
+	\vskip 0.05cm
+	Khi đó, theo bất đẳng thức Cauchy--Schwarz, ta có:
+	\begin{align*}
+		P > \frac{1}{{a + 2}} + \frac{1}{{b + 2}} \ge \frac{4}{{a + b + 4}} \ge \frac{4}{5}.
+	\end{align*}
+	$\bullet$ \textit{Trường hợp $2$:} $a + b > 1$.
+	\vskip 0.05cm
+	Đặt $t = a + b$; ta có, $1 < t \le 2c$. Do đó, từ ($4$), ta có:
+	\begin{align*}
+		c(t - 1) &= ca + cb - c = a + b - ab \\
+		&= t - ab < t \le 2c.
+	\end{align*}
+	Suy ra, $1 < t < 3$ và $0 < c < \frac{t}{t-1}$.  
+	Vì thế
+	\begin{align*}
+		P &\ge \frac{4}{a + b + 4} + \frac{1}{c + 2}\\
+		 &> \frac{4}{t + 4} + \frac{1}{\frac{t}{t-1} + 2}\\
+		 &= \frac{4}{t + 4} + \frac{t-1}{3t_2}\\
+		 &= \frac{4}{5} + \frac{7(t-1)(4-t)}{5(t+4)(3t-2)}>\frac{4}{5}.
+	\end{align*}
+	Vậy, ($3$) được chứng minh.
+	\vskip 0.05cm
+	Từ ($2$) và ($3$), suy ra giá trị lớn nhất của $M$ bằng $\frac{4}{5}$.
+	\vskip 0.05cm 
+	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
+	\vskip 0.05cm
+	$\pmb{1.}$ Bài đã ra là một bài toán khó.
+	\vskip 0.05cm
+	$\pmb{2.}$ Cho tới thời điểm bản thảo vào Nhà in, Tạp chí mới chỉ nhận được một lời giải cho bài toán, từ bạn \textit{Trần Việt Anh} (lớp $9$A$7$, Archimedes Academy Trung Yên, Quận Cầu Giấy, Tp. Hà Nội); và đó là một lời giải đúng, hoàn chỉnh.
+	\begin{flushright}
+		\textbf{\color{thachthuctoanhoc}Võ Quốc Bá Cẩn}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P709.}}
+	(Mức $A$) Cho tam giác không cân $ABC$ ngoại tiếp đường tròn $(I)$. Gọi $D,E,F$ lần lượt là tiếp điểm của $(I)$ với $BC,CA,AB$. Qua $D$ kẻ đường thẳng song song với $EF$, cắt $(I)$ tại điểm thứ hai $G$ (khác $D$). Đường tròn đường kính $AG$ cắt $(I)$ tại điểm thứ hai $P$ (khác $G$). Đường tròn ngoại tiếp các tam giác $BPF$ và $CPE$ cắt nhau tại $Q$ (khác $P$). Chứng minh rằng $PQ,AG$ cắt nhau tại một điểm nằm trên $(I)$. 
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{phỏng theo cách giải của Đáp án bài toán})\textbf{\color{thachthuctoanhoc}.}
+	\vskip 0.05cm
+	Gọi $L$ là giao điểm thứ hai, khác $G$, của đường thẳng $AG$ và đường tròn $(I)$. Ta có, $GELF$ là một tứ giác điều hòa; do đó, $D(GL,EF) = -1$. Mà $È \parallel DG$,  nên $DL$ đi qua trung điểm $M$ của $EF$.   \hfill ($1$)
+	\begin{center}
+		\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+		\definecolor{ffxfqq}{rgb}{1.,0.4980392156862745,0.}
+		\definecolor{qqffqq}{rgb}{0.,1.,0.}
+		\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+		\definecolor{qqqqff}{rgb}{0.,0.,1.}
+		\begin{tikzpicture}[scale=0.54, thachthuctoanhoc, node font= \small]
+			\draw [shift={(2.3365597548650334,2.1612588735046763)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-48.3274042417266:0.4) arc (-48.3274042417266:-0.15730836877164603:0.4) -- cycle;
+			\draw [shift={(6.27728957823615,2.150439379587464)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-159.1637021208633:0.4) arc (-159.1637021208633:-110.99360624790835:0.4) -- cycle;
+			\draw [shift={(2.3365597548650334,2.1612588735046763)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-117.33379799381825:0.6) arc (-117.33379799381825:-48.3274042417266:0.6) -- cycle;
+			\draw [shift={(1.3645212760338545,0.2806914843046909)},pattern color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0) -- (-48.17009587295495:0.6) arc (-48.17009587295495:20.836297879136698:0.6) -- cycle;
+			\draw  (2.,6.)-- (1.,-3.);
+			\draw  (1.,-3.)-- (12.,-3.);
+			\draw  (12.,-3.)-- (2.,6.);
+			\draw [color=qqqqff] (4.300880545531854,-0.045570656750642424) circle (2.954429343249358cm);
+			\draw [color=qqqqff] (1.3645212760338545,0.2806914843046909)-- (6.27728957823615,2.150439379587464);
+			\draw  (6.2652013361986745,-2.2524001870059607)-- (2.,6.);
+			\draw  (4.132600668099338,1.8737999064970197) circle (4.644729574604074cm);
+			\draw [color=qqffqq] (1.5282924508389875,-1.3981022370501057) circle (1.6867629817367171cm);
+			\draw (1.70524,6.95) node[anchor=north west] {$A$};
+			\draw (0.56524,-3) node[anchor=north west] {$B$};
+			\draw (12.06524,-2.64446) node[anchor=north west] {$C$};
+			\draw (4.08524,-3) node[anchor=north west] {$D$};
+			\draw (6.14524,3.1) node[anchor=north west] {$E$};
+			\draw (0.58524,0.95554) node[anchor=north west] {$F$};
+			\draw (6.20524,-1.98446) node[anchor=north west] {$G$};
+			\draw (2.62524,-2.62446) node[anchor=north west] {$P$};
+			\draw (2.86524,-0.6446) node[anchor=north west] {$Q$};
+			\draw (4.38524,0.33554) node[anchor=north west] {$I$};
+			\draw  (4.300880545531854,-3.)-- (3.636720643630867,2.833238883486384);
+			\draw  (1.3645212760338545,0.2806914843046909)-- (4.300880545531854,-3.);
+			\draw  (4.300880545531854,-3.)-- (6.27728957823615,2.150439379587464);
+			\draw [color=qqqqff] (4.300880545531854,-3.)-- (6.2652013361986745,-2.2524001870059607);
+			\draw (3.52524,3.81554) node[anchor=north west] {$L$};
+			\draw (3.30524,1.9554) node[anchor=north west] {$M$};
+			\draw [shift={(7.395143359910634,-2.3620041204367563)},color=qqffqq]  plot[domain=-0.3417530429011668:3.3897702182052125,variable=\t]({1.*4.6488432344094806*cos(\t r)+0.*4.6488432344094806*sin(\t r)},{0.*4.6488432344094806*cos(\t r)+1.*4.6488432344094806*sin(\t r)});
+			\draw [dashed,color=ffxfqq] (2.7505417150657467,-2.560546254048122)-- (3.636720643630867,2.833238883486384);
+			\draw [color=qqqqff] (0.5344374608583545,-0.0352296768127455)-- (12.,-3.);
+			\draw (0.12524,-0.19554) node[anchor=north west] {$X$};
+			\draw (4.86524,1.81554) node[anchor=north west] {$Y$};
+			\draw  (2.7505417150657467,-2.560546254048122)-- (2.,6.);
+			\draw (1.992524,3.15554) node[anchor=north west] {$H$};
+			\draw  (0.5344374608583545,-0.0352296768127455)-- (1.3645212760338545,0.2806914843046909);
+			\draw  (5.229928658629403,1.751824839968676)-- (6.27728957823615,2.150439379587464);
+			\draw  (6.2652013361986745,-2.2524001870059607)-- (2.3365597548650334,2.1612588735046763);
+			\draw  (2.7505417150657467,-2.560546254048122)-- (1.,-3.);
+			\draw  (2.7505417150657467,-2.560546254048122)-- (1.3645212760338545,0.2806914843046909);
+			\draw  (2.7505417150657467,-2.560546254048122)-- (6.27728957823615,2.150439379587464);
+			\draw [color=qqqqff] (6.27728957823615,2.150439379587464)-- (3.636720643630867,2.833238883486384);
+			\draw  (1.3645212760338545,0.2806914843046909)-- (3.636720643630867,2.833238883486384);
+			\draw  (2.3365597548650334,2.1612588735046763)-- (6.27728957823615,2.150439379587464);
+			\draw  (6.27728957823615,2.150439379587464)-- (6.2652013361986745,-2.2524001870059607);
+			\draw  (2.3365597548650334,2.1612588735046763)-- (1.3645212760338545,0.2806914843046909);
+			\draw  (1.3645212760338545,0.2806914843046909)-- (6.2652013361986745,-2.2524001870059607);
+			\draw [shift={(2.3365597548650334,2.1612588735046763)},color=qqwuqq] (-117.33379799381825:0.6) arc (-117.33379799381825:-48.3274042417266:0.6);
+			\draw [shift={(2.3365597548650334,2.1612588735046763)},color=qqwuqq] (-117.33379799381825:0.5) arc (-117.33379799381825:-48.3274042417266:0.5);
+			\draw [shift={(1.3645212760338545,0.2806914843046909)},color=qqwuqq] (-48.17009587295495:0.6) arc (-48.17009587295495:20.836297879136698:0.6);
+			\draw [shift={(1.3645212760338545,0.2806914843046909)},color=qqwuqq] (-48.17009587295495:0.5) arc (-48.17009587295495:20.836297879136698:0.5);
+				\draw [fill=white] (2.,6.) circle (1.5pt);
+				\draw [fill=white] (1.,-3.) circle (1.5pt);
+				\draw [fill=white] (12.,-3.) circle (1.5pt);
+				\draw [fill=white] (1.3645212760338545,0.2806914843046909) circle (1.5pt);
+				\draw [fill=white] (1.3645212760338545,0.2806914843046909) circle (1.5pt);
+				\draw [fill=white] (4.300880545531854,-3.) circle (1.5pt);
+				\draw [fill=white] (4.300880545531854,-3.) circle (1.5pt);
+				\draw [fill=white] (6.27728957823615,2.150439379587464) circle (1.5pt);
+				\draw [fill=white] (6.27728957823615,2.150439379587464) circle (1.5pt);
+				\draw [fill=white] (4.300880545531854,-3.) circle (1.5pt);
+				\draw [fill=white] (6.2652013361986745,-2.2524001870059607) circle (1.5pt);
+				\draw [fill=white] (2.7505417150657467,-2.560546254048122) circle (1.5pt);
+				\draw [fill=white] (6.265201336198671,-2.2524001870059625) circle (1.5pt);
+				\draw [fill=white] (2.7505417150657467,-2.560546254048122) circle (1.5pt);
+				\draw [fill=white] (3.0582218990515213,-0.6878309930528336) circle (1.5pt);
+				\draw [fill=white] (3.636720643630867,2.833238883486384) circle (1.5pt);
+				\draw [fill=white] (4.300880545531854,-0.045570656750642424) circle (1.5pt);
+				\draw [fill=white] (3.8209054271350023,1.2155654319460776) circle (1.5pt);
+				\draw [fill=white] (1.3645212760338545,0.2806914843046909) circle (1.5pt);
+				\draw [fill=white] (0.5344374608583545,-0.0352296768127455) circle (1.5pt);
+				\draw [fill=white] (5.229928658629403,1.751824839968676) circle (1.5pt);
+				\draw [fill=white] (6.27728957823617,2.150439379587472) circle (1.5pt);
+				\draw [fill=white] (2.7505417150657467,-2.560546254048122) circle (1.5pt);
+				\draw [fill=white] (2.3365597548650334,2.1612588735046763) circle (1.5pt);
+		\end{tikzpicture}
+	\end{center}
+	Gọi $X$, $Y$, tương ứng, là giao điểm thứ hai của đường thẳng $EF$ và các đường tròn $(BPF)$, $(CPE)$. Ta có:
+	\begin{align*}
+		&(QX; PQ) \equiv (FX; FP) \\
+		\equiv \,&(FE; FP) \,(\!\bmod \pi) \,\,(\text{do } X \in EF)\\
+		\equiv \,&(EC; EP) \,(\!\bmod \pi) \,\,(\text{do $EC$ tiếp xúc $(I)$})\\
+		\equiv \,&(QC; QP) \,(\!\bmod \pi).
+	\end{align*}
+	Do đó, $C, Q, X$ thẳng hàng. \hfill ($2$)
+	\vskip 0.05cm
+	Gọi $H$ là giao điểm thứ hai, khác $P$, của đường thẳng $AP$ và đường tròn $(I)$. Ta có, $PH \bot PG$ (do $P$ thuộc đường tròn đường kính $AG$). Do đó, $HG$ là đường kính \linebreak của $(I)$. \hfill ($3$)
+	\vskip 0.05cm
+	Vì
+	\begin{align*}
+		\left( {FB;FP} \right) \equiv \left( {EF;EP} \right) \equiv \left( {EX;EP} \right)\left( {\bmod \pi } \right)
+	\end{align*}
+	và  
+	\begin{align*}
+		\left( {BF;BP} \right) \equiv \left( {XF;XP} \right) \equiv \left( {XE;XP} \right)\,\left( {\!\bmod \pi } \right)
+	\end{align*}                                       
+	nên $\Delta PBF \sim \Delta PXE$. Suy ra
+	\begin{align*}
+		\frac{{PF}}{{PE}} = \frac{{BF}}{{XE}}.
+	\end{align*}
+	Từ đó, do $PEHF$ là tứ giác điều hòa, ta có:
+	\begin{align*}
+		\frac{{XE}}{{CE}} = \frac{{PE}}{{PF}} \cdot \frac{{BF}}{{CE}} = \frac{{HE}}{{HF}} \cdot \frac{{BF}}{{CE}}. \tag{$4$}
+	\end{align*}
+	Do $DGEF$ là tứ giác nội tiếp và $DG \parallel FE$ (giả thiết) nên $DGEF$ là một hình thang cân. Do đó
+	\begin{align*}
+			&\angle EHG = \angle EFG = \angle FED = \angle BFD,\\
+			&\angle FHG = \angle FEG = \angle EFD = \angle CED.
+	\end{align*}
+	Từ đó, áp dụng định lý sin cho tam giác $HEF$, ta được:
+	\begin{align*}
+		\frac{{HE}}{{HF}} &= \frac{{\sin \angle EFH}}{{\sin \angle HEF}} = \frac{{\sin \angle EGH}}{{\sin \angle HGF}} \\
+		&= \frac{{\cos \angle EHG}}{{\cos \angle FHG}} \,\,({\text{do }}(3))\\
+		&= \frac{{\cos \angle BFD}}{{\cos \angle CED}} = \frac{{\frac{1}{2}FD:FB}}{{\frac{1}{2}ED:EC}} \\
+		&= \frac{{FD \cdot EC}}{{ED \cdot FB}}. \tag{$5$}
+	\end{align*}
+	Từ ($4$) và ($5$), suy ra
+	\begin{align*}
+		\frac{{XE}}{{CE}} = \frac{{FD}}{{ED}}. \tag{$6$}
+	\end{align*}
+	Do $DELF$ là tứ giác nội tiếp, có hai đường chéo cắt nhau tại $M$, nên $\Delta DMF \sim \Delta EML$ và $\Delta DME \sim \Delta FML$. Suy ra
+	\begin{align*}
+		\frac{{FD}}{{MD}} \!=\! \frac{{LE}}{{ME}} \text{ và } \frac{{ED}}{{MD}} \!=\! \frac{{LF}}{{MF}} \!=\! \frac{{LF}}{{ME}}\,\,\,({\text{do }}(1)).
+	\end{align*} 
+	Do đó
+	\begin{align*}
+		LE = \frac{{FD \cdot ME}}{{MD}} \text{ và } LF = \frac{{ED \cdot ME}}{{MD}}.
+	\end{align*}
+	Suy ra
+	\begin{align*}
+		\frac{{LE}}{{LF}} = \frac{{FD}}{{ED}} = \frac{{EX}}{{EC}}\,\,\,({\text{do }}(6)).
+	\end{align*}
+	Mà $\angle FLE = \angle CEX$ (góc nội tiếp và góc tạo bởi tiếp tuyến với một dây, cùng chắn một cung của $(I)$).
+	\vskip 0.1cm
+	Nên $\Delta LEF \sim \Delta EXC$. Suy ra, $\angle LEF = \angle EXC$; vì vậy, $LE \parallel XC$. \hfill ($7$)
+	\vskip 0.05cm
+	Từ ($2$) và ($7$), với lưu ý $E, F, L, P$ đồng viên và $B, F, P, Q, X$ đồng viên, ta có:
+	\begin{align*}
+		\left( {LP;LE} \right) &\equiv \left( {FP;FE} \right) \equiv \left( {FP;FX} \right) \\
+		&\equiv \left( {QP;QX} \right) \equiv \left( {QP;QC} \right) \\
+		&\equiv \left( {QP;LE} \right)\left( {\bmod \pi } \right).
+	\end{align*}
+	Do đó, $L, P, Q$ thẳng hàng. Điều này chứng tỏ, $PQ$ và $AG$ cắt nhau tại một điểm nằm trên $(I)$.
+	\vskip 0.05cm
+	Ta có điều phải chứng minh theo yêu cầu đề bài.
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
+	\vskip 0.05cm
+	$\pmb{1.}$ Bài đã ra là một cách phát biểu khác của Bài $6$ Đề thi IMO $2019$. Vì thế, theo đánh giá của người chấm bài, bài đã ra là một bài toán rất khó.
+	\vskip 0.05cm
+	$\pmb{2.}$ Cho đến thời điểm bản thảo vào Nhà in, Tạp chí mới chỉ nhận được một lời giải cho bài toán, từ bạn \textit{Nguyễn Gia Khánh} (lớp $11$ Toán $1$, trường THPT chuyên Hưng Yên, Tỉnh Hưng Yên); và đó là một lời giải đúng.
+	\begin{flushright}
+		\textbf{\color{thachthuctoanhoc}Hạ Vũ Anh}
+	\end{flushright}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P710.}}
+	(Mức $A$) Cho $a$ là số nguyên dương không vượt quá $7$. Chứng minh rằng, tồn tại số nguyên $b$ sao cho
+	\begin{align*}
+		\sum\limits_{k=0}^n\left\lfloor\dfrac ka\right\rfloor=\left\lfloor\dfrac {(2n+b)^2}{8a}\right\rfloor
+	\end{align*}
+	với mọi số tự nhiên $n$.
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo Đáp án của bài toán})\textbf{\color{thachthuctoanhoc}.}
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
+	
+	\begin{flushright}
+		\textbf{\color{thachthuctoanhoc}Nguyễn Khắc Minh}
+	\end{flushright}
+\end{multicols}	
