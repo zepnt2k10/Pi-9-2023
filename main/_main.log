@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 22.1) (preloaded format=xelatex 2022.2.16)  20 AUG 2023 16:45
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 22.1) (preloaded format=xelatex 2022.2.16)  20 AUG 2023 17:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2909,7 +2909,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 82.
 
-(../duongvaotoanhoc/duongvaotoanhoc.tex
+(../hoccungpi/hoccungpi.tex
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  5.
 
@@ -3068,63 +3068,47 @@ Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 16.
+(Font)              scaled to size 12.0pt on input line 14.
 Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
 mapping=tex-text;" at 12.0pt
  -> C:/Users/iamsi/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramo
 nd/EBGaramond-Bold.otf
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 18.
-Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
-m;mapping=tex-text;" at 12.0pt
- -> C:/Users/iamsi/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramo
-nd/EBGaramond-Italic.otf
-Package microtype Info: Character `156' is missing
-(microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
-(microtype)             Ignoring protrusion settings for this character.
-File: ../duongvaotoanhoc/pic//H1.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H1.pdf>
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 8.0pt on input line 37.
 Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
-um;mapping=tex-text;" at 10.95pt
+um;mapping=tex-text;" at 8.0pt
  -> C:/Users/iamsi/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramo
 nd/EBGaramond-Regular.otf
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 25.
-Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
-m;mapping=tex-text;" at 10.95pt
- -> C:/Users/iamsi/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramo
-nd/EBGaramond-Italic.otf
-Package microtype Info: Character `156' is missing
-(microtype)             in font `\TU/EBGaramond(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Requested font "zptmcm7t" at 10.95pt
 Requested font "zptmcm7t" at 8.0pt
-Requested font "zptmcm7m" at 10.95pt
+Requested font "zptmcm7t" at 5.0pt
 Requested font "zptmcm7m" at 8.0pt
-Requested font "zptmcm7y" at 10.95pt
+Requested font "zptmcm7m" at 5.0pt
 Requested font "zptmcm7y" at 8.0pt
-Requested font "zptmcm7v" at 10.95pt
+Requested font "zptmcm7y" at 5.0pt
 Requested font "zptmcm7v" at 8.0pt
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
-Requested font "ptmb7t" at 10.95pt
+Requested font "zptmcm7v" at 5.0pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 Requested font "ptmb7t" at 8.0pt
-Requested font "ptmri7t" at 10.95pt
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+Requested font "ptmb7t" at 5.0pt
 Requested font "ptmri7t" at 8.0pt
-Requested font "msam10" at 10.95pt
+Requested font "ptmri7t" at 5.0pt
 Requested font "msam10" at 8.0pt
-Requested font "msbm10" at 10.95pt
+Requested font "msam10" at 5.0pt
 Requested font "msbm10" at 8.0pt
-Requested font "yhcmex10" at 10.95pt
+Requested font "msbm10" at 5.0pt
 Requested font "yhcmex10" at 8.0pt
-Requested font "rsfs10" at 10.95pt
+Requested font "yhcmex10" at 5.0pt
 Requested font "rsfs10" at 8.0pt
-File: ../duongvaotoanhoc/pic//H2.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H2.pdf>
+Requested font "rsfs5" at 5.0pt
+
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 1 might be wrong on input line 117.
+
+
 
 Overfull \vbox (11.62634pt too high) has occurred while \output is active []
 
@@ -3144,271 +3128,77 @@ Package microtype Info: Loading generic protrusion settings for font family
 Requested font "[lmsans8-regular]:mapping=tex-text;" at 8.0pt
  -> C:/Users/iamsi/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm/lmsan
 s8-regular.otf
-File: ../duongvaotoanhoc/pic//../bannerduongvao.jpg Graphic file (type bmp)
-<../duongvaotoanhoc/pic//../bannerduongvao.jpg>
-File: ../duongvaotoanhoc/pic//../tieude.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//../tieude.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
+File: ../hoccungpi/pic//../bannerhoccungpi.jpg Graphic file (type bmp)
+<../hoccungpi/pic//../bannerhoccungpi.jpg>
+File: ../hoccungpi/pic//../tieude.pdf Graphic file (type pdf)
+<use ../hoccungpi/pic//../tieude.pdf>
+File: fhoccungpi2.pdf Graphic file (type pdf)
+<use fhoccungpi2.pdf>
+File: fhoccungpi2.pdf Graphic file (type pdf)
+<use fhoccungpi2.pdf>
+File: fhoccungpi2.pdf Graphic file (type pdf)
+<use fhoccungpi2.pdf>
 [1
 
 ]
-File: ../duongvaotoanhoc/pic//H3.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H3.pdf>
-File: ../duongvaotoanhoc/pic//H4.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H4.pdf>
-
-Overfull \hbox (10.87448pt too wide) detected at line 73
-[]
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 167.
+Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
+m;mapping=tex-text;" at 12.0pt
+ -> C:/Users/iamsi/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramo
+nd/EBGaramond-Italic.otf
+Package microtype Info: Character `156' is missing
+(microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
+(microtype)             Ignoring protrusion settings for this character.
+File: hoccungpi1.pdf Graphic file (type pdf)
+<use hoccungpi1.pdf>
+File: fhoccungpi1.pdf Graphic file (type pdf)
+<use fhoccungpi1.pdf>
+File: hoccungpi1.pdf Graphic file (type pdf)
+<use hoccungpi1.pdf>
+File: fhoccungpi1.pdf Graphic file (type pdf)
+<use fhoccungpi1.pdf>
+File: hoccungpi1.pdf Graphic file (type pdf)
+<use hoccungpi1.pdf>
+File: fhoccungpi1.pdf Graphic file (type pdf)
+<use fhoccungpi1.pdf>
+ [2]
+File: hoccungpi2.pdf Graphic file (type pdf)
+<use hoccungpi2.pdf>
+File: fhoccungpi2.pdf Graphic file (type pdf)
+<use fhoccungpi2.pdf>
+File: hoccungpi2.pdf Graphic file (type pdf)
+<use hoccungpi2.pdf>
+File: fhoccungpi2.pdf Graphic file (type pdf)
+<use fhoccungpi2.pdf>
+File: hoccungpi2.pdf Graphic file (type pdf)
+<use hoccungpi2.pdf>
+File: fhoccungpi2.pdf Graphic file (type pdf)
+<use fhoccungpi2.pdf>
+ [3]
+Overfull \hbox (1.70059pt too wide) in paragraph at lines 360--362
+ [][] 
  []
 
 
-Overfull \hbox (12.75021pt too wide) detected at line 78
-[]
+Underfull \hbox (badness 5771) in paragraph at lines 416--417
+[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 2$[]\TU/EBGaramond(0)/m/n/12 ]
+Graphes – Trajet minimal – Bac ES
  []
 
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-[2]
-File: ../duongvaotoanhoc/pic//H5.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H5.pdf>
-
-Overfull \hbox (5.219pt too wide) detected at line 99
-[]
- []
-
-
-Overfull \hbox (6.64131pt too wide) detected at line 104
-[]
- []
-
-File: ../duongvaotoanhoc/pic//H6.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H6.pdf>
-File: ../duongvaotoanhoc/pic//H7.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H7.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-[3]
-File: ../duongvaotoanhoc/pic//H8.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H8.pdf>
-File: ../duongvaotoanhoc/pic//H9.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H9.pdf>
-File: ../duongvaotoanhoc/pic//H10.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H10.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
- [4]
-File: ../duongvaotoanhoc/pic//H11.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H11.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
- [5]
-File: ../duongvaotoanhoc/pic//H12.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H12.pdf>
-File: ../duongvaotoanhoc/pic//H13.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H13.pdf>
-File: ../duongvaotoanhoc/pic//H14.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H14.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
- [6]
-File: ../duongvaotoanhoc/pic//H15_1.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H15_1.pdf>
-File: ../duongvaotoanhoc/pic//H15_2.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H15_2.pdf>
-File: ../duongvaotoanhoc/pic//H16.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H16.pdf>
-File: ../duongvaotoanhoc/pic//H17.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H17.pdf>
-File: ../duongvaotoanhoc/pic//H18.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H18.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
- [7]
-File: ../duongvaotoanhoc/pic//H19.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H19.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
- [8]
-File: ../duongvaotoanhoc/pic//H20.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H20.pdf>
-File: ../duongvaotoanhoc/pic//H20.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H20.pdf>
-File: ../duongvaotoanhoc/pic//H22.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H22.pdf>
-File: ../duongvaotoanhoc/pic//H23.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H23.pdf>
-File: ../duongvaotoanhoc/pic//H24.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H24.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
-[]\OML/ztmcm/m/it/12 a[]b[]a[]b[]a[]b[]a[]b[] [] a[]b[]a[]b[]$[]\TU/EBGaramond(
-0)/m/n/12 ,
- []
-
-File: ../duongvaotoanhoc/pic//H25.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H25.pdf>
-File: ../duongvaotoanhoc/pic//H26.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H26.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-[10]
-File: ../duongvaotoanhoc/pic//H27.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H27.pdf>
-File: ../duongvaotoanhoc/pic//H28.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H28.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
- [11]
-File: ../duongvaotoanhoc/pic//H29.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H29.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
- [12]
-File: ../duongvaotoanhoc/pic//H30.pdf Graphic file (type pdf)
-<use ../duongvaotoanhoc/pic//H30.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
-File: duongvao2.pdf Graphic file (type pdf)
-<use duongvao2.pdf>
-File: fduongvao2.pdf Graphic file (type pdf)
-<use fduongvao2.pdf>
- [13])
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
-File: duongvao1.pdf Graphic file (type pdf)
-<use duongvao1.pdf>
-File: fduongvao1.pdf Graphic file (type pdf)
-<use fduongvao1.pdf>
- [14] (_main.aux)
+File: hoccungpi1.pdf Graphic file (type pdf)
+<use hoccungpi1.pdf>
+File: fhoccungpi1.pdf Graphic file (type pdf)
+<use fhoccungpi1.pdf>
+File: hoccungpi1.pdf Graphic file (type pdf)
+<use hoccungpi1.pdf>
+File: fhoccungpi1.pdf Graphic file (type pdf)
+<use fhoccungpi1.pdf>
+File: hoccungpi1.pdf Graphic file (type pdf)
+<use hoccungpi1.pdf>
+File: fhoccungpi1.pdf Graphic file (type pdf)
+<use fhoccungpi1.pdf>
+[4]) (_main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3419,12 +3209,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69330 strings out of 410969
- 1583939 string characters out of 2823810
- 2652856 words of memory out of 3000000
- 88777 multiletter control sequences out of 15000+600000
- 508078 words of font info for 139 fonts, out of 8000000 for 9000
+ 69106 strings out of 410969
+ 1575869 string characters out of 2823810
+ 2690854 words of memory out of 3000000
+ 88586 multiletter control sequences out of 15000+600000
+ 508069 words of font info for 138 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 104i,12n,120p,1418b,706s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 104i,12n,120p,1132b,1020s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on _main.pdf (14 pages).
+Output written on _main.pdf (4 pages).
