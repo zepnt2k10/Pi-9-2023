@@ -254,21 +254,6 @@
 \vspace*{35pt} 
 \begin{multicols}{2}
 	Thám tử Xuân Phong cần tổ chức một cuộc điều tra tất cả các nhân viên của một công ty vận tải để nắm bắt được tình hình an ninh trật tự của thành phố trong mùa du lịch. Xuân Phong được biết rằng các nhân viên này chia ra thành $3$ loại: những người trung thực, những người nói dối và những người ranh mãnh. Tất cả các nhân viên, do làm việc gần nhau trong cùng một công ty, nên đều biết nhau và biết ai là thuộc loại người nào. Xuân Phong nhờ cô thư ký xinh đẹp in sẵn những tờ phiếu điều tra để phát cho họ với câu hỏi duy nhất: ``Bạn hãy cho biết trong số các nhân viên của công ty có bao nhiêu người trung thực?". Những người trung thực đã trả lời chính xác, những người nói dối tất nhiên trả lời hoàn toàn sai, còn những người ranh mãnh thì tuỳ ý (có người trả lời đúng và cũng có người trả lời sai). Tất cả các phiếu sau khi thu về đều ghi một số có hai chữ số. Sau khi cô thư ký tổng hợp kết quả, Xuân Phong nhận thấy chữ số $3$ đã được viết ra $33$ lần, chữ số $5$ được viết ra $66$ lần, còn chữ số $7$ được viết ra $77$ lần. Ngoài ra không có chữ số nào khác được ghi trên các phiếu điều tra được thu về. Các em hãy thử đoán xem có tất cả bao nhiêu nhân viên trung thực làm việc trong công ty đó?
-%	Lời giải
-%	\vskip 0.1cm
-%	Do tất cả các nhân viên trung thực đều viết đúng số lượng, chỉ sử dụng các chữ số $3$, $5$ hoặc $7$, suy ra ta chỉ cần xét $9$ trường hợp đối với số lượng các nhân viên trung thực: 
-%	\begin{align*}
-%		33,35,37,53,55,57,73,75,77.
-%	\end{align*}
-%	Chữ số $3$ được viết $33$ lần. Vì thế, số người trung thực không thể là $33$ (vì nếu không những người trung thực sẽ viết ra chữ số $3$ tận $66$ lần). Cũng vậy số người trung thực không thể là $35$, $37$, $53$ hoặc $73$, vì nếu không những người trung thực sẽ viết ra chữ số $3$ nhiều hơn $33$ lần.
-%	\vskip 0.1cm
-%	Chữ số $5$ được viết ra $66$ lần. Do  đó, số người trung thực không thể là $55$ (vì nếu không họ sẽ viết ra tận $110$ lần chữ số $5$), và cũng không thể là $75$ (vì nếu không, những người trung thực sẽ viết ra $75$ lần chữ số $5$).
-%	\vskip 0.1cm
-%	Số những người trung thực cũng không thể là $77$, vì nếu không những người trung thực sẽ viết ra $154$ lần chữ số $7$. 
-%	\vskip 0.1cm
-%	Còn lại duy nhất một khả năng là có $57$ người trung thực. Có rất nhiều trường hợp có thể xảy ra tương ứng với đáp số này, các em không nhất thiết phải tìm ra cụ thể tất cả các trường hợp.
-%	\vskip 0.1cm
-%	Ví dụ, có $9$ người ranh mãnh cũng viết số $57$, trong số những người còn lại có $11$ người gồm cả những người nói dối và những người ranh mãnh sẽ viết trả lời là số $33$, còn $11$ người (gồm cả những người nói dối và những người ranh mãnh) viết trả lời là số $73$.
 	\begin{figure}[H]
 		\centering
 		\vspace*{-5pt}
@@ -536,8 +521,8 @@
 		&   &                                                  &                                                  &  H                                                 \\
 		&   &                                                  &  H                                                 &  N                                                 \\
 		&   &  H                                                 &  N                                                 &  A                                                 \\
-		&  H  &  N                                                 & \cellcolor{duongvaotoanhoc!40}  A &  H                                                 \\
-		H  &  N  & \cellcolor{duongvaotoanhoc!40}  A  & \cellcolor{cackithi!40}  H  & \cellcolor{cackithi!40}  T 
+		&  H  &  N                                                 & \cellcolor{toancuabi!40}  A &  H                                                 \\
+		H  &  N  & \cellcolor{toancuabi!40}  A  & \cellcolor{cackithi!40}  H  & \cellcolor{cackithi!40}  T 
 	\end{tabular}
 	\vspace*{-10pt}
 	\end{figure}
@@ -711,4 +696,35 @@
 	\vskip 0.1cm
 	{\color{toancuabi}score (n):} số điểm
 	}
+\end{multicols}
+\vspace*{-10pt}
+{\color{toancuabi}\rule{1\linewidth}{0.1pt}}
+\begin{center}
+	\LARGE\textbf{\color{toancuabi}LỜI GIẢI, ĐÁP ÁN}
+\end{center}
+\begin{multicols}{2}
+	\textbf{\color{toancuabi}Cuộc điều tra với những chữ số}
+	\vskip 0.1cm
+	Do tất cả các nhân viên trung thực đều viết đúng số lượng, chỉ sử dụng các chữ số $3$, $5$ hoặc $7$, suy ra ta chỉ cần xét $9$ trường hợp đối với số lượng các nhân viên trung thực: 
+	\begin{align*}
+				33,35,37,53,55,57,73,75,77.
+			\end{align*}
+	Chữ số $3$ được viết $33$ lần. Vì thế, số người trung thực không thể là $33$ (vì nếu không những người trung thực sẽ viết ra chữ số $3$ tận $66$ lần). Cũng vậy số người trung thực không thể là $35$, $37$, $53$ hoặc $73$, vì nếu không những người trung thực sẽ viết ra chữ số $3$ nhiều hơn $33$ lần.
+	\vskip 0.1cm
+	Chữ số $5$ được viết ra $66$ lần. Do  đó, số người trung thực không thể là $55$ (vì nếu không họ sẽ viết ra tận $110$ lần chữ số $5$), và cũng không thể là $75$ (vì nếu không, những người trung thực sẽ viết ra $75$ lần chữ số $5$).
+	\vskip 0.1cm
+	Số những người trung thực cũng không thể là $77$, vì nếu không những người trung thực sẽ viết ra $154$ lần chữ số $7$. 
+	\vskip 0.1cm
+	Còn lại duy nhất một khả năng là có $57$ người trung thực. Có rất nhiều trường hợp có thể xảy ra tương ứng với đáp số này, các em không nhất thiết phải tìm ra cụ thể tất cả các trường hợp.
+	\vskip 0.1cm
+	Ví dụ, có $9$ người ranh mãnh cũng viết số $57$, trong số những người còn lại có $11$ người gồm cả những người nói dối và những người ranh mãnh sẽ viết trả lời là số $33$, còn $11$ người (gồm cả những người nói dối và những người ranh mãnh) viết trả lời là số $73$.
+	\vskip 0.1cm
+	\textbf{\color{toancuabi}Góc cờ}
+	\vskip 0.1cm
+	\textit{Hình} $4$: $\pmb{1)}$ M$5.7$ Tg$4/1$\quad $\pmb{2)}$ M$7/8$ Tg$4/1$\quad  $\pmb{3)}$ M$8/7$ X$8.3$\quad $\pmb{4)}$ Tg$5/1$  Tg$4.1$\quad  $\pmb{5)}$ M$7.8$ Tg$4/1$ \quad$\pmb{6)}$ M$8.7$ Tg$4.1$\quad $\pmb{7)}$ M$7/5$ Tg$4/1$\quad $\pmb{8)}$ M$5/7$ Tg$4.1$\quad $\pmb{9)}$ M$7/8$ Tg$4/1$\quad $\pmb{10)}$ M$8/7$ X$8/2$\quad $\pmb{11)}$ M$7/6$ $(1-0)$
+	\vskip 0.1cm
+	\textit{Hình} $5$: 
+	$\pmb{1)}$ C$5-6$ Tg$4/1$\quad $\pmb{2)}$ T$1/3$ X$9-7$\quad  $\pmb{3)}$ P$3/8$ X$7/1$\quad $\pmb{4)}$ P$4-6$  X$7-4$\quad  $\pmb{5)}$ C$6.1$ Tg$4/1$\quad $\pmb{6)}$ C$6.1$ $(1-0)$
+	\vskip 0.1cm
+	\hfill (\textit{Xem tiếp trang} $60$)
 \end{multicols}

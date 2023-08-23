@@ -17,7 +17,7 @@
 	\vskip 0.1cm
 	Để dễ hình dung, ta xét một mạng lưới đường bộ biểu diễn như hình dưới đây được lấy từ Wikipedia.
 	\vskip 0.1cm
-	Một mạng lưới như thế được gọi là một đồ thị. Ở đây những thành phố từ $A$, $B, \ldots, J$  được gọi là các đỉnh của đồ thị. Chúng được nối với nhau bởi những con đường mà ta gọi là các cạnh của đồ thị. Mỗi cạnh được gán với một giá trị mà ta gọi là trọng số của cạnh. Trọng số trong ví dụ này biểu diễn khoảng cách được tính bằng km giữa hai thành phố kết nối với nhau. Bài toán đặt ra là tìm đường đi ngắn nhất từ thành phố $A$ tới thành phố $J$. 
+	Một mạng lưới như thế được gọi là một đồ thị. Ở đây những thành phố $A$, $B, \ldots, J$  được gọi là các đỉnh của đồ thị. Chúng được nối với nhau bởi những con đường mà ta gọi là các cạnh của đồ thị. Mỗi cạnh được gán với một giá trị mà ta gọi là trọng số của cạnh. Trọng số trong ví dụ này biểu diễn khoảng cách được tính bằng km giữa hai thành phố kết nối với nhau. Bài toán đặt ra là tìm đường đi ngắn nhất từ thành phố $A$ tới thành phố $J$. 
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
@@ -113,7 +113,7 @@
 	\end{figure}
 	Ở đây các đỉnh $A, B, \ldots, G$ của đồ thị đại diện cho các ga tàu. Mỗi cạnh của đồ thị thể hiện rằng có tuyến tàu nối giữa hai ga. Trọng số trên mỗi cạnh chính là thời gian di chuyển tính bằng phút từ ga này tới ga kia. Bài toán đặt ra là làm thế nào tìm đường đi nhanh nhất để di chuyển từ ga $B$ tới ga $G$. 
 	\vskip 0.1cm
-	Để giải quyết những bài toán như trên, vào năm $1959$, nhà Toán học và Khoa học máy tính người Hà Lan, E.W. Dijkstra ($1930 - 2022$) đã đề xuất một thuật toán cho phép tìm ra đường đi ngắn nhất từ một đỉnh cụ thể tới một đỉnh bất kỳ khác trong một đồ thị mà tất cả các trọng số đều dương. Thuật toán bắt đầu bằng cách gán trọng số bằng $0$ cho đỉnh xuất phát và bằng vô cùng cho các đỉnh còn lại. Quy trình xử lý của thuật toán là kiểm tra tất cả các đỉnh, chọn ra đỉnh có khoảng cách nhỏ nhất kể từ đỉnh xuất phát và cập nhật trọng số cho các đỉnh kề với đỉnh được chọn.Quy trình trên được lặp lại liên tiếp và dừng lại khi đỉnh kết thúc được chọn hoặc khi không còn đỉnh nào để chọn. Khi thuật toán dừng, ta thu được đường đi ngắn nhất giữa đỉnh xuất phát và đỉnh kết thúc.
+	Để giải quyết những bài toán như trên, vào năm $1959$, nhà toán học và khoa học máy tính người Hà Lan, E.W. Dijkstra ($1930 - 2022$) đã đề xuất một thuật toán cho phép tìm ra đường đi ngắn nhất từ một đỉnh cụ thể (gọi là đỉnh xuất phát) tới một đỉnh bất kỳ khác (gọi là đỉnh kết thúc) trong một đồ thị mà tất cả các trọng số đều dương. Thuật toán bắt đầu bằng cách gán trọng số bằng $0$ cho đỉnh xuất phát và bằng vô cùng cho các đỉnh còn lại. Quy trình xử lý của thuật toán là kiểm tra tất cả các đỉnh, chọn ra đỉnh có độ dài của đường đi là nhỏ nhất kể từ đỉnh xuất phát và cập nhật trọng số cho các đỉnh kề với đỉnh được chọn. Quy trình trên được lặp lại liên tiếp và dừng lại khi đỉnh kết thúc được chọn hoặc khi không còn đỉnh nào để chọn. Khi thuật toán dừng, ta thu được đường đi ngắn nhất giữa đỉnh xuất phát và đỉnh kết thúc.
 	\vskip 0.1cm
 	\textbf{\color{hoccungpi}Thuật toán Dijkstra dưới dạng bảng}
 	\vskip 0.1cm 
@@ -218,7 +218,7 @@
 	\vskip 0.1cm 
 	Ta được bảng mới như sau: 
 	\begin{table}[H]
-		\vspace*{-5pt}
+		\vspace*{-10pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
 		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
@@ -238,7 +238,7 @@
 	\vskip 0.1cm
 	Ta được bảng mới như sau: 
 	\begin{table}[H]
-		\vspace*{-5pt}
+		\vspace*{-10pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
 		\resizebox{\columnwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
@@ -257,15 +257,15 @@
 		\vspace*{-10pt}
 	\end{table}
 	\textit{Bước $5$ đến kết thúc: Lặp lại quá trình trên cho tới khi đỉnh kết thúc được chọn hoặc không còn đỉnh để chọn.}
-	\vskip 0.1cm 
+	\vskip 0.05cm 
 	$\bullet$ \textit{Hàng} $5$: Chọn đỉnh $E$, đóng khung trọng số $173_A$ và xóa tất cả các ô nằm dưới ô vừa được đóng khung. 
-	\vskip 0.1cm
+	\vskip 0.05cm
 	$\bullet$ \textit{Hàng} $6$: Ghi $E(173)$ trong cột \textit{Đỉnh được chọn}. Cập nhật trọng số mới $675_E$ cho đỉnh $J$. Ở đây $675$ km chính là tổng độ dài các đường đi ngắn nhất từ $A$ tới $E$ và từ $E$ tới $J$. Các đỉnh còn lại vẫn giữ nguyên giá trị. Tiếp theo chọn đỉnh $C$, đóng khung trọng số $217_A$ và xóa tất cả các ô nằm dưới ô vừa được đóng khung.
-	\vskip 0.1cm 
+	\vskip 0.05cm 
 	$\bullet$ \textit{Hàng} $7$: Ghi $C(217)$ trong cột \textit{Đỉnh được chọn}. Từ đỉnh $C$ ta có thể di chuyển tới các đỉnh $G$ và $H$ với các khoảng cách tương ứng là $186$ km và $103$ km. Tổng độ dài các đường đi ngắn nhất tương ứng tính từ $A$ tới các đỉnh $G$ và $H$ lần lượt là $217+186=403$ km và $217+103=320$ km. Ta cập nhật trọng số mới $403_C$ cho đỉnh $G$ và $320_C$ cho đỉnh $H$. Các đỉnh còn lại vẫn giữ nguyên. Tiếp theo chọn đỉnh $H$, đóng khung trọng số $320_C$ và xóa tất cả các ô nằm dưới ô vừa được đóng khung.
-	\vskip 0.1cm
+	\vskip 0.05cm
 	$\bullet$ \textit{Hàng} $8$: Ghi $H(320)$ trong cột Đỉnh được chọn. Từ đỉnh $H$ ta có thể di chuyển tới các đỉnh $D$ và $J$ với các khoảng cách tương ứng là $183$ km và $167$ km. Tổng độ dài các đường đi ngắn nhất tương ứng tính từ $A$ tới các đỉnh $D$ và $J$ lần lượt là $320+183=503$ km và $320+167=487$ km. Bằng cách chọn giá trị nhỏ nhất, ta cập nhật trọng số mới $503_H$ cho đỉnh $D$ và $487_H$ cho đỉnh $J$. Các đỉnh còn lại không thay đổi. Tiếp theo chọn đỉnh $G$, đóng khung trọng số $403_C$ và xóa tất cả các ô nằm dưới ô vừa được đóng khung.
-	\vskip 0.1cm
+	\vskip 0.05cm
 	$\bullet$ \textit{Hàng} $9$: Ghi $G(403)$ trong cột \textit{Đỉnh được chọn}. Vì không có đường đi nào xuất phát từ $G$ tới những đỉnh còn lại (không tính những đỉnh đã bị loại), nên các giá trị của các đỉnh còn lại không thay đổi. Tiếp theo chọn đỉnh $I$, đóng khung trọng số $415_F$ và xóa tất cả các ô nằm dưới ô vừa được đóng khung. 
 	\vskip 0.1cm
 	$\bullet$ \textit{Hàng} $10$: Ghi $I(415)$ trong cột \textit{Đỉnh được chọn}. Trọng số của đỉnh $D$ không thay đổi vì không có đường đi từ $I$ tới $J$. Trọng số của đỉnh $J$ cũng vậy vì trọng số mới $415+84=499$ km lớn hơn trọng số ban đầu.  Chọn đỉnh $J$, đóng khung trọng số $487_H$ và xóa tất cả các ô nằm dưới ô vừa được đóng khung.
@@ -283,7 +283,7 @@
 				\hline
 				Xuất phát&	$[0_A ]$	&$\infty$&	$\infty$&	$\infty$	&$\infty$	&$\infty$&	$\infty$&	$\infty$&	$\infty$	&$\infty$\\
 				\hline
-				$A(0)$&		&$[85_A]$	&$[217_A]$&	$\infty$	&$173_A$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$\\
+				$A(0)$&		&$[85_A]$	&$217_A$&	$\infty$	&$173_A$&	$\infty$&	$\infty$&	$\infty$&	$\infty$&	$\infty$\\
 				\hline
 				$B(85)$	&	&	&$217_A$&	$\infty$&	$173_A$&	$[165_B]$&	$\infty$	&$\infty$&	$\infty$	&$\infty$\\
 				\hline
@@ -409,7 +409,7 @@
 		\end{tikzpicture}
 		\vspace*{-10pt}
 	\end{figure}	 
-	\textbf{\color{hoccungpi}Nguồn tham khảo.} 
+	\textbf{\color{hoccungpi}Nguồn tham khảo} 
 	\vskip 0.1cm
 	[$1$] Algorithme de Dijkstra -- Wikipédia (wikipedia.org)
 	\vskip 0.1cm

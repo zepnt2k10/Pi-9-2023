@@ -35,7 +35,7 @@
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
 		\begin{tikzpicture}[thachthuctoanhoc,scale=0.15]
-				\draw[fill=black] (0,0) rectangle (1,1);
+				\draw[fill=white] (0,0) rectangle (1,1);
 				\draw  (0.,-9.)-- (9.,-9.);
 				\draw  (9.,-9.)-- (9.,0.);
 				\draw  (9.,0.)-- (0.,0.);
@@ -84,13 +84,13 @@
 	\begin{align*}
 		S=\left[\dfrac{b+c}a\right]+\left[\dfrac{c+a}b\right]+\left[\dfrac{a+b}c\right]
 	\end{align*}
-	trong đó $a,b,c$ là các số nguyên dương.
+	trong đó $a,b,c$ là các biến nguyên dương.
 	\begin{flushright}
-		\textit{Nguyễn Việt Hùng, Hà Nội}
+		\textit{Nguyễn Việt Hùng, Hà Nội (st)}
 	\end{flushright}
 	
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P734.}}
-	(Mức $B$) Cho hình vuông $ABCD$. Gọi $E$ là trung điểm của $AD$; $H$ là hình chiếu vuông góc của $B$ trên $CE$. Trên đường chéo $AC$, lấy điểm $M$ sao cho $AM=\frac38AC$. Chứng minh rằng, $ME$ song song với $DH$.  
+	(Mức $B$) Cho hình vuông $ABCD$. Gọi $E$ là trung điểm của $AD$; $H$ là hình chiếu vuông góc của $B$ trên $CE$. Trên đường chéo $AC$, lấy điểm $M$ sao cho $AM=\dfrac38AC$. Chứng minh rằng, $ME$ song song với $DH$.  
 	\begin{center}
 		\definecolor{ffvvqq}{rgb}{1,0.3333333333333333,0}
 		\definecolor{qqzzcc}{rgb}{0,0.6,0.8}
@@ -196,7 +196,7 @@
 	\begin{align*}
 		a_n=\left[\dfrac n{\sqrt2}\right]+\left[\dfrac n{\sqrt3}\right],\quad\text{với mọi $n\in\mathbb N^*$}.
 	\end{align*}
-	Chứng minh rằng, trong dãy $(a_n)$ chứa vô hạn số chẵn và vô hạn số lẻ.
+	Chứng minh rằng, trong dãy $(a_n)$ có vô hạn số chẵn và vô hạn số lẻ.
 	\begin{flushright}
 		\textit{Nguyễn Tiến Lâm, Hà Nội}
 	\end{flushright}
@@ -214,6 +214,266 @@
 \centerline{{\large{\textbf{\color{thachthuctoanhoc}\color{thachthuctoanhoc}GIẢI BÀI KỲ TRƯỚC}}}}
 \vspace*{-5pt}
 \begin{multicols}{2}
+	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P678.}}
+	Trong mặt phẳng, cho hai điểm $I$, $J$ cố định thoả mãn $IJ=8$.  Gọi $(S)$ là tập hợp các điểm $M$ sao cho ít nhất một trong hai đoạn thẳng $MI,MJ$ có độ dài không vượt quá $7$. Với $A,B,C$ là ba điểm không thẳng hàng thuộc $(S)$, chu vi tam giác $ABC$ lớn nhất là bao nhiêu?
+	\vskip 0.05cm
+	Bài toán {\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P678}}, được thầy Trần Quốc Luật, trường THPT chuyên Lê Hồng Phong, Tp Hồ Chí Minh, đề xuất trong số báo $1-2$ năm $2023$. Đây là một bài toán khó và thực tế là Tạp chí chỉ nhận được duy nhất một lời giải từ phía bạn đọc. Trong số này, chúng tôi giới thiệu với bạn đọc hai lời giải với hai hướng tiếp cận khác nhau. 
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Lời giải $\pmb{1.}$} Trước tiên ta có các nhận xét sau:
+	\vskip 0.05cm
+	\textit{Nhận xét $1$.} Tập hợp $(S)$ là tập hợp các điểm nằm trong hoặc nằm trên một trong hai đường tròn $(I;7)$ hoặc $(J;7)$. 
+	\vskip 0.05cm
+	Gọi $M,N$ là giao điểm của hai đường tròn này. Khi đó, biên $\partial S$ của $S$ là hợp của $\partial S_1$ và $\partial S_2$, trong đó $\partial S_1$ là cung lớn $MN$ của $(I)$ và $\partial S_2$ là cung lớn $MN$ của $(J)$.
+ 	\vskip 0.05cm	
+	Ký hiệu $P_{XYZ}$ là chu vi tam giác $XYZ$.
+	\vskip 0.05cm
+	\textit{Nhận xét $2$.} Đối với tam giác $ABC$ bất kỳ, nếu $A'$ nằm trên tia $BA$ và nằm ngoài đoạn $BA$ thì $P_{A'BC}> P_{ABC}$. 
+	\vskip 0.05cm
+	Trước tiên ta rút gọn về trường hợp tam giác có ba đỉnh nằm trên biên của $S$.
+	\vskip 0.05cm
+	Xét tam giác $ABC$ với $A,B,C$ là ba điểm thuộc $(S)$. Giả sử tam giác $ABC$ có một đỉnh nằm hoàn toàn bên trong $S$. Chẳng hạn $A\in S\setminus \partial S$. Tia $BA$ cắt $\partial S$ tại không quá $4$ điểm (thực ra là $3$); gọi $A'$ là giao điểm có khoảng cách tới $B$ là lớn nhất (nếu có nhiều hơn $1$ giao điểm). Ta có $A'$ nằm ngoài đoạn thẳng $BA$, vì thế theo nhận xét $2$ thì $P_{A'BC}> P_{ABC}$. Tiếp tục lập luận như vậy với $B$ nếu $B\notin \partial S$ (cho tam giác $A'BC$), rồi với $C$ nếu $C\notin \partial S$. Các suy luận trên cho thấy nếu một trong $3$ đỉnh $A, B, C$ không nằm trên biên của $S$ thì ta có thể tìm được một tam giác mới (có các đỉnh thuộc $\partial S$) có chu vi lớn hơn chu vi tam giác $ABC$.
+	\vskip 0.05cm
+	Bây giờ, xét trường hợp tam giác $ABC$ có các đỉnh thuộc $\partial S$. Do $\partial S = \partial S_1 \cup \partial S_2$ nên có $2$ trường hợp xảy ra: Trường hợp $1)$ có $2$ đỉnh nằm trên một cung và đỉnh thứ $3$ nằm trên cung còn lại; Trường hợp $2)$ cả $3$ đỉnh cùng nằm trên cùng một cung (nói riêng cùng nằm trên một đường tròn).
+	\vskip 0.05cm
+	\textit{Trường hợp $1.$} Không giảm tổng quát, giả sử $A$ thuộc $\partial S_1$ và $B,C$ thuộc $\partial S_2$. 
+	\vskip 0.05cm	
+	Đặt $2\alpha=(\vec{JC}, \vec{JB})$, $2\beta=(\vec{JA}, \vec{JC})$, $2\gamma= (\vec{JB}, \vec{JA})$. Như vậy, $2\alpha + 2 \beta + 2\gamma \equiv 0\pmod{2\pi}$, hay $\alpha + \beta + \gamma \equiv 0 \pmod{\pi}$.
+	\vskip 0.05cm
+	Đặt $t=AJ$. Như vậy, $t>0$ và 
+	\begin{align*}
+		t\leq AI+JI=15.
+	\end{align*}
+	\begin{center}
+		\definecolor{qqqqff}{rgb}{0,0,1}
+		\definecolor{qqqqffa}{rgb}{1,1,1}
+		\begin{tikzpicture}[thachthuctoanhoc,scale=0.55]
+			\draw [shift={(3,0.4)}] (0,0) -- (-76.37300514010846:0.4) arc (-76.37300514010846:65.35609953429524:0.4) -- cycle;
+			\draw  (-2,0.4) circle (4cm);
+			\draw  (3,0.4) circle (4cm);
+			\draw  (0.5,3.522498999199199)-- (0.5,-2.7224989991991992);
+			\draw  (-4.611364135838608,3.4299797606676976)-- (4.667909334714851,4.035667538591924);
+			\draw  (4.667909334714851,4.035667538591924)-- (3.9424001024860162,-3.487400422754819);
+			\draw  (3.9424001024860162,-3.487400422754819)-- (-4.611364135838608,3.4299797606676976);
+			\draw  (-4.611364135838608,3.4299797606676976)-- (3,0.4);
+			\draw  (3,0.4)-- (4.667909334714851,4.035667538591924);
+			\draw  (3,0.4)-- (3.9424001024860162,-3.487400422754819);
+			\draw (3.38,0.92) node[anchor=north west] {$2\alpha$};
+			\draw [fill=white] (-2,0.4) circle (2.6pt);
+			\draw (-1.98,-0.2) node {$I$};
+			\draw [fill=white] (3,0.4) circle (2.6pt);
+			\draw (2.72,-0.2) node {$J$};
+			\draw [fill=white] (0.5,3.522498999199199) circle (2.6pt);
+			\draw (0.46,4.2) node {$M$};
+			\draw [fill=white] (0.5,-2.7224989991991992) circle (2.6pt);
+			\draw (0.5,-3.2) node {$N$};
+			\draw [fill=white] (-4.611364135838608,3.4299797606676976) circle (2.6pt);
+			\draw (-4.94,3.75) node {$A$};
+			\draw [fill=white] (3.9424001024860162,-3.487400422754819) circle (2.6pt);
+			\draw (3.88,-4) node {$C$};
+			\draw [fill=white] (4.667909334714851,4.035667538591924) circle (2.6pt);
+			\draw (4.68,4.57) node {$B$};
+		\end{tikzpicture}
+	\end{center}
+	Theo định lý cosin (hoặc đơn giản sử dụng véc tơ: $AB^2  = (\vec{JA}- \vec{JB})^2$), ta có 
+	\begin{align*}
+		&AB^2=t^2+7^2-14t\cos 2\gamma,\\
+		&AC^2=t^2+7^2-14t \cos2\beta.
+	\end{align*}
+	Suy ra 
+	\begin{align*}
+		&AB^2+AC^2\\
+		= \,&2t^2+98-14t \left( \cos2\gamma +\cos 2\beta \right)\\
+		= \,&2t^2+98-28t\cos (\beta+ \gamma)\cos (\beta-\gamma)\\
+		= \,&2t^2+98\pm 28t\cos\alpha \cos (\beta-\gamma)\\
+		\leq \,&2\cdot 15^2 + 98 + 28\cdot 15 |\cos \alpha| \\
+		= \,&548+420 |\cos\alpha|.
+	\end{align*}
+	Từ đó, theo bất đẳng thức Cauchy--Schwarz 
+	\begin{align*}
+		AB+AC &\leq \sqrt{2(AB^2+AC^2)}\\
+		&=2\sqrt{274+210|\cos\alpha|} . 
+	\end{align*}
+	Lại có, vẫn theo định lý cosin, 
+	\begin{align*}
+		BC^2 &=7^2+7^2-2\cdot 7\cdot 7 \cos2\alpha\\
+		&= 2\cdot 7^2 - 2\cdot 7^2 (1-2\sin^2 \alpha)\\
+		& = 4\cdot 7^2\cdot \sin^2\alpha.
+	\end{align*}
+	Do đó $BC=14 | \sin\alpha|$. Vậy,
+	\begin{align*}
+			P_{ABC}\leq 14| \sin\alpha|+2\sqrt{274+210|\cos\alpha|}.
+	\end{align*}
+	Đặt $r=|\cos\alpha|$ thì $P_{ABC}\le g(r)$, trong đó
+	\begin{align*}
+		g(r)=14\sqrt{1-r^2}+2\sqrt{274+210r}.
+	\end{align*}
+	Ta sẽ tìm giá trị lớn nhất của hàm số $g(r)$ trên $[0;1]$. Đây là một hàm số liên tục, có đạo hàm trên $(0, 1)$. Ta biết rằng $g$ đạt cực đại trên $[0; 1]$; hơn nữa, nếu $g$ đạt cực đại tại một điểm $r_0$ thì hoặc $r_0$ là một giá trị biên (nghĩa là $r_0=0$ hoặc $r_0=1$) hoặc $r_0$ là một điểm bên trong mà tại đó đạo hàm triệt tiêu ($r_0\in (0, 1)$ và là một nghiệm của đạo hàm).
+	Ta có
+	\begin{align*}
+		g^\prime(r)=-\dfrac{14r}{\sqrt{1-r^2}}+\dfrac{210}{\sqrt{274+210r}}.
+	\end{align*}
+	Từ đó, $g'(r)=0$ khi và chỉ khi $14 r \sqrt{274 + 210r}= 210 \sqrt{1-r^2}$, hay một cách tương đương $ r \sqrt{274+ 210r}= 15 \sqrt{1-r^2}$. Bình phương hai vế và chuyển vế, ta thu được $210 r^3 + 499 r^2 - 225=0$, hay
+	\begin{align*}
+		(5r-3)(6r+5)(7r+15)=0.
+	\end{align*} 
+	Điều này có nghĩa là $r_0=\dfrac{3}{5}$ là điểm duy nhất trong khoảng $(0,1)$ mà ở đó đạo hàm của $g$ triệt tiêu. Cuối cùng, nhận xét rằng $g(0)= 14 + 2\sqrt{274}, g\left(\dfrac{3}{5}\right) = \dfrac{256}{5}, g(1)= 44$ nên giá trị lớn nhất của $g$ trên $[0; 1]$ bằng $\dfrac{256}{5}$, đạt được tại $r= \dfrac{3}{5}$. 
+	\vskip 0.05cm
+	Từ đó suy ra $P_{ABC}\le \dfrac{256}{5}$. Dấu ``$=$" đạt được khi $ABC$ là tam giác cân, với $A$ là giao điểm của $IJ$ và $(I)$ sao cho $I$ nằm giữa $A$ và $J$; và $B, C$ là các giao điểm với $(J)$ của đường tròn tâm $A$, bán kính $ \sqrt{274 + 210 \cdot \dfrac{3}{5}}=20$.
+	\vskip 0.05cm
+	\textit{Trường hợp $2.$} Cả ba điểm $A, B, C$ cùng nằm trên một đường tròn, chẳng hạn là đường tròn $(I;7)$. Lúc này, 
+	\begin{align*}
+		P_{ABC}&=2\cdot 7 \cdot (\sin A+\sin B+\sin C)\le 6\cdot 7\\ &=42<\dfrac{256}{5}.
+	\end{align*}
+	Từ các lập luận trên, ta suy ra tam giác $ABC$ có chu vi lớn nhất là $\dfrac{256}{5}$. 
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Lời giải} $\pmb{2}$ (\textit{của bạn Trần Minh Hoàng, học sinh lớp $10$, trường THPT chuyên Hà Tĩnh})\textbf{\color{thachthuctoanhoc}.}
+	\vskip 0.1cm
+	Ta sử dụng hai bổ đề sau:
+	\vskip 0.1cm
+	\textbf{\color{thachthuctoanhoc}Bổ đề $\pmb{1.}$} Cho elíp $(E)$ có hai tiêu điểm $F_1,F_2$. Lấy điểm $M$ bất kỳ nằm trên $(E)$ và điểm $N$ bất kỳ nằm ngoài elíp này. Khi đó $MF_1+MF_2 < NF_1+NF_2$.
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
+		\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1.}
+		\begin{tikzpicture}[thachthuctoanhoc,scale=0.85]
+			\draw [rotate around={0.:(0.5,2.)}] (0.5,2.) ellipse (2.4555339953435182cm and 1.9441314776238001cm);
+			\draw  (1.4265834936058992,3.8004071913071167)-- (2.,2.);
+			\draw  (-1.,2.)-- (3.0154057379903705,4.979236191848852);
+			\draw [fill=white] (-1.,2.) circle (1.5pt);
+			\draw (-1.05,1.64) node {$F_1$};
+			\draw [fill=white] (2.,2.) circle (1.5pt);
+			\draw (2.11,1.58) node {$F_2$};
+			\draw [fill=white] (0.34,3.94) circle (1.5pt);
+			\draw (0.42,4.33) node {$M$};
+			\draw [fill=white] (1.4265834936058992,3.8004071913071167) circle (1.5pt);
+			\draw (1.38,4.31) node {$U$};
+			\draw [fill=white] (3.0154057379903705,4.979236191848852) circle (1.5pt);
+			\draw (3.12,4.67) node {$N$};
+		\end{tikzpicture}
+		\vspace*{-10pt}
+	\end{figure}
+	\textit{Chứng minh.} Đoạn thẳng $NF_1$, có một đầu mút nằm bên trong và một đầu mút nằm bên ngoài elíp, do đó cắt $(E)$ tại một điểm nào đó, ký hiệu là $U$.
+	Rõ ràng $N$ không thể thuộc đoạn thẳng $UF_2$. Do đó, ta có $MF_1+MF_2 = UF_1+UF_2 < UF_1 + UN+NF_2 = NF_1 + NF_2$. 
+	\vskip 0.05cm
+	\textbf{\color{thachthuctoanhoc}Bổ đề $\pmb{2.}$} Cho elíp $(E)$ có hai tiêu điểm $F_1,F_2$ và điểm $M$ bất kỳ thuộc $(E)$. Khi đó phân giác ngoài của $\angle{F_1MF_2}$ tiếp xúc với $(E)$.
+	\begin{figure}[H]
+		\vspace*{-10pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\definecolor{xdxdff}{rgb}{0.49019607843137253,0.49019607843137253,1.}
+		\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+		\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1.}
+		\begin{tikzpicture}[thachthuctoanhoc,scale=0.85]
+			\draw [rotate around={0.:(0.5,2.)}] (0.5,2.) ellipse (2.4555339953435182cm and 1.9441314776238001cm);
+			\draw  (-1.,2.)-- (0.34,3.94);
+			\draw  (-1.1929115093255551,5.73147489644071)-- (-1.,2.);
+			\draw  (-1.1929115093255551,5.73147489644071)-- (2.,2.);
+			\draw  (0.34,3.94)-- (2.087515517856266,4.030343862809057);
+			\draw [fill=white] (-1.,2.) circle (1.5pt);
+			\draw (-1.040678263775316,1.61691538002340639) node {$F_1$};
+			\draw [fill=white] (2.,2.) circle (1.5pt);
+			\draw (2.1012386841826762,1.6140324502698885) node {$F_2$};
+			\draw [fill=white] (0.34,3.94) circle (1.5pt);
+			\draw (0.42003751027532965,4.29554900692543) node {$M$};
+			\draw [fill=white] (-1.1929115093255551,5.73147489644071) circle (2.0pt);
+			\draw[color=uuuuuu] (-1.1325471803822749,6.252356930653653) node {$F_3$};
+			\draw [fill=white] (2.087515517856266,4.030343862809057) circle (1.5pt);
+			\draw (2.2206682757717227,4.369044140210997) node {$N$};
+		\end{tikzpicture}
+		\vspace*{-10pt}
+	\end{figure}
+	\textit{Chứng minh.} Giả sử phân giác ngoài của $\angle{F_1MF_2}$ cắt $(E)$ tại điểm $N$ khác $M$. Lấy $F_3$ đối xứng với $F_1$ qua $MN$. Thế thì $F_3,M,F_2$ thẳng hàng. Do $N\not\equiv M$ nên $N\not\in F_2F_3$, theo bất đẳng thức tam giác ta có: 
+	\begin{align*}
+		NF_1+NF_2&=NF_3+NF_2 >F_3F_2\\&=MF_3+MF_2=MF_1+MF_2.
+	\end{align*}
+	Điều này là vô lý do $M,N$ đều thuộc $(E)$. Do đó giả sử trên là sai, hay ta có phân giác ngoài của $\angle{F_1MF_2}$ tiếp xúc với $(E)$.
+	\vskip 0.1cm
+	\textit{Quay trở lại bài toán:}
+	\begin{center}
+	\begin{tikzpicture}[scale=0.28, thachthuctoanhoc]
+		\draw(-4.,0.) circle (7cm);
+		\draw (-4.,0.)-- (4.,0.);
+		\draw(4.,0.) circle (7cm);
+		\draw (-11.,0.)-- (8.2,5.6);
+		\draw (-11.,0.)-- (8.2,-5.6);
+		\draw (8.2,5.6)-- (8.2,-5.6);
+		\draw (-11.,0.)-- (-4.,0.);
+		\draw (4.,0.)-- (8.2,0.);
+		\draw (4.,0.)-- (8.2,5.6);
+		\draw (4.,0.)-- (8.2,-5.6);
+			\draw [fill=white] (-4.,0.) circle (4.5pt);
+			\draw (-3.6901287699666807,0.96020769758771811) node {$J$};
+			\draw [fill=white] (4.,0.) circle (4.5pt);
+			\draw (3.783060241936751,0.644061183809223) node {$I$};
+			\draw [fill=white] (-11.,0.) circle (4.5pt);
+			\draw (-11.667128277054614,0.5181085600130975) node {$C$};
+			\draw [fill=white] (8.2,0.) circle (4.5pt);
+			\draw (9.485291530325428,0.6020769758771811) node {$H$};
+			\draw [fill=white] (8.2,-5.6) circle (4.5pt);
+			\draw (8.611244154121554,-6.47459461521341) node {$A$};
+			\draw [fill=white] (8.2,5.6) circle (4.5pt);
+			\draw (8.485291530325428,6.85976630838742) node {$B$};
+	\end{tikzpicture}
+\end{center}
+Dễ thấy $(S)$ là hợp của hai hình tròn $(I; 7)$ và $(J; 7)$ (bao gồm cả phần bên trong lẫn biên, là đường tròn tương ứng; để cho tiện ta sẽ ký hiệu $(I)$ cho cả hình tròn và đường tròn tâm $I$ bán kính $7$). Vì chu vi tam giác $ABC$ luôn không vượt quá $3$ lần khoảng cách lớn nhất giữa hai điểm thuộc $(S)$, đồng thời các điểm thuộc $(S)$ có tính liên tục nên ta lấy được ba điểm $A,B,C$ thuộc $(S)$ sao cho chu vi tam giác $ABC$ là lớn nhất. (Cụ thể hơn, nếu gọi $P(X, Y, Z)$ là chu vi của tam giác $XYZ$ thì hàm số $(S) \times (S) \times (S) \to \mathbb{R}$, $(X, Y, Z)\mapsto P(X, Y, Z)$ là một hàm số liên tục và $(S)$ là một tập con đóng và bị chặn nên phải có giá trị lớn nhất).
+\vskip 0.1cm
+Ta sẽ sử dụng các bổ đề trên để xác định vị trí của $A, B, C$. Gọi $(E_a)$ là elip đi qua $A$ và nhận $B,C$ làm hai tiêu điểm. Các elip $(E_b),(E_c)$ được định nghĩa tương tự.
+\vskip 0.1cm
+Ta chứng minh rằng mỗi elíp trong $(E_a),(E_b),(E_c)$ tiếp xúc với một trong hai đường tròn $(I),(J)$. 
+\vskip 0.1cm
+Xét điểm $A$. Do $A\in (S)$, nó thuộc một trong hai hình tròn $(I)$ hoặc $(J)$; không giảm tổng quát, giả sử là $(I)$. Ta sẽ chỉ ra rằng $(E_a)$ tiếp xúc với $(I)$. Thật vậy, giả sử ngược lại $(E_a)$ không tiếp xúc với $(I)$; có nghĩa là $A$ nằm hoàn toàn bên trong đường tròn $(I)$ hoặc  $A$ nằm trên đường tròn $(I)$ nhưng các tiếp tuyến với $(E_a)$ và $(I)$ tại $A$ không trùng nhau. 
+\vskip 0.1cm
+Kẻ tiếp tuyến $d$ của $(E_a)$ tại $A$. Như vậy, theo giả thiết thì hoặc $A$ nằm hoàn toàn bên trong đường tròn $(I)$, hoặc $A$ nằm trên $(I)$ nhưng $d$ không phải là tiếp tuyến tại $A$ của $(I)$; trong mọi trường hợp $d$ cắt $(I)$ tại ít nhất một điểm $A'$ nào đó không trùng với $A$. Hơn nữa, mọi điểm của tiếp tuyến mà không phải là tiếp điểm thì phải nằm ngoài elíp nên $A'$ nằm ngoài $(E_a)$. Vì thế theo bổ đề $1$, $A'B + A'C > AB+AC$, suy ra chu vi tam giác $ABC$ nhỏ hơn chu vi tam giác $A'BC$, vô lý. 
+\vskip 0.1cm
+Lập luận trên đây chứng tỏ rằng nếu một đỉnh của tam giác $ABC$ thuộc một trong hai hình tròn thì elíp và đường tròn tương ứng phải tiếp xúc với nhau tại điểm đó. Điều này cho thấy, nói riêng, mỗi đỉnh của tam giác $ABC$ phải nằm trên biên của $(S)$, nghĩa là các phần của các đường tròn $(I), (J)$ không nằm bên miền trong của $(S)$.
+\vskip 0.1cm
+Theo nguyên lý Dirichlet, hai trong ba đỉnh của tam giác $ABC$ nằm trên biên của $(S)$ thuộc một trong hai đường tròn. Giả sử $A$ và $B$ thuộc đường tròn $(I)$ (và không nằm bên trong $(J)$). Khi đó, như đã thấy, $(I)$ tiếp xúc với $(E_a),(E_b)$ tương ứng tại $A$ và $B$.
+\vskip 0.1cm
+Theo bổ đề $2$ ta suy ra $AI,BI$ lần lượt là phân giác của $\angle{BAC},\angle{CBA}$. Suy ra $I$ là tâm đường tròn nội tiếp của tam giác $ABC$. Suy ra $CI$ là phân giác $\angle{ACB}$. Mà $\angle IAB= \angle IBA$, nên $\angle BAC = \angle ABC$, hay tam giác $ABC$ cân tại $C$.
+\vskip 0.1cm
+Xét $2$ trường hợp.
+\vskip 0.1cm
+\textit{Trường hợp $1$}: $C$ nằm trên đường tròn $(J)$. Khi này, $(E_c)$ tiếp xúc với $(J)$ và tương tự như trên, ta suy ra $CJ$ là phân giác $\angle{ACB}$, nghĩa là $C$ nằm trên đường thẳng $IJ$. Để ý rằng đường thẳng $IJ$ cắt đường tròn $(J)$ tại hai điểm, một điểm nằm trên biên của $(S)$, điểm còn lại nằm hoàn toàn bên trong $(S)$. Theo các lập luận ở phần đầu của lời giải, $C$ phải là điểm nằm trên biên của $(S)$, hay $C$ nằm trên tia đối của tia $JI$. Các dữ kiện trên đây xác định một cách duy nhất tam giác $ABC$ và cho phép chúng ta tính tường minh chu vi của nó như sau.
+\vskip 0.1cm
+Gọi $H$ là giao điểm của $CI$ và $AB$ và đặt  $x = IH, x > 0$. Ta có $CI = CJ + IJ = 15$ nên $CH = 15 + x$. Suy ra 
+\vskip 0.1cm
+$ AH^2 = AI^2 - IH^2 = 49 - x^2$, kéo theo $AC^2 = AH^2 + CH^2 = 49 - x^2 + (15 + x)^2 = 274 + 30x$.
+\vskip 0.1cm
+Mặt khác. vì $AI$ là phân giác $\angle{BAC}$ nên $\dfrac{AH}{AC} = \dfrac{IH}{IC}$, dẫn đến
+\vskip 0.1cm
+$ \dfrac{AH^2}{AC^2}=\dfrac{IH^2}{IC^2}$, hay $\dfrac{49 - x^2}{274 + 30x} = \dfrac{x^2}{225}$. Từ đó, ta thu được phương trình $ 30x^3 + 499x^2 - 11025=0$, hay $(6 x + 35) (5 x - 21) (x + 15)=0$, dẫn đến $x = \dfrac{21}{5}$.
+\vskip 0.05cm
+Từ đây, ta tính được $\begin{cases} \!\!\!AC^2 \!=\! 274 \!+\! 30x \!=\! 400 \\ \!\! AH^2 \!=\! 49 \!-\! x^2 \!=\! \dfrac{784}{25}    \end{cases}$ và do đó $\begin{cases} AC = 20 \\ AB = 2AH = \dfrac{56}{5}\end{cases}$.
+\vskip 0.05cm
+Như vậy, trong trường hợp này, chu vi tam giác $ABC$ bằng $ 2\cdot 20 +    \dfrac{56}{5} = \dfrac{256}{5}$.
+\vskip 0.05cm
+\textit{Trường hợp $2$}: $C$ nằm trên đường tròn $(I)$. Khi này, tam giác $ABC$ nhận $I$ vừa là tâm đường tròn nội tiếp và tâm đường tròn ngoại tiếp. Dễ thấy $ABC$ phải là tam giác đều và do đó có chu vi bằng
+\begin{align*}
+	BC+CA+AB = 3\sqrt{3}IA = 21\sqrt{3}	 < \dfrac{256}{5}.
+\end{align*}
+So sánh hai trường hợp, ta suy ra chu vi tam giác $ABC$ lớn nhất bằng $\dfrac{256}{5}$ và đạt được trong trường hợp $1$.
+\vskip 0.05cm
+\textbf{\color{thachthuctoanhoc}Bình luận.}
+\vskip 0.1cm
+Ở lời giải đầu tiên, chúng ta cũng có thể tránh việc sử dụng lượng giác như sau. Như đã thấy, ta quy về trường hợp tam giác $ABC$ có cả ba đỉnh nằm trên biên của $(S)$. Giả sử $B, C$ nằm trên $(I)$ và $A$ nằm trên $(J)$. Gọi $M$ là trung điểm của $BC$ và đặt $x=IM$. Khi này, theo tính chất của đường trung tuyến, ta có
+\begin{align*}
+	&2(AB^2+AC^2)&\\
+	= \,&4AM^2+BC^2= 4(AM^2 + BM^2)\\
+	\le\, &4 \left( (IM + JI + AJ)^2 + BM^2\right)\\
+	=\,& 4 \left( (x+15)^2 + 7^2-x^2\right)\\
+	= \,&4 \left(30x+ 274\right).
+\end{align*}
+Lưu ý rằng, nếu $A$ nằm trên $(I)$ thay vì $(J)$ thì rõ ràng $AM\le 14< x+15$ nên bất đẳng thức trên cũng đúng. Từ đó suy ra, trong mọi trường hợp thì 
+\begin{align*}
+	&BC+CA + AB\le BC + \sqrt{2(AB^2+AC^2)}\\
+	=\,&2\left(\sqrt{49-x^2} + \sqrt{30x+274}\right).
+\end{align*}
+Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm giá trị lớn nhất của $f(x)$, biểu thức cuối cùng nhận được trên miền xác định của nó là $[0, 7]$. Ta cũng tìm được $x= \dfrac{21}{5}$ là điểm duy nhất trên khoảng $[0, 7]$ mà ở đó đạo hàm triệt tiêu. Sau đó, bằng cách so sánh với các giá trị biên, ta thu được giá trị lớn nhất là $f(\dfrac{21}{5})= \dfrac{256}{5}$. 
+	\begin{flushright}
+		\textbf{\color{thachthuctoanhoc}Nhóm TTTH}
+	\end{flushright}
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P701.}}
 	(Mức $B$) Một chiếc hộp đựng một số viên bi, gồm bi xanh và bi đỏ. Biết rằng, số bi đỏ ít hơn số bi xanh; tổng của số bi xanh và hai lần số bi đỏ lớn hơn $24$; tổng của số bi đỏ và hai lần số bi xanh nhỏ hơn $28$. Hỏi, trong hộp có bao nhiêu viên bi xanh và bao nhiêu viên bi đỏ?
 	\vskip 0.05cm
@@ -235,7 +495,7 @@
 	\vskip 0.05cm
 	Từ ($2$) và ($3$), ta có:
 	\begin{align*}
-		12 - \frac{x}{2} < y < 28-2x; \tag{$5$}
+		12 - \dfrac{x}{2} < y < 28-2x; \tag{$5$}
 	\end{align*}
 	suy ra, $3x < 32$. Mà $x \in \mathbb{N^*}$, nên $x \le 10$. \hfill ($6$)
 	\vskip 0.05cm
@@ -243,7 +503,7 @@
 	\vskip 0.05cm
 	-- Với $x = 9$, từ ($5$) ta được:
 	\begin{align*}
-		\frac{15}{2} < y < 10.
+		\dfrac{15}{2} < y < 10.
 	\end{align*}
 	Từ đó, do $y \in \mathbb{N^*}$ và $y < x = 9$, suy ra $y = 8$.
 	\vskip 0.05cm
@@ -261,7 +521,7 @@
 	\vskip 0.05cm
 	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
 	\vskip 0.05cm	
-	Bài đã ra là một bài toán đơn giản. Tuy vậy, trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có một lời giải sai, do người giải bài đã mắc các nhầm lẫn rất sơ đẳng trong tính toán. Bên cạnh đó, một số lời giải không được chấp nhận là lời giải hoàn chỉnh (tuy có kết quả đúng), do người giải bài không thử lại các giá trị $x$, $y$ (theo ký hiệu ở Lời giải trên), mặc dù các bước suy luận để tìm ra các giá trị đó đều là phép ``suy ra".
+	Bài đã ra là một bài toán đơn giản. Tuy vậy, trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có một lời giải sai, do người giải bài đã mắc các nhầm lẫn rất sơ đẳng trong tính toán. Bên cạnh đó, một số lời giải không được chấp nhận là lời giải hoàn chỉnh (tuy có kết quả đúng), do người giải bài không thử lại các giá trị $x$, $y$ (theo ký hiệu ở Lời giải trên), mặc dù phép suy luận để tìm ra các giá trị đó là phép ``suy ra".
 	\begin{flushright}
 		\textbf{\color{thachthuctoanhoc}Lê Huy}
 	\end{flushright}
@@ -365,10 +625,10 @@
 			\draw  (7.,-1.)-- (1.,-3.);
 			\draw (7.08,-0.46) node[anchor=north west] {$J$};
 			\draw  (5.,1.)-- (1.,5.);
-			\draw [color=qqqqff] (7.,-1.)-- (5.,1.);
-			\draw [color=qqqqff] (5.936360389693209,-0.06363961030678982) -- (6.063639610306788,0.06363961030678982);
-			\draw [color=qqqqff] (7.,-1.)-- (9.,-3.);
-			\draw [color=qqqqff] (8.06363961030679,-1.936360389693211) -- (7.93636038969321,-2.0636396103067907);
+			\draw  (7.,-1.)-- (5.,1.);
+			\draw  (5.936360389693209,-0.06363961030678982) -- (6.063639610306788,0.06363961030678982);
+			\draw  (7.,-1.)-- (9.,-3.);
+			\draw  (8.06363961030679,-1.936360389693211) -- (7.93636038969321,-2.0636396103067907);
 			\draw  (5.,-3.)-- (1.,5.);
 			\draw [shift={(1.,5.)},color=qqwuqq] (-26.56505117707799:0.6) arc (-26.56505117707799:0.:0.6);
 			\draw [shift={(1.,5.)},color=qqwuqq] (-26.56505117707799:0.5) arc (-26.56505117707799:0.:0.5);
@@ -398,8 +658,8 @@
 	\end{align*}
 	Do đó, $\Delta ABE = \Delta BCF$; suy ra
 	\begin{align*}
-		CF &\!=\! BE \!=\! \frac{1}{2} BC \,\,(\text{do $E$ là trung điểm của $BC$})\\
-		&\!=\! \frac{1}{2}CD \,\,(\text{do $BC = CD$}).
+		CF &\!=\! BE \!=\! \dfrac{1}{2} BC \,\,(\text{do $E$ là trung điểm của $BC$})\\
+		&\!=\! \dfrac{1}{2}CD \,\,(\text{do $BC = CD$}).
 	\end{align*}
 	Vì thế, $F$ là trung điểm của cạnh $CD$. Suy ra, tứ giác $OECF$ là một hình vuông. Do đó
 	\begin{align*}
@@ -418,11 +678,11 @@
 	\begin{align*}
 		A{D^2} = A{B^2} = AI \cdot AE;
 	\end{align*}
-	do đó, $\dfrac{{AI}}{{AD}} = \dfrac{{AD}}{{AE}}$.
+	do đó, $\dfrac{{AI}}{{AD}} = \dfrac{{AD}}{{AE}}$. \hfill ($4$)
 	\vskip 0.05cm
 	Từ ($3$) và ($4$), suy ra $\Delta ADI \sim \Delta AED$. Vì thế
 	\begin{align*}
-		\frac{{DA}}{{DI}} = \frac{{EA}}{{ED}} = 1\,\,\,({\text{do }}(2)).
+		\dfrac{{DA}}{{DI}} = \dfrac{{EA}}{{ED}} = 1\,\,\,({\text{do }}(2)).
 	\end{align*}
 	Suy ra, $DI = DA = DC$. Do đó, $IDC$ là tam giác cân tại $D$. Từ đây và ($1$), suy ra $DJ$ là trung trực của $IC$; và vì thế, $DJ$ cũng là phân giác của góc $IDC$. Ta có điều phải chứng minh theo yêu cầu đề bài.
 	\vskip 0.05cm
@@ -431,7 +691,8 @@
 	Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có một lời giải tuy có ý giải đúng, nhưng không hoàn chỉnh, do người giải bài xét phép quay, nhưng không nêu chiều quay.
 	\vskip 0.05cm
 	\hfill	\textbf{\color{thachthuctoanhoc}Hạ Vũ Anh}
-	\vskip 0.05cm
+	\vskip 0.01cm
+	\columnbreak
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P704.}}
 	(Mức $B$) Điền vào mỗi ô vuông con của bảng ô vuông kích thước $20\times 22$ một số nguyên dương không vượt quá $10$, sao cho hai số được điền ở hai ô có đỉnh chung nguyên tố cùng nhau. Chứng minh rằng, có ít nhất $74$ ô vuông con được điền số như nhau.
 	\vskip 0.05cm
@@ -447,7 +708,7 @@
 	\vskip 0.05cm
 	Do các số được dùng để điền vào bảng là các số nguyên dương không vượt quá $10$, và trong $10$ số nguyên dương đầu tiên chỉ có ba số $1$, $5$, $7$ là các số lẻ không chia hết cho $3$, nên theo ($*$), trong bảng đã cho có ít nhất $220$ ô vuông con được điền các số $1$, $5$, $7$. Vì thế, theo nguyên lý Dirichlet, phải có ít nhất
 	\begin{align*}
-		\left[ {\frac{{220}}{3}} \right] + 1 = 74
+		\left[ {\dfrac{{220}}{3}} \right] + 1 = 74
 	\end{align*}
 	ô vuông con được điền cùng một số (trong các số $1$, $5$, $7$).
 	\vskip 0.05cm
@@ -499,39 +760,39 @@
 	\vskip 0.05cm
 	Với $x, y$ là hai số thực dương tùy ý, ta có:
 	\begin{align*}
-		{x^2} - xy + {y^2} &= \frac{3}{4}{(x - y)^2} + \frac{1}{4}{(x + y)^2}\\ &\ge \frac{1}{4}{(x + y)^2}.
+		{x^2} - xy + {y^2} &= \dfrac{3}{4}{(x - y)^2} + \dfrac{1}{4}{(x + y)^2}\\ &\ge \dfrac{1}{4}{(x + y)^2}.
 	\end{align*}
 	Vì thế, do $a, b, c > 0$ nên
 	\begin{align*}
 		&\left( {{a^2} - ab + {b^2}} \right)\left( {{a^2} - ac + {c^2}} \right)\\ 
-		\ge &\frac{1}{{16}}{\left( {a + b} \right)^2}{\left( {a + c} \right)^2}. \tag{$1$}
+		\ge &\dfrac{1}{{16}}{\left( {a + b} \right)^2}{\left( {a + c} \right)^2}. \tag{$1$}
 	\end{align*}
 	Lại do $a, b, c > 0$ nên theo bất đẳng thức trung bình cộng -- trung bình nhân cho ba số dương, ta có:
 	\begin{align*}
-		\left( {a + b} \right)\left( {a + c} \right) &= {a^2} + \left( {ab + bc + ca} \right) \\
+		\left( {a \!+\! b} \right)\!\left( {a \!+\! c} \right) &= {a^2} + \left( {ab + bc + ca} \right) \\
 		&\ge {a^2} + 3\sqrt[3]{{{a^2}{b^2}{c^2}}} \\
-		&= {a^2} + 3 \,\,({\text{do }}abc = 1).
+		&= {a^2} \!+\! 3 \,\,({\text{do }}abc = 1). \tag{$2$}
 	\end{align*}
 	Từ ($1$) và ($2$), suy ra
 	\begin{align*}
 		&\left( {{a^3} + {b^3}} \right)\left( {{a^3} + {c^3}} \right) \\
 		= &\left( {a \!+\! b} \right)\!\left( {a \!+\! c} \right)\left( {{a^2} \!-\! ab \!+\! {b^2}} \right)\!\left( {{a^2} \!-\! ac \!+\! {c^2}} \right) \\
-		\ge &\frac{1}{{16}}\left( {{a^2} + 3} \right){\left( {a + b} \right)^2}{\left( {a + c} \right)^2}.
+		\ge &\dfrac{1}{{16}}\left( {{a^2} + 3} \right){\left( {a + b} \right)^2}{\left( {a + c} \right)^2}.
 	\end{align*}
 	Do đó
 	\begin{align*}
-		\sqrt {\!\!\frac{{{a^2} \!+\! 3}}{{\left( {{a^3} \!+\! {b^3}} \right)\!\left( {{a^3} \!+\! {c^3}} \right)}}}  \!\le\! \frac{4}{{\left( {a \!+\! b} \right)\!\left( {a \!+\! c} \right)}}. \tag{$3$}
+		\sqrt {\!\!\dfrac{{{a^2} \!+\! 3}}{{\left( {{a^3} \!+\! {b^3}} \right)\!\left( {{a^3} \!+\! {c^3}} \right)}}}  \!\le\! \dfrac{4}{{\left( {a \!+\! b} \right)\!\left( {a \!+\! c} \right)}}. \tag{$3$}
 	\end{align*}
 	Bằng cách hoàn toàn tương tự, ta cũng chứng minh được:
 	\begin{align*}
-		\sqrt {\!\!\frac{{{b^2} \!+\! 3}}{{\left( {{b^3} \!+\! {c^3}} \right)\!\left( {{b^3} \!+\! {a^3}} \right)}}}  \!\le\! \frac{4}{{\left( {b \!+\! c} \right)\!\left( {b \!+\! a} \right)}}, \tag{$4$}\\
-		\sqrt {\!\!\frac{{{c^2} \!+\! 3}}{{\left( {{c^3} \!+\! {a^3}} \right)\!\left( {{c^3} \!+\! {b^3}} \right)}}}  \!\le\! \frac{4}{{\left( {c \!+\! a} \right)\!\left( {c \!+\! b} \right)}}. \tag{$5$}
+		\sqrt {\!\!\dfrac{{{b^2} \!+\! 3}}{{\left( {{b^3} \!+\! {c^3}} \right)\!\left( {{b^3} \!+\! {a^3}} \right)}}}  \!\le\! \dfrac{4}{{\left( {b \!+\! c} \right)\!\left( {b \!+\! a} \right)}}, \tag{$4$}\\
+		\sqrt {\!\!\dfrac{{{c^2} \!+\! 3}}{{\left( {{c^3} \!+\! {a^3}} \right)\!\left( {{c^3} \!+\! {b^3}} \right)}}}  \!\le\! \dfrac{4}{{\left( {c \!+\! a} \right)\!\left( {c \!+\! b} \right)}}. \tag{$5$}
 	\end{align*}
 	Cộng các bất đẳng thức ($3$), ($4$), ($5$), vế theo vế, ta được:
 	\begin{align*}
-		P \le &\frac{4}{{\left( {a + b} \right)\left( {a + c} \right)}} + \frac{4}{{\left( {b + c} \right)\left( {b + a} \right)}} \\
-		&+ \frac{4}{{\left( {c + a} \right)\left( {c + b} \right)}} \\
-		= &\frac{{8\left( {a + b + c} \right)}}{{\left( {a + b} \right)\left( {b + c} \right)\left( {c + a} \right)}}. \tag{$6$}
+		P \le &\dfrac{4}{{\left( {a + b} \right)\left( {a + c} \right)}} + \dfrac{4}{{\left( {b + c} \right)\left( {b + a} \right)}} \\
+		&+ \dfrac{4}{{\left( {c + a} \right)\left( {c + b} \right)}} \\
+		= &\dfrac{{8\left( {a + b + c} \right)}}{{\left( {a + b} \right)\left( {b + c} \right)\left( {c + a} \right)}}. \tag{$6$}
 	\end{align*}
 	Tiếp theo, do $a, b, c > 0$ nên theo bất đẳng thức trung bình cộng -- trung bình nhân cho ba số dương, ta có:
 	\begin{align*}
@@ -540,21 +801,21 @@
 	\end{align*}
 	suy ra
 	\begin{align*}
-		abc \le \frac{{\left( {a + b + c} \right)\left( {ab + bc + ca} \right)}}{9}.
+		abc \le \dfrac{{\left( {a + b + c} \right)\left( {ab + bc + ca} \right)}}{9}.
 	\end{align*}
 	Do đó
 	\begin{align*}
 		&\left( {a + b} \right)\left( {b + c} \right)\left( {c + a} \right) \\
 		= &\left( {a + b + c} \right)\left( {ab + bc + ca} \right) - abc\\
 		\ge& \left( {a + b + c} \right)\left( {ab + bc + ca} \right) \\
-		&- \frac{{\left( {a + b + c} \right)\left( {ab + bc + ca} \right)}}{9}\\
-		= &\frac{{8\left( {a + b + c} \right)\left( {ab + bc + ca} \right)}}{9}\\
-		\ge& \frac{{8\left( {a + b + c} \right) \cdot 3\sqrt[3]{{{a^2}{b^2}{c^2}}}}}{9}\\
-		\ge &\frac{{8\left( {a + b + c} \right)}}{3}\,\,({\text{do }}abc = 1).
+		&- \dfrac{{\left( {a + b + c} \right)\left( {ab + bc + ca} \right)}}{9}\\
+		= &\dfrac{{8\left( {a + b + c} \right)\left( {ab + bc + ca} \right)}}{9}\\
+		\ge& \dfrac{{8\left( {a + b + c} \right) \cdot 3\sqrt[3]{{{a^2}{b^2}{c^2}}}}}{9}\\
+		= &\dfrac{{8\left( {a + b + c} \right)}}{3}\,\,({\text{do }}abc = 1). \tag{$7$}
 	\end{align*}
 	Từ ($6$) và ($7$), suy ra
 	\begin{align*}
-		P \le \frac{{8\left( {a + b + c} \right)}}{{\frac{8}{3}\left( {a + b + c} \right)}} = 3.
+		P \le \dfrac{{8\left( {a + b + c} \right)}}{{\dfrac{8}{3}\left( {a + b + c} \right)}} = 3.
 	\end{align*}
 	Ta có điều phải chứng minh theo yêu cầu đề bài.
 	\vskip 0.05cm
@@ -571,28 +832,28 @@
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P707.}}
 	(Mức $A$) Chứng minh rằng, với mỗi số nguyên $a$, tồn tại số thực $x$, sao cho  
 	\begin{align*}
-		a=\left\lfloor +\dfrac12\right\rfloor+\left\lfloor\sqrt{2}x\right\rfloor.
+		a=\left[ x +\dfrac12\right]+\left[\sqrt{2}x\right].
 	\end{align*}
 	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của bạn Hồ Trần Khánh Linh, lớp $12$ Toán $2$, trường THPT Chuyên, ĐHSP Hà Nội})\textbf{\color{thachthuctoanhoc}.}
 	\vskip 0.05cm
-	Xét số nguyên $a$ tùy ý. Chọn $x = \frac{{a + \frac{1}{2}}}{{1 + \sqrt 2 }}.$  Ta có:
+	Xét số nguyên $a$ tùy ý. Chọn $x = \dfrac{{a + \dfrac{1}{2}}}{{1 + \sqrt 2 }}.$  Ta có:
 	\begin{align*}
-		a = x + \sqrt 2 x - \frac{1}{2}. \tag{$1$}
+		a = x + \sqrt 2 x - \dfrac{1}{2}. \tag{$1$}
 	\end{align*}
-	Vì $a \in \mathbb{Z}$  nên $a + \frac{1}{2}$ là một số hữu tỷ khác $0$. Do đó, $x$ là một số vô tỷ; suy ra, $x + \frac{1}{2}$ là một số vô tỷ. Vì vậy
+	Vì $a \in \mathbb{Z}$  nên $a + \dfrac{1}{2}$ là một số hữu tỷ khác $0$. Do đó, $x$ là một số vô tỷ; suy ra, $x + \dfrac{1}{2}$ là một số vô tỷ. Vì vậy
 	\begin{align*}
-		\left[ {x + \frac{1}{2}} \right] < x + \frac{1}{2}.
+		\left[ {x + \dfrac{1}{2}} \right] < x + \dfrac{1}{2}.
 	\end{align*}
 	Suy ra
 	\begin{align*}
-		&\left( {\left( {x + \frac{1}{2}} \right) - 1} \right) + \left( {\sqrt 2 x - 1} \right) \\
-		< &\left[ {x \!+\! \frac{1}{2}} \right] \!+\! \left[ {\sqrt 2 x} \right] \!<\! \left( {x \!+\! \frac{1}{2}} \right) \!+\! \sqrt 2 x. \tag{$2$}
+		&\left( {\left( {x + \dfrac{1}{2}} \right) - 1} \right) + \left( {\sqrt 2 x - 1} \right) \\
+		< &\left[ {x \!+\! \dfrac{1}{2}} \right] \!+\! \left[ {\sqrt 2 x} \right] \!<\! \left( {x \!+\! \dfrac{1}{2}} \right) \!+\! \sqrt 2 x. \tag{$2$}
 	\end{align*}
 	Từ ($1$) và ($2$), ta được:
 	\begin{align*}
-		a - 1 < \left[ {x + \frac{1}{2}} \right] + \left[ {\sqrt 2 x} \right] < a + 1.
+		a - 1 < \left[ {x + \dfrac{1}{2}} \right] + \left[ {\sqrt 2 x} \right] < a + 1.
 	\end{align*}
-	Vì vậy, $\left[ {x + \frac{1}{2}} \right] + \left[ {\sqrt 2 x} \right] = a$.
+	Vì vậy, $\left[ {x + \dfrac{1}{2}} \right] + \left[ {\sqrt 2 x} \right] = a$.
 	\vskip 0.05cm   
 	Ta có điều phải chứng minh theo yêu cầu đề bài.
 	\vskip 0.05cm
@@ -621,28 +882,32 @@
 	\vskip 0.05cm
 	Giả sử $M$ là số thực, sao cho
 	\begin{align*}
-		\frac{1}{{a + 2}} + \frac{1}{{b + 2}} + \frac{1}{{c + 2}} > M,
+		\dfrac{1}{{a + 2}} + \dfrac{1}{{b + 2}} + \dfrac{1}{{c + 2}} > M,
 	\end{align*}
 	với mọi $a, b, c \ge  0$, thỏa mãn 
 	\begin{align*}
 		a + b + c = ab + bc + ca > 0.
 	\end{align*}
-	Xét số thực $x$ tùy ý thuộc khoảng $\left( {\frac{1}{2}; + \infty } \right).$
+	Xét số thực $x$ tùy ý thuộc khoảng $\left( {\dfrac{1}{2}; + \infty } \right).$
 	\vskip 0.05cm 
-	Chọn  $a = \frac{1}{2}, b = x$ và $c = \frac{x+1}{2x-1}$.
+	Chọn  $a = \dfrac{1}{2}, b = x$ và $c = \dfrac{x+1}{2x-1}$.
 	\vskip 0.05cm
-	Bằng cách kiểm tra trực tiếp, dễ thấy, $a + b + c = ab + bc + ca > 0$. Do đó
+	Bằng cách kiểm tra trực tiếp, dễ thấy; 
 	\begin{align*}
-		\frac{1}{{\frac{1}{2} + 2}} + \frac{1}{{x + 2}} + \frac{1}{{\frac{{x + 1}}{{2x - 1}} + 2}} > M,
+		a + b + c = ab + bc + ca > 0.
+	\end{align*}
+	Do đó
+	\begin{align*}
+		\dfrac{1}{{\dfrac{1}{2} + 2}} + \dfrac{1}{{x + 2}} + \dfrac{1}{{\dfrac{{x + 1}}{{2x - 1}} + 2}} > M,
 	\end{align*}
 	hay                                                                         \begin{align*}
-		\frac{2}{5} + \frac{1}{{x + 2}} + \frac{{2x - 1}}{{5x - 1}} > M. \tag{$1$}
+		\dfrac{2}{5} + \dfrac{1}{{x + 2}} + \dfrac{{2x - 1}}{{5x - 1}} > M. \tag{$1$}
 	\end{align*}
-	Ở ($1$), cho $x \to {\left( {\frac{1}{2}} \right)^ + },$ ta được: $M \le \frac{4}{5}$. \hfill ($2$)
+	Ở ($1$), cho $x \to {\left( {\dfrac{1}{2}} \right)^ + },$ ta được: $M \le \dfrac{4}{5}$. \hfill ($2$)
 	\vskip 0.05cm
 	Tiếp theo, ta sẽ chứng minh
 	\begin{align*}
-		\frac{1}{{a + 2}} + \frac{1}{{b + 2}} + \frac{1}{{c + 2}} > \frac{4}{5}, \tag{$3$}
+		\dfrac{1}{{a + 2}} + \dfrac{1}{{b + 2}} + \dfrac{1}{{c + 2}} > \dfrac{4}{5}, \tag{$3$}
 	\end{align*}
 	với mọi $a, b, c \ge  0$, thỏa mãn
 	\begin{align*}
@@ -658,7 +923,7 @@
 	\vskip 0.05cm
 	Khi đó, theo bất đẳng thức Cauchy--Schwarz, ta có:
 	\begin{align*}
-		P > \frac{1}{{a + 2}} + \frac{1}{{b + 2}} \ge \frac{4}{{a + b + 4}} \ge \frac{4}{5}.
+		P > \dfrac{1}{{a + 2}} + \dfrac{1}{{b + 2}} \ge \dfrac{4}{{a + b + 4}} \ge \dfrac{4}{5}.
 	\end{align*}
 	$\bullet$ \textit{Trường hợp $2$:} $a + b > 1$.
 	\vskip 0.05cm
@@ -667,17 +932,17 @@
 		c(t - 1) &= ca + cb - c = a + b - ab \\
 		&= t - ab < t \le 2c.
 	\end{align*}
-	Suy ra, $1 < t < 3$ và $0 < c < \frac{t}{t-1}$.  
+	Suy ra, $1 < t < 3$ và $0 < c < \dfrac{t}{t-1}$.  
 	Vì thế
 	\begin{align*}
-		P &\ge \frac{4}{a + b + 4} + \frac{1}{c + 2}\\
-		 &> \frac{4}{t + 4} + \frac{1}{\frac{t}{t-1} + 2}\\
-		 &= \frac{4}{t + 4} + \frac{t-1}{3t_2}\\
-		 &= \frac{4}{5} + \frac{7(t-1)(4-t)}{5(t+4)(3t-2)}>\frac{4}{5}.
+		P &\ge \dfrac{4}{a + b + 4} + \dfrac{1}{c + 2}\\
+		 &> \dfrac{4}{t + 4} + \dfrac{1}{\dfrac{t}{t-1} + 2}\\
+		 &= \dfrac{4}{t + 4} + \dfrac{t-1}{3t - 2}\\
+		 &= \dfrac{4}{5} + \dfrac{7(t-1)(4-t)}{5(t+4)(3t-2)}>\dfrac{4}{5}.
 	\end{align*}
 	Vậy, ($3$) được chứng minh.
 	\vskip 0.05cm
-	Từ ($2$) và ($3$), suy ra giá trị lớn nhất của $M$ bằng $\frac{4}{5}$.
+	Từ ($2$) và ($3$), suy ra giá trị lớn nhất của $M$ bằng $\dfrac{4}{5}$.
 	\vskip 0.05cm 
 	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
 	\vskip 0.05cm
@@ -692,7 +957,7 @@
 	\vskip 0.05cm
 	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{phỏng theo cách giải của Đáp án bài toán})\textbf{\color{thachthuctoanhoc}.}
 	\vskip 0.05cm
-	Gọi $L$ là giao điểm thứ hai, khác $G$, của đường thẳng $AG$ và đường tròn $(I)$. Ta có, $GELF$ là một tứ giác điều hòa; do đó, $D(GL,EF) = -1$. Mà $È \parallel DG$,  nên $DL$ đi qua trung điểm $M$ của $EF$.   \hfill ($1$)
+	Gọi $L$ là giao điểm thứ hai, khác $G$, của đường thẳng $AG$ và đường tròn $(I)$. Ta có, $GELF$ là một tứ giác điều hòa; do đó, $D(GL,EF) = -1$. Mà $EF \parallel DG$,  nên $DL$ đi qua trung điểm $M$ của $EF$.   \hfill ($1$)
 	\begin{center}
 		\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
 		\definecolor{ffxfqq}{rgb}{1.,0.4980392156862745,0.}
@@ -707,8 +972,8 @@
 			\draw  (2.,6.)-- (1.,-3.);
 			\draw  (1.,-3.)-- (12.,-3.);
 			\draw  (12.,-3.)-- (2.,6.);
-			\draw [color=qqqqff] (4.300880545531854,-0.045570656750642424) circle (2.954429343249358cm);
-			\draw [color=qqqqff] (1.3645212760338545,0.2806914843046909)-- (6.27728957823615,2.150439379587464);
+			\draw  (4.300880545531854,-0.045570656750642424) circle (2.954429343249358cm);
+			\draw  (1.3645212760338545,0.2806914843046909)-- (6.27728957823615,2.150439379587464);
 			\draw  (6.2652013361986745,-2.2524001870059607)-- (2.,6.);
 			\draw  (4.132600668099338,1.8737999064970197) circle (4.644729574604074cm);
 			\draw [color=qqffqq] (1.5282924508389875,-1.3981022370501057) circle (1.6867629817367171cm);
@@ -725,12 +990,12 @@
 			\draw  (4.300880545531854,-3.)-- (3.636720643630867,2.833238883486384);
 			\draw  (1.3645212760338545,0.2806914843046909)-- (4.300880545531854,-3.);
 			\draw  (4.300880545531854,-3.)-- (6.27728957823615,2.150439379587464);
-			\draw [color=qqqqff] (4.300880545531854,-3.)-- (6.2652013361986745,-2.2524001870059607);
+			\draw  (4.300880545531854,-3.)-- (6.2652013361986745,-2.2524001870059607);
 			\draw (3.52524,3.81554) node[anchor=north west] {$L$};
 			\draw (3.30524,1.9554) node[anchor=north west] {$M$};
 			\draw [shift={(7.395143359910634,-2.3620041204367563)},color=qqffqq]  plot[domain=-0.3417530429011668:3.3897702182052125,variable=\t]({1.*4.6488432344094806*cos(\t r)+0.*4.6488432344094806*sin(\t r)},{0.*4.6488432344094806*cos(\t r)+1.*4.6488432344094806*sin(\t r)});
 			\draw [dashed,color=ffxfqq] (2.7505417150657467,-2.560546254048122)-- (3.636720643630867,2.833238883486384);
-			\draw [color=qqqqff] (0.5344374608583545,-0.0352296768127455)-- (12.,-3.);
+			\draw  (0.5344374608583545,-0.0352296768127455)-- (12.,-3.);
 			\draw (0.12524,-0.19554) node[anchor=north west] {$X$};
 			\draw (4.86524,1.81554) node[anchor=north west] {$Y$};
 			\draw  (2.7505417150657467,-2.560546254048122)-- (2.,6.);
@@ -741,7 +1006,7 @@
 			\draw  (2.7505417150657467,-2.560546254048122)-- (1.,-3.);
 			\draw  (2.7505417150657467,-2.560546254048122)-- (1.3645212760338545,0.2806914843046909);
 			\draw  (2.7505417150657467,-2.560546254048122)-- (6.27728957823615,2.150439379587464);
-			\draw [color=qqqqff] (6.27728957823615,2.150439379587464)-- (3.636720643630867,2.833238883486384);
+			\draw  (6.27728957823615,2.150439379587464)-- (3.636720643630867,2.833238883486384);
 			\draw  (1.3645212760338545,0.2806914843046909)-- (3.636720643630867,2.833238883486384);
 			\draw  (2.3365597548650334,2.1612588735046763)-- (6.27728957823615,2.150439379587464);
 			\draw  (6.27728957823615,2.150439379587464)-- (6.2652013361986745,-2.2524001870059607);
@@ -798,11 +1063,11 @@
 	\end{align*}                                       
 	nên $\Delta PBF \sim \Delta PXE$. Suy ra
 	\begin{align*}
-		\frac{{PF}}{{PE}} = \frac{{BF}}{{XE}}.
+		\dfrac{{PF}}{{PE}} = \dfrac{{BF}}{{XE}}.
 	\end{align*}
 	Từ đó, do $PEHF$ là tứ giác điều hòa, ta có:
 	\begin{align*}
-		\frac{{XE}}{{CE}} = \frac{{PE}}{{PF}} \cdot \frac{{BF}}{{CE}} = \frac{{HE}}{{HF}} \cdot \frac{{BF}}{{CE}}. \tag{$4$}
+		\dfrac{{XE}}{{CE}} = \dfrac{{PE}}{{PF}} \cdot \dfrac{{BF}}{{CE}} = \dfrac{{HE}}{{HF}} \cdot \dfrac{{BF}}{{CE}}. \tag{$4$}
 	\end{align*}
 	Do $DGEF$ là tứ giác nội tiếp và $DG \parallel FE$ (giả thiết) nên $DGEF$ là một hình thang cân. Do đó
 	\begin{align*}
@@ -811,35 +1076,35 @@
 	\end{align*}
 	Từ đó, áp dụng định lý sin cho tam giác $HEF$, ta được:
 	\begin{align*}
-		\frac{{HE}}{{HF}} &= \frac{{\sin \angle EFH}}{{\sin \angle HEF}} = \frac{{\sin \angle EGH}}{{\sin \angle HGF}} \\
-		&= \frac{{\cos \angle EHG}}{{\cos \angle FHG}} \,\,({\text{do }}(3))\\
-		&= \frac{{\cos \angle BFD}}{{\cos \angle CED}} = \frac{{\frac{1}{2}FD:FB}}{{\frac{1}{2}ED:EC}} \\
-		&= \frac{{FD \cdot EC}}{{ED \cdot FB}}. \tag{$5$}
+		\dfrac{{HE}}{{HF}} &= \dfrac{{\sin \angle EFH}}{{\sin \angle HEF}} = \dfrac{{\sin \angle EGH}}{{\sin \angle HGF}} \\
+		&= \dfrac{{\cos \angle EHG}}{{\cos \angle FHG}} \,\,({\text{do }}(3))\\
+		&= \dfrac{{\cos \angle BFD}}{{\cos \angle CED}} = \dfrac{{\dfrac{1}{2}FD:FB}}{{\dfrac{1}{2}ED:EC}} \\
+		&= \dfrac{{FD \cdot EC}}{{ED \cdot FB}}. \tag{$5$}
 	\end{align*}
 	Từ ($4$) và ($5$), suy ra
 	\begin{align*}
-		\frac{{XE}}{{CE}} = \frac{{FD}}{{ED}}. \tag{$6$}
+		\dfrac{{XE}}{{CE}} = \dfrac{{FD}}{{ED}}. \tag{$6$}
 	\end{align*}
 	Do $DELF$ là tứ giác nội tiếp, có hai đường chéo cắt nhau tại $M$, nên $\Delta DMF \sim \Delta EML$ và $\Delta DME \sim \Delta FML$. Suy ra
 	\begin{align*}
-		\frac{{FD}}{{MD}} \!=\! \frac{{LE}}{{ME}} \text{ và } \frac{{ED}}{{MD}} \!=\! \frac{{LF}}{{MF}} \!=\! \frac{{LF}}{{ME}}\,\,\,({\text{do }}(1)).
+		\dfrac{{FD}}{{MD}} \!=\! \dfrac{{LE}}{{ME}} \text{ và } \dfrac{{ED}}{{MD}} \!=\! \dfrac{{LF}}{{MF}} \!=\! \dfrac{{LF}}{{ME}}\,\,\,({\text{do }}(1)).
 	\end{align*} 
 	Do đó
 	\begin{align*}
-		LE = \frac{{FD \cdot ME}}{{MD}} \text{ và } LF = \frac{{ED \cdot ME}}{{MD}}.
+		LE = \dfrac{{FD \cdot ME}}{{MD}} \text{ và } LF = \dfrac{{ED \cdot ME}}{{MD}}.
 	\end{align*}
 	Suy ra
 	\begin{align*}
-		\frac{{LE}}{{LF}} = \frac{{FD}}{{ED}} = \frac{{EX}}{{EC}}\,\,\,({\text{do }}(6)).
+		\dfrac{{LE}}{{LF}} = \dfrac{{FD}}{{ED}} = \dfrac{{EX}}{{EC}}\,\,\,({\text{do }}(6)).
 	\end{align*}
 	Mà $\angle FLE = \angle CEX$ (góc nội tiếp và góc tạo bởi tiếp tuyến với một dây, cùng chắn một cung của $(I)$).
-	\vskip 0.1cm
+	\vskip 0.05cm
 	Nên $\Delta LEF \sim \Delta EXC$. Suy ra, $\angle LEF = \angle EXC$; vì vậy, $LE \parallel XC$. \hfill ($7$)
 	\vskip 0.05cm
 	Từ ($2$) và ($7$), với lưu ý $E, F, L, P$ đồng viên và $B, F, P, Q, X$ đồng viên, ta có:
 	\begin{align*}
-		\left( {LP;LE} \right) &\equiv \left( {FP;FE} \right) \equiv \left( {FP;FX} \right) \\
-		&\equiv \left( {QP;QX} \right) \equiv \left( {QP;QC} \right) \\
+		\left( {LP;LE} \right) &\equiv \left( {FP;FE} \right) \equiv \left( {FP;FX} \right) \\[-0.5ex]
+		&\equiv \left( {QP;QX} \right) \equiv \left( {QP;QC} \right) \\[-0.5ex]
 		&\equiv \left( {QP;LE} \right)\left( {\bmod \pi } \right).
 	\end{align*}
 	Do đó, $L, P, Q$ thẳng hàng. Điều này chứng tỏ, $PQ$ và $AG$ cắt nhau tại một điểm nằm trên $(I)$.
@@ -851,13 +1116,14 @@
 	$\pmb{1.}$ Bài đã ra là một cách phát biểu khác của Bài $6$ Đề thi IMO $2019$. Vì thế, theo đánh giá của người chấm bài, bài đã ra là một bài toán rất khó.
 	\vskip 0.05cm
 	$\pmb{2.}$ Cho đến thời điểm bản thảo vào Nhà in, Tạp chí mới chỉ nhận được một lời giải cho bài toán, từ bạn \textit{Nguyễn Gia Khánh} (lớp $11$ Toán $1$, trường THPT chuyên Hưng Yên, tỉnh Hưng Yên); và đó là một lời giải đúng.
-	\begin{flushright}
-		\textbf{\color{thachthuctoanhoc}Hạ Vũ Anh}
-	\end{flushright}
+	\vskip 0.2cm
+	\hfill	\textbf{\color{thachthuctoanhoc}Hạ Vũ Anh}
+	\vskip 0.01cm
+	\columnbreak
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P710.}}
 	(Mức $A$) Cho $a$ là số nguyên dương không vượt quá $7$. Chứng minh rằng, tồn tại số nguyên $b$ sao cho
 	\begin{align*}
-		\sum\limits_{k=0}^n\left\lfloor\dfrac ka\right\rfloor=\left\lfloor\dfrac {(2n+b)^2}{8a}\right\rfloor
+		\sum\limits_{k=0}^n\left[\dfrac ka\right]=\left[\dfrac {(2n+b)^2}{8a}\right]
 	\end{align*}
 	với mọi số tự nhiên $n$.
 	\vskip 0.05cm
@@ -865,7 +1131,7 @@
 	\vskip 0.05cm
 	Bằng phương pháp quy nạp theo $n \in \mathbb{N}$, ta sẽ chứng minh với mỗi số nguyên dương $a$ không vượt quá $7$, số nguyên $b = 2 - a$ thỏa mãn
 	\begin{align*}
-		\sum\limits_{k = 0}^n {\left[ {\frac{k}{a}} \right]}  = \left[ {\frac{{{{\left( {2n + b} \right)}^2}}}{{8a}}} \right], \tag{$1$}
+		\sum\limits_{k = 0}^n {\left[ {\dfrac{k}{a}} \right]}  = \left[ {\dfrac{{{{\left( {2n + b} \right)}^2}}}{{8a}}} \right], \tag{$1$}
 	\end{align*}
 	với mọi số tự nhiên $n$.
 	\vskip 0.05cm
@@ -873,7 +1139,7 @@
 	\vskip 0.05cm
 	Khi đó
 	\begin{align*}
-		\sum\limits_{k = 0}^n {\left[ {\frac{k}{a}} \right]}  = 0. \tag{$2$}
+		\sum\limits_{k = 0}^n {\left[ {\dfrac{k}{a}} \right]}  = 0. \tag{$2$}
 	\end{align*}
 	Hơn nữa, vì $a \in \mathbb{N^*}$  và $a \le 7$, nên với \linebreak $b = 2 - a$, ta có:
 	\begin{align*}
@@ -884,11 +1150,11 @@
 	\end{align*}
 	Do đó, $|2n + b| < 2\sqrt {2a}$;  suy ra
 	\begin{align*}
-		0 \le \frac{{{{\left( {2n + b} \right)}^2}}}{{8a}} < 1.
+		0 \le \dfrac{{{{\left( {2n + b} \right)}^2}}}{{8a}} < 1.
 	\end{align*}
 	Vì thế
 	\begin{align*}
-		\left[ {\frac{{{{\left( {2n + b} \right)}^2}}}{{8a}}} \right] = 0 = \sum\limits_{k = 0}^n {\left[ {\frac{k}{a}} \right]} \left( {{\rm{theo}}(2)} \right).
+		\left[ {\dfrac{{{{\left( {2n + b} \right)}^2}}}{{8a}}} \right] = 0 = \sum\limits_{k = 0}^n {\left[ {\dfrac{k}{a}} \right]} \left( {{\rm{theo}}(2)} \right).
 	\end{align*}
 	Như vậy, số nguyên $b = 2 - a$ thỏa mãn ($1$), với mọi số tự nhiên $n < a$.
 	\vskip 0.05cm
@@ -897,23 +1163,23 @@
 	\columnbreak
 	Khi đó
 	\begin{align*}
-			&\sum\limits_{k = 0}^m {\left[ {\frac{k}{a}} \right]}  = \sum\limits_{k = a}^m {\left[ {\frac{k}{a}} \right]}  = \sum\limits_{k = 0}^{m - a} {\left[ {\frac{{k + a}}{a}} \right]} \\
-			 = &\left( {m - a + 1} \right) + \sum\limits_{k = 0}^{m - a} {\left[ {\frac{k}{a}} \right]} \\
-			= &\left( {m - a + 1} \right) + \left[ {\frac{{{{\left( {2\left( {m - a} \right) + b} \right)}^2}}}{{8a}}} \right] \tag{$3$}\\
+			&\sum\limits_{k = 0}^m {\left[ {\dfrac{k}{a}} \right]}  = \sum\limits_{k = a}^m {\left[ {\dfrac{k}{a}} \right]}  = \sum\limits_{k = 0}^{m - a} {\left[ {\dfrac{{k + a}}{a}} \right]} \\
+			 = &\left( {m - a + 1} \right) + \sum\limits_{k = 0}^{m - a} {\left[ {\dfrac{k}{a}} \right]} \\
+			= &\left( {m - a + 1} \right) + \left[ {\dfrac{{{{\left( {2\left( {m - a} \right) + b} \right)}^2}}}{{8a}}} \right] \tag{$3$}\\
 			&\,\,\,(\text{do } 0 \le m-a < a).
 	\end{align*}
 	Do
 	\begin{align*}
-		\frac{{{{\left( {2m \!+\! b} \right)}^2}}}{{8a}} \!-\! \frac{{{{\left( {2\left( {m \!-\! a} \right) \!+\! b} \right)}^2}}}{{8a}} \!=\! m \!-\! a \!+\! 1 \!\in\! \mathbb{Z},
+		\dfrac{{{{\left( {2m \!+\! b} \right)}^2}}}{{8a}} \!-\! \dfrac{{{{\left( {2\left( {m \!-\! a} \right) \!+\! b} \right)}^2}}}{{8a}} \!=\! m \!-\! a \!+\! 1 \!\in\! \mathbb{Z},
 	\end{align*}
 	nên
 	\begin{align*}
-		&\left[ {\frac{{{{\left( {2m + b} \right)}^2}}}{{8a}}} \right] - \left[ {\frac{{{{\left( {2\left( {m - a} \right) + b} \right)}^2}}}{{8a}}} \right] \\
+		&\left[ {\dfrac{{{{\left( {2m + b} \right)}^2}}}{{8a}}} \right] - \left[ {\dfrac{{{{\left( {2\left( {m - a} \right) + b} \right)}^2}}}{{8a}}} \right] \\
 		= \,\,\,&m - a + 1. \tag{$4$}
 	\end{align*}
 	Từ ($3$) và ($4$), suy ra
 	\begin{align*}
-		\sum\limits_{k = 0}^m {\left[ {\frac{k}{a}} \right]}  = \left[ {\frac{{{{\left( {2m + b} \right)}^2}}}{{8a}}} \right].
+		\sum\limits_{k = 0}^m {\left[ {\dfrac{k}{a}} \right]}  = \left[ {\dfrac{{{{\left( {2m + b} \right)}^2}}}{{8a}}} \right].
 	\end{align*}
 	Như vậy, $b = 2 - a$ cũng thỏa mãn ($1$) khi $n = m$.
 	\vskip 0.05cm
@@ -930,7 +1196,7 @@
 \end{multicols}	
 \newpage
 \centerline{\textbf{\color{thachthuctoanhoc}DANH SÁCH HỌC SINH CÓ LỜI GIẢI HOÀN CHỈNH}}
-\vskip 0.1cm
+\vskip 0.05cm
 \textit{Trong các ngoặc đơn ở phần dưới đây, sau tên lớp là mã hiệu của các bài toán mà học sinh có lời giải hoàn chỉnh.}
 \begin{multicols}{2}
 	\textbf{\color{thachthuctoanhoc}KHỐI THCS}
