@@ -35,7 +35,7 @@
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
 		\begin{tikzpicture}[thachthuctoanhoc,scale=0.15]
-				\draw[fill=white] (0,0) rectangle (1,1);
+				\draw[fill=black] (0,0) rectangle (1,1);
 				\draw  (0.,-9.)-- (9.,-9.);
 				\draw  (9.,-9.)-- (9.,0.);
 				\draw  (9.,0.)-- (0.,0.);
@@ -82,9 +82,9 @@
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P733.}}
 	(Mức $B$) Tìm giá trị nhỏ nhất của biểu thức
 	\begin{align*}
-		S=\left[\dfrac{b+c}a\right]+\left[\dfrac{c+a}b\right]+\left[\dfrac{a+b}c\right]
+		S=\left\lfloor\dfrac{b+c}a\right\rfloor+\left\lfloor\dfrac{c+a}b\right\rfloor+\left\lfloor\dfrac{a+b}c\right\rfloor
 	\end{align*}
-	trong đó $a,b,c$ là các biến nguyên dương.
+	trong đó $a,b,c$ là các biến nguyên dương,$\lfloor x\rfloor$ ký hiệu số nguyên lớn nhất không vượt quá $x$.
 	\begin{flushright}
 		\textit{Nguyễn Việt Hùng, Hà Nội (st)}
 	\end{flushright}
@@ -194,8 +194,9 @@
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P739.}}
 	(Mức $A$) Cho dãy số $(a_n)$, xác định bởi
 	\begin{align*}
-		a_n=\left[\dfrac n{\sqrt2}\right]+\left[\dfrac n{\sqrt3}\right],\quad\text{với mọi $n\in\mathbb N^*$}.
+		a_n=\left\lfloor\dfrac n{\sqrt2}\right\rfloor+\left\lfloor\dfrac n{\sqrt3}\right\rfloor,\quad\text{với mọi $n\in\mathbb N^*$}.
 	\end{align*}
+	Trong đó, $\lfloor x\rfloor$ ký hiệu số nguyên lớn nhất không vượt quá $x$.
 	Chứng minh rằng, trong dãy $(a_n)$ có vô hạn số chẵn và vô hạn số lẻ.
 	\begin{flushright}
 		\textit{Nguyễn Tiến Lâm, Hà Nội}
@@ -708,7 +709,7 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	\vskip 0.05cm
 	Do các số được dùng để điền vào bảng là các số nguyên dương không vượt quá $10$, và trong $10$ số nguyên dương đầu tiên chỉ có ba số $1$, $5$, $7$ là các số lẻ không chia hết cho $3$, nên theo ($*$), trong bảng đã cho có ít nhất $220$ ô vuông con được điền các số $1$, $5$, $7$. Vì thế, theo nguyên lý Dirichlet, phải có ít nhất
 	\begin{align*}
-		\left[ {\dfrac{{220}}{3}} \right] + 1 = 74
+		\left\lfloor {\dfrac{{220}}{3}} \right\rfloor + 1 = 74
 	\end{align*}
 	ô vuông con được điền cùng một số (trong các số $1$, $5$, $7$).
 	\vskip 0.05cm
@@ -832,7 +833,7 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P707.}}
 	(Mức $A$) Chứng minh rằng, với mỗi số nguyên $a$, tồn tại số thực $x$, sao cho  
 	\begin{align*}
-		a=\left[ x +\dfrac12\right]+\left[\sqrt{2}x\right].
+		a=\left\lfloor x +\dfrac12\right\rfloor+\left\lfloor\sqrt{2}x\right\rfloor.
 	\end{align*}
 	\textbf{\color{thachthuctoanhoc}Lời giải} (\textit{dựa theo lời giải của bạn Hồ Trần Khánh Linh, lớp $12$ Toán $2$, trường THPT Chuyên, ĐHSP Hà Nội})\textbf{\color{thachthuctoanhoc}.}
 	\vskip 0.05cm
@@ -842,18 +843,18 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	\end{align*}
 	Vì $a \in \mathbb{Z}$  nên $a + \dfrac{1}{2}$ là một số hữu tỷ khác $0$. Do đó, $x$ là một số vô tỷ; suy ra, $x + \dfrac{1}{2}$ là một số vô tỷ. Vì vậy
 	\begin{align*}
-		\left[ {x + \dfrac{1}{2}} \right] < x + \dfrac{1}{2}.
+		\left\lfloor {x + \dfrac{1}{2}} \right\rfloor < x + \dfrac{1}{2}.
 	\end{align*}
 	Suy ra
 	\begin{align*}
 		&\left( {\left( {x + \dfrac{1}{2}} \right) - 1} \right) + \left( {\sqrt 2 x - 1} \right) \\
-		< &\left[ {x \!+\! \dfrac{1}{2}} \right] \!+\! \left[ {\sqrt 2 x} \right] \!<\! \left( {x \!+\! \dfrac{1}{2}} \right) \!+\! \sqrt 2 x. \tag{$2$}
+		< &\left\lfloor {x \!+\! \dfrac{1}{2}} \right\rfloor \!+\! \left\lfloor {\sqrt 2 x} \right\rfloor \!<\! \left( {x \!+\! \dfrac{1}{2}} \right) \!+\! \sqrt 2 x. \tag{$2$}
 	\end{align*}
 	Từ ($1$) và ($2$), ta được:
 	\begin{align*}
-		a - 1 < \left[ {x + \dfrac{1}{2}} \right] + \left[ {\sqrt 2 x} \right] < a + 1.
+		a - 1 < \left\lfloor {x + \dfrac{1}{2}} \right\rfloor + \left\lfloor {\sqrt 2 x} \right\rfloor < a + 1.
 	\end{align*}
-	Vì vậy, $\left[ {x + \dfrac{1}{2}} \right] + \left[ {\sqrt 2 x} \right] = a$.
+	Vì vậy, $\left\lfloor {x + \dfrac{1}{2}} \right\rfloor + \left\lfloor {\sqrt 2 x} \right\rfloor = a$.
 	\vskip 0.05cm   
 	Ta có điều phải chứng minh theo yêu cầu đề bài.
 	\vskip 0.05cm
@@ -861,7 +862,7 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	\vskip 0.05cm
 	Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có một lời giải sai, do người giải bài đã \textit{ngộ nhận} rằng
 	\begin{align*}
-		 \left\lceil x \right\rceil  - \left[ x \right] = 1, \text{ với mọi số thực } x.
+		 \left\lceil x \right\rceil  - \left\lfloor x \right\rfloor = 1, \text{ với mọi số thực } x.
 	\end{align*}
 	(Với $x \in \mathbb{R}, \left\lceil x \right\rceil $    ký hiệu số nguyên nhỏ nhất không nhỏ hơn $x$.)
 	\vskip 0.05cm
@@ -892,7 +893,7 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	\vskip 0.05cm 
 	Chọn  $a = \dfrac{1}{2}, b = x$ và $c = \dfrac{x+1}{2x-1}$.
 	\vskip 0.05cm
-	Bằng cách kiểm tra trực tiếp, dễ thấy; 
+	Bằng cách kiểm tra trực tiếp, dễ thấy, 
 	\begin{align*}
 		a + b + c = ab + bc + ca > 0.
 	\end{align*}
@@ -1123,7 +1124,7 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P710.}}
 	(Mức $A$) Cho $a$ là số nguyên dương không vượt quá $7$. Chứng minh rằng, tồn tại số nguyên $b$ sao cho
 	\begin{align*}
-		\sum\limits_{k=0}^n\left[\dfrac ka\right]=\left[\dfrac {(2n+b)^2}{8a}\right]
+		\sum\limits_{k=0}^n\left\lfloor\dfrac ka\right\rfloor=\left\lfloor\dfrac {(2n+b)^2}{8a}\right\rfloor
 	\end{align*}
 	với mọi số tự nhiên $n$.
 	\vskip 0.05cm
@@ -1131,7 +1132,7 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	\vskip 0.05cm
 	Bằng phương pháp quy nạp theo $n \in \mathbb{N}$, ta sẽ chứng minh với mỗi số nguyên dương $a$ không vượt quá $7$, số nguyên $b = 2 - a$ thỏa mãn
 	\begin{align*}
-		\sum\limits_{k = 0}^n {\left[ {\dfrac{k}{a}} \right]}  = \left[ {\dfrac{{{{\left( {2n + b} \right)}^2}}}{{8a}}} \right], \tag{$1$}
+		\sum\limits_{k = 0}^n {\left\lfloor {\dfrac{k}{a}} \right\rfloor}  = \left\lfloor {\dfrac{{{{\left( {2n + b} \right)}^2}}}{{8a}}} \right\rfloor, \tag{$1$}
 	\end{align*}
 	với mọi số tự nhiên $n$.
 	\vskip 0.05cm
@@ -1139,7 +1140,7 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	\vskip 0.05cm
 	Khi đó
 	\begin{align*}
-		\sum\limits_{k = 0}^n {\left[ {\dfrac{k}{a}} \right]}  = 0. \tag{$2$}
+		\sum\limits_{k = 0}^n {\left\lfloor {\dfrac{k}{a}} \right\rfloor}  = 0. \tag{$2$}
 	\end{align*}
 	Hơn nữa, vì $a \in \mathbb{N^*}$  và $a \le 7$, nên với \linebreak $b = 2 - a$, ta có:
 	\begin{align*}
@@ -1154,7 +1155,7 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	\end{align*}
 	Vì thế
 	\begin{align*}
-		\left[ {\dfrac{{{{\left( {2n + b} \right)}^2}}}{{8a}}} \right] = 0 = \sum\limits_{k = 0}^n {\left[ {\dfrac{k}{a}} \right]} \left( {{\rm{theo}}(2)} \right).
+		\left\lfloor {\dfrac{{{{\left( {2n + b} \right)}^2}}}{{8a}}} \right\rfloor = 0 = \sum\limits_{k = 0}^n {\left\lfloor {\dfrac{k}{a}} \right\rfloor} \left( {{\rm{theo}}(2)} \right).
 	\end{align*}
 	Như vậy, số nguyên $b = 2 - a$ thỏa mãn ($1$), với mọi số tự nhiên $n < a$.
 	\vskip 0.05cm
@@ -1163,9 +1164,9 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	\columnbreak
 	Khi đó
 	\begin{align*}
-			&\sum\limits_{k = 0}^m {\left[ {\dfrac{k}{a}} \right]}  = \sum\limits_{k = a}^m {\left[ {\dfrac{k}{a}} \right]}  = \sum\limits_{k = 0}^{m - a} {\left[ {\dfrac{{k + a}}{a}} \right]} \\
-			 = &\left( {m - a + 1} \right) + \sum\limits_{k = 0}^{m - a} {\left[ {\dfrac{k}{a}} \right]} \\
-			= &\left( {m - a + 1} \right) + \left[ {\dfrac{{{{\left( {2\left( {m - a} \right) + b} \right)}^2}}}{{8a}}} \right] \tag{$3$}\\
+			&\sum\limits_{k = 0}^m {\left\lfloor {\dfrac{k}{a}} \right\rfloor}  = \sum\limits_{k = a}^m {\left\lfloor {\dfrac{k}{a}} \right\rfloor}  = \sum\limits_{k = 0}^{m - a} {\left\lfloor {\dfrac{{k + a}}{a}} \right\rfloor} \\
+			 = &\left( {m - a + 1} \right) + \sum\limits_{k = 0}^{m - a} {\left\lfloor {\dfrac{k}{a}} \right\rfloor} \\
+			= &\left( {m - a + 1} \right) + \left\lfloor {\dfrac{{{{\left( {2\left( {m - a} \right) + b} \right)}^2}}}{{8a}}} \right\rfloor \tag{$3$}\\
 			&\,\,\,(\text{do } 0 \le m-a < a).
 	\end{align*}
 	Do
@@ -1174,12 +1175,12 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	\end{align*}
 	nên
 	\begin{align*}
-		&\left[ {\dfrac{{{{\left( {2m + b} \right)}^2}}}{{8a}}} \right] - \left[ {\dfrac{{{{\left( {2\left( {m - a} \right) + b} \right)}^2}}}{{8a}}} \right] \\
+		&\left\lfloor {\dfrac{{{{\left( {2m + b} \right)}^2}}}{{8a}}} \right\rfloor - \left\lfloor {\dfrac{{{{\left( {2\left( {m - a} \right) + b} \right)}^2}}}{{8a}}} \right\rfloor \\
 		= \,\,\,&m - a + 1. \tag{$4$}
 	\end{align*}
 	Từ ($3$) và ($4$), suy ra
 	\begin{align*}
-		\sum\limits_{k = 0}^m {\left[ {\dfrac{k}{a}} \right]}  = \left[ {\dfrac{{{{\left( {2m + b} \right)}^2}}}{{8a}}} \right].
+		\sum\limits_{k = 0}^m {\left\lfloor {\dfrac{k}{a}} \right\rfloor}  = \left\lfloor {\dfrac{{{{\left( {2m + b} \right)}^2}}}{{8a}}} \right\rfloor.
 	\end{align*}
 	Như vậy, $b = 2 - a$ cũng thỏa mãn ($1$) khi $n = m$.
 	\vskip 0.05cm
@@ -1221,7 +1222,7 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	\vskip 0.05cm
 	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Hà Nội -- Amsterdam}, Tp. Hà Nội: \textit{Nguyễn Thành Trung} (lớp $10$ Toán $2$; P$702$).
 	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Hà Tĩnh}, tỉnh Hà Tĩnh: \textit{Trần Minh Hoàng} (lớp $10$T$1$; P$707$).
+	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Hà Tĩnh}, tỉnh Hà Tĩnh: \textit{Trần Minh Hoàng} (lớp $10$T$1$; P$678$, P$707$).
 	\vskip 0.05cm
 	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Hưng Yên}, tỉnh Hưng Yên: \textit{Nguyễn Gia Khánh} (lớp $11$ Toán $1$; P$709$).
 	\vskip 0.05cm
@@ -1229,7 +1230,7 @@ Tương tự như lời giải đầu tiên, ta khảo sát hàm số để tìm
 	\vskip 0.05cm
 	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Lê Thánh Tông}, tỉnh Quảng Nam: \textit{Nguyễn Hữu Hoàng Nhật} (lớp $10/1$; P$701$).
 	\vskip 0.05cm
-	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Nguyễn Thị Minh Khai}, tỉnh Sóc Trăng: Tiết Trọng Khiêm (lớp $11$A$2$; P$706$).
+	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Nguyễn Thị Minh Khai}, tỉnh Sóc Trăng: \textit{Tiết Trọng Khiêm} (lớp $11$A$2$; P$706$).
 	\vskip 0.05cm
 	$\bullet$  Trường \textbf{\color{thachthuctoanhoc}THPT chuyên Sư phạm}, ĐH Sư phạm Hà Nội: \textit{Hồ Trần Khánh Linh} (lớp $12$ Toán $2$; P$707$).
 \end{multicols}

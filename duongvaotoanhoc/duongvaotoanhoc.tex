@@ -31,11 +31,11 @@
 	\end{align*}
 	Ta định nghĩa {\it đĩa mở} với tâm $\mathbf{x} \in \mathbb{R}^2$ và bán kính $r > 0$ bởi
 	\begin{align*}
-		\mathbb{D}(\mathbf{x}, r) = \{ y \in \mathbb{R}^2:  \left\|\mathbf{x} - \mathbf{y}\right\| < r\}
+		\mathbb{D}(\mathbf{x}, r) = \{ \mathbf{y} \in \mathbb{R}^2:  \left\|\mathbf{x} - \mathbf{y}\right\| < r\}
 	\end{align*}
 	(đó là hình tròn tâm $\mathbf{x}$ bán kính $r$ không kể biên), cũng như {\it đĩa đóng} tâm $\mathbf{x}$ bán kính $r$ bởi
 	\begin{align*}
-		\overline{\mathbb{D}}(\mathbf{x}, r) = \{ y \in \mathbb{R}^2:  \left\|\mathbf{x} - \mathbf{y}\right\| \le r\}
+		\overline{\mathbb{D}}(\mathbf{x}, r) = \{ \mathbf{y} \in \mathbb{R}^2:  \left\|\mathbf{x} - \mathbf{y}\right\| \le r\}
 	\end{align*}
 	(đó là hình tròn tâm $\mathbf{x}$ bán kính $r$ kể cả biên). Với $\mathbf{x} = (0,0)$ là gốc tọa độ và $r = 1$, ta sẽ ký hiệu đơn giản $\mathbb{D} = \mathbb{D}((0,0),1)$, $\overline{\mathbb{D}} = \overline{\mathbb{D}}((0,0),1)$ và gọi chúng lần lượt là {\it đĩa mở đơn vị} và {\it đĩa đóng đơn vị}. Xét không gian $X = \overline{\mathbb{D}}$. Với $\mathbf{x} \in \mathbb{D}$, một tập con của $\overline{\mathbb{D}}$ là một lân cận của $\mathbf{x}$ nếu nó chứa một đĩa $\mathbb{D}(\mathbf{x},r)$ với $r > 0$ đủ nhỏ. Tuy nhiên, với $\mathbf{x} \in \overline{\mathbb{D}} \setminus \mathbb{D}$, một tập con của $\overline{\mathbb{D}}$ là một lân cận của $\mathbf{x}$ nếu nó chứa phần giao của một đĩa như vậy với $\overline{\mathbb{D}}$, giao này không phải là một đĩa (xem Hình $2$).
 	\begin{figure}[H]
@@ -180,7 +180,7 @@
 	\vskip 0.1cm
 	$\pmb{3.}$ \textbf{\color{duongvaotoanhoc}Tính đóng và định hướng. Trải phẳng}
 	\vskip 0.1cm
-	Trong định nghĩa về mặt, ta dùng đĩa đóng $\overline{\mathbb{D}}$ thay cho đĩa mở $\mathbb{D}$. Lí do là vì cách định nghĩa như vậy bao hàm các {\it mặt có biên}, như sau. Cho $X$ là một mặt. Ta nói một điểm $x \in X$ là {\it điểm trong} nếu nó có một lân cận đồng phôi với đĩa mở đơn vị $\mathbb{D}$. Ngược lại, ta gọi nó là một {\it điểm biên}. Tập hợp các điểm trong của $X$ được gọi là {\it phần trong} của $X$ và được ký hiệu bởi $X^\circ$. Tập hợp các điểm biên của $X$ được gọi nó là {\it biên} của $X$ và được ký hiệu bởi $\partial X$. 
+	Trong định nghĩa về mặt, ta dùng đĩa đóng $\overline{\mathbb{D}}$ thay cho đĩa mở $\mathbb{D}$. Lý do là vì cách định nghĩa như vậy bao hàm các {\it mặt có biên}, như sau. Cho $X$ là một mặt. Ta nói một điểm $x \in X$ là {\it điểm trong} nếu nó có một lân cận đồng phôi với đĩa mở đơn vị $\mathbb{D}$. Ngược lại, ta gọi nó là một {\it điểm biên}. Tập hợp các điểm trong của $X$ được gọi là {\it phần trong} của $X$ và được ký hiệu bởi $X^\circ$. Tập hợp các điểm biên của $X$ được gọi nó là {\it biên} của $X$ và được ký hiệu bởi $\partial X$. 
 	\vskip 0.1cm
 	Chẳng hạn, ở Hình $1$, ta thấy rằng $\partial \overline{\mathbb{D}}$ là đường tròn đơn vị và $\overline{\mathbb{D}}^\circ = \mathbb{D}$. Trong khi đó, hình hộp, hình cầu, mặt trụ... đều là các mặt không có biên (mọi điểm của chúng đều là điểm trong). Dễ thấy biên và phần trong là các khái niệm tôpô, tức là nếu $f: X \to Y$ là một phép đồng phôi thì $f(\partial X) = \partial Y$ và $f(X^\circ) = Y^\circ$.
 	\vskip 0.1cm
