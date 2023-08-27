@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 22.1) (preloaded format=xelatex 2022.2.16)  25 AUG 2023 00:16
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 22.1) (preloaded format=xelatex 2022.2.16)  27 AUG 2023 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2909,7 +2909,11 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 82.
 
-(../toanhocdoisong/toanhocdoisong.tex
+File: ML.pdf Graphic file (type pdf)
+<use ML.pdf>
+[1
+
+] (../toanhocdoisong/toanhocdoisong.tex
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  5.
 
@@ -3144,9 +3148,7 @@ File: ftoanhocds1.pdf Graphic file (type pdf)
 <use ftoanhocds1.pdf>
 File: ftoanhocds1.pdf Graphic file (type pdf)
 <use ftoanhocds1.pdf>
-[2
-
-]
+[2]
 File: ../toanhocdoisong/pic//2.png Graphic file (type bmp)
 <../toanhocdoisong/pic//2.png>
 File: ../toanhocdoisong/pic//3.png Graphic file (type bmp)
@@ -4561,12 +4563,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 71785 strings out of 410969
- 1641000 string characters out of 2823810
- 2690981 words of memory out of 3000000
- 91120 multiletter control sequences out of 15000+600000
+ 71794 strings out of 410969
+ 1641111 string characters out of 2823810
+ 2690923 words of memory out of 3000000
+ 91127 multiletter control sequences out of 15000+600000
  513686 words of font info for 158 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  104i,18n,120p,1418b,1097s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on _main.pdf (63 pages).
+Output written on _main.pdf (64 pages).
